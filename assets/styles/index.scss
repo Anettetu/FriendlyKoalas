@@ -8,8 +8,8 @@ body {
 }
 
 .square {
-    width: 20em;
-    height: 20em;
+    width: 10em;
+    height: 10em;
     background-color: $color-square;
     position: relative;
     
@@ -17,6 +17,12 @@ body {
 
 .square--trym {
     animation: trym 6s 2s infinite;
+}
+
+.square--sondre {
+    margin: 50px;
+    background-color: $color-s-square;
+    animation: translate 3s infinite;
 }
 
 @keyframes trym {
@@ -27,12 +33,6 @@ body {
     75% { border-radius: 50%; transform: rotateZ(45deg)}
     76% { transform: rotateZ(0deg);}
     100% { border-radius: 0%;}
-}
-
-.square--sondre {
-    margin: 50px;
-    background-color: $color-s-square;
-    animation: translate 3s infinite;
 }
 
 @keyframes translate {

@@ -12,8 +12,8 @@ body {
 }
 
 .square {
-  width: 20em;
-  height: 20em;
+  width: 10em;
+  height: 10em;
   background-color: #e59da9;
   position: relative;
 }
@@ -21,6 +21,13 @@ body {
 .square--trym {
   -webkit-animation: trym 6s 2s infinite;
           animation: trym 6s 2s infinite;
+}
+
+.square--sondre {
+  margin: 50px;
+  background-color: yellow;
+  -webkit-animation: translate 3s infinite;
+          animation: translate 3s infinite;
 }
 
 @-webkit-keyframes trym {
@@ -81,13 +88,6 @@ body {
   100% {
     border-radius: 0%;
   }
-}
-
-.square--sondre {
-  margin: 50px;
-  background-color: yellow;
-  -webkit-animation: translate 3s infinite;
-          animation: translate 3s infinite;
 }
 
 @-webkit-keyframes translate {
