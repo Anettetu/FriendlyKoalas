@@ -28,3 +28,51 @@ body {
     76% { transform: rotateZ(0deg);}
     100% { border-radius: 0%;}
 }
+
+.square--sondre {
+    margin: 50px;
+    background-color: $color-s-square;
+    animation: translate 3s infinite;
+}
+
+@keyframes translate {
+    0% {
+      transform: translate(0);
+    }
+    25% {
+        transform: rotate(45deg);
+    }
+    50% {
+        width: 150px;
+    }
+    100% {
+      transform: translate(100%);
+    }
+}
+
+  
+@media (prefers-reduced-motion) {
+    .square--sondre {
+      animation: none;
+    }
+}
+  
+@media (prefers-color-scheme: dark) {
+    .square--sondre {
+      background-color: black;
+    }
+}
+  
+@media (orientation: landscape) {
+    .square--sondre {
+      background-color: darkgreen;
+    }
+}
+
+@media (orientation: landscape) {
+    @media (prefers-color-scheme: dark) {
+        .square--sondre {
+            background-color: black;
+        }
+    }
+}
