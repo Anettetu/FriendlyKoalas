@@ -133,7 +133,7 @@ body {
   }
 }
 
-@media (orientation: landscape) {
+@media (orientation: portrait) {
   .square--sondre, .square--trym {
     background-color: darkgreen;
   }
