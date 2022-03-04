@@ -31,9 +31,6 @@ body {
 }
 
 @-webkit-keyframes trym {
-  0% {
-    background-color: #e59da9;
-  }
   25% {
     border-radius: 50%;
     -webkit-transform: rotateZ(0deg);
@@ -61,9 +58,6 @@ body {
 }
 
 @keyframes trym {
-  0% {
-    background-color: #e59da9;
-  }
   25% {
     border-radius: 50%;
     -webkit-transform: rotateZ(0deg);
@@ -127,26 +121,26 @@ body {
 }
 
 @media (prefers-reduced-motion) {
-  .square--sondre {
+  .square--sondre, .square--trym {
     -webkit-animation: none;
             animation: none;
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  .square--sondre {
+  .square--sondre, .square--trym {
     background-color: black;
   }
 }
 
 @media (orientation: landscape) {
-  .square--sondre {
+  .square--sondre, .square--trym {
     background-color: darkgreen;
   }
 }
 
 @media (orientation: landscape) and (prefers-color-scheme: dark) {
-  .square--sondre {
+  .square--sondre, .square--trym {
     background-color: black;
   }
 }

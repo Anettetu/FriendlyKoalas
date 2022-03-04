@@ -26,7 +26,6 @@ body {
 }
 
 @keyframes trym {
-    0%  { background-color: $color-square }
     25% { border-radius: 50%; transform: rotateZ(0deg);}
     26% { transform: rotateZ(45deg); } 
     50% { border-radius: 0%; }
@@ -52,27 +51,27 @@ body {
 
   
 @media (prefers-reduced-motion) {
-    .square--sondre {
+    .square--sondre, .square--trym {
       animation: none;
     }
 }
   
 @media (prefers-color-scheme: dark) {
-    .square--sondre {
-      background-color: black;
+    .square--sondre, .square--trym {
+      background-color: $dark-square;
     }
 }
   
 @media (orientation: landscape) {
-    .square--sondre {
-      background-color: darkgreen;
+    .square--sondre, .square--trym {
+      background-color: $landscape-square;
     }
 }
 
 @media (orientation: landscape) {
     @media (prefers-color-scheme: dark) {
-        .square--sondre {
-            background-color: black;
+        .square--sondre, .square--trym {
+            background-color: $dark-square;
         }
     }
 }
