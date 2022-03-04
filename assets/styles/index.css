@@ -11,6 +11,10 @@ body {
           align-items: center;
 }
 
+.container {
+  width: 30em;
+}
+
 .square {
   width: 10em;
   height: 10em;
