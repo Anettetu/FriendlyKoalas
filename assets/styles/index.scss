@@ -1,4 +1,10 @@
 @import "_colors.scss";
+@import "_animations.scss";
+@import "_layout.scss";
+@import "_theme.scss";
+@import "_typography.scss";
+
+
 
 body {
     height: 100vh;
@@ -6,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 
 .square {
     width: 10em;
@@ -24,6 +31,19 @@ body {
     background-color: $color-s-square;
     animation: translate 3s infinite;
 }
+
+
+.square--anette {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 10rem;
+    background-color: lightblue;
+    animation-name: rotates, color_change;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  }
 
 @keyframes trym {
     25% { border-radius: 50%; transform: rotateZ(0deg);}
@@ -49,9 +69,74 @@ body {
     }
 }
 
+@keyframes rotates{
+    0%  {transform: rotate(0deg);}
+    100%  {transform: rotate(360deg);}
+} 
   
-@media (prefers-reduced-motion) {
+@keyframes color_change {
+    10% {
+      background-color: rgb(184, 228, 236); 
+    }
+    20% {
+       background-color: rgb(162, 219, 230);
+    }
+    30% { 
+        background-color: rgb(113, 212, 229); 
+    }
+    40% {
+       background-color: rgb(67, 204, 231);
+    }
+    50% {
+       background-color: rgb(16, 188, 222);
+    }
+    60% {
+      background-color: rgb(67, 204, 231);
+    }
+    70% {
+      background-color: rgb(113, 212, 229);
+    }
+    80% {
+        background-color: rgb(162, 219, 230);
+    } 
+    90% {
+      background-color: rgb(184, 228, 236); 
+    }
+    100% {
+        background-color: lightblue;
+    }
+}
+  
+  
+  
+@media (prefers-color-scheme: light) {
+    .square--anette
+      body {
+          background-color: rgb(246, 243, 239);
+      }
+}
+  
+  
+@media (orientation: landscape) {
+    .square--anette
+      body {
+          flex-direction: row;
+      }
+}
+  
+@media (orientation: portrait) {
+    .square--anette
+    body {
+        flex-direction: column;
+    }
     .square--sondre, .square--trym {
+        background-color: $landscape-square;
+      }
+}
+
+
+@media (prefers-reduced-motion) {
+    .square--sondre, .square--trym, .square--anette {
       animation: none;
     }
 }
@@ -62,12 +147,6 @@ body {
     }
 }
   
-@media (orientation: landscape) {
-    .square--sondre, .square--trym {
-      background-color: $landscape-square;
-    }
-}
-
 @media (orientation: landscape) {
     @media (prefers-color-scheme: dark) {
         .square--sondre, .square--trym {

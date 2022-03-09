@@ -30,6 +30,22 @@ body {
           animation: translate 3s infinite;
 }
 
+.square--anette {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 10rem;
+  background-color: lightblue;
+  -webkit-animation-name: rotates, color_change;
+          animation-name: rotates, color_change;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
 @-webkit-keyframes trym {
   25% {
     border-radius: 50%;
@@ -120,6 +136,124 @@ body {
   }
 }
 
+@-webkit-keyframes rotates {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotates {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes color_change {
+  10% {
+    background-color: #b8e4ec;
+  }
+  20% {
+    background-color: #a2dbe6;
+  }
+  30% {
+    background-color: #71d4e5;
+  }
+  40% {
+    background-color: #43cce7;
+  }
+  50% {
+    background-color: #10bcde;
+  }
+  60% {
+    background-color: #43cce7;
+  }
+  70% {
+    background-color: #71d4e5;
+  }
+  80% {
+    background-color: #a2dbe6;
+  }
+  90% {
+    background-color: #b8e4ec;
+  }
+  100% {
+    background-color: lightblue;
+  }
+}
+
+@keyframes color_change {
+  10% {
+    background-color: #b8e4ec;
+  }
+  20% {
+    background-color: #a2dbe6;
+  }
+  30% {
+    background-color: #71d4e5;
+  }
+  40% {
+    background-color: #43cce7;
+  }
+  50% {
+    background-color: #10bcde;
+  }
+  60% {
+    background-color: #43cce7;
+  }
+  70% {
+    background-color: #71d4e5;
+  }
+  80% {
+    background-color: #a2dbe6;
+  }
+  90% {
+    background-color: #b8e4ec;
+  }
+  100% {
+    background-color: lightblue;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .square--anette
+body {
+    background-color: #f6f3ef;
+  }
+}
+
+@media (orientation: landscape) {
+  .square--anette
+body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (orientation: portrait) {
+  .square--anette
+body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .square--sondre, .square--trym {
+    background-color: darkgreen;
+  }
+}
+
 @media (prefers-reduced-motion) {
   .square--sondre, .square--trym, .square--anette {
     -webkit-animation: none;
@@ -128,97 +262,14 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-  .square--sondre, .square--trym, .square--anette {
-    background-color: black;
-  }
-}
-
-@media (orientation: landscape) {
   .square--sondre, .square--trym {
-    background-color: darkgreen;
+    background-color: black;
   }
 }
 
 @media (orientation: landscape) and (prefers-color-scheme: dark) {
-  .square--sondre, .square--trym, .square--anette {
+  .square--sondre, .square--trym {
     background-color: black;
   }
 }
 /*# sourceMappingURL=index.css.map */
-
-
-
-
-.square--anette {
-  height: 100px;
-  width: 100px;
-  margin: 0 auto;
-  margin-top: 10rem;
-  background-color: lightblue;
-  animation-name: rotates, color_change;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-delay: 1s;
-}
-
-@keyframes rotates{
-  0%  {transform: rotate(0deg);}
-  100%  {transform: rotate(360deg);}
-} 
-
-@keyframes color_change {
-  10% {
-    background-color: rgb(184, 228, 236); 
-  }
-  20% {
-     background-color: rgb(162, 219, 230);
-  }
-  30% { 
-      background-color: rgb(113, 212, 229); 
-  }
-  40% {
-     background-color: rgb(67, 204, 231);
-  }
-  50% {
-     background-color: rgb(16, 188, 222);
-  }
-  60% {
-    background-color: rgb(67, 204, 231);
-  }
-  70% {
-    background-color: rgb(113, 212, 229);
-  }
-  80% {
-      background-color: rgb(162, 219, 230);
-  } 
-  90% {
-    background-color: rgb(184, 228, 236); 
-  }
-  100% {
-      background-color: lightblue;
-  }
-}
-
-
-
-@media (prefers-color-scheme: light) {
-  .square--anette
-    body {
-        background-color: rgb(246, 243, 239);
-    }
-    
-}
-
-
-@media (orientation: landscape) {
-  .square--anette
-    body {
-        flex-direction: row;
-    }
-}
-
-@media (orientation: portrait) {
-  .square--anette
-  body {
-      flex-direction: column;
-  }
