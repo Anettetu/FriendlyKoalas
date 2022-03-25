@@ -1,5 +1,37 @@
 $color-square: rgb(229, 157, 169);
-$color-s-square: rgb(255,255,0);
-$dark-square: black;
-$landscape-square: darkgreen;
-$light-blue: rgb(184, 228, 236);
+$sky-norwegian: hsl(208,83%,74%);
+$sky-african:hsl(32,83%,74%);
+$sky-norwegian-dark: hsl(211,73%,64%);
+$sky-african-dark: hsl(19,73%,64%);
+$sky-norwegian-bright: hsl(208,76%,83%);
+$sky-african-bright: hsl(34,44%,83%);
+$grond-norwegian: hsl(100,75%,37%);
+$grond-african: hsl(31,74%,48%);
+
+.sky, .ground-block {
+    background: $sky-norwegian;
+}
+
+.ground, .ground--left {
+    background-color: $grond-norwegian;
+}
+
+.sky--dark:nth-of-type(2) {
+    border-right:65vw solid $sky-norwegian-dark;
+}
+
+.sky--dark:nth-of-type(3) {
+    border-right:40vw solid $sky-norwegian-dark;
+}
+
+.sky--dark:nth-of-type(4) {
+    border-right:59vw solid $sky-norwegian-dark;
+}
+
+.sky--dark:nth-of-type(5) {
+    border-right:45vw solid $sky-norwegian-dark;
+}
+
+.sky--bright {
+    border-right:170vw solid $sky-norwegian-bright;
+}
