@@ -1,29 +1,37 @@
-.sky, .ground-block {
-  background: #86c0f4;
+.sky, .ground__blueblock {
+  background-color: #86c0f4;
 }
 
-.ground, .ground--left {
+.ground__greyblock {
+  background-color: #a9a7a7;
+}
+
+.ground, .ground__left {
   background-color: #47a518;
 }
 
-.sky--dark:nth-of-type(2) {
+.sky__dark:nth-of-type(2) {
   border-right: 65vw solid #60a1e6;
 }
 
-.sky--dark:nth-of-type(3) {
+.sky__dark:nth-of-type(3) {
   border-right: 40vw solid #60a1e6;
 }
 
-.sky--dark:nth-of-type(4) {
+.sky__dark:nth-of-type(4) {
   border-right: 59vw solid #60a1e6;
 }
 
-.sky--dark:nth-of-type(5) {
+.sky__dark:nth-of-type(5) {
   border-right: 45vw solid #60a1e6;
 }
 
-.sky--bright {
+.sky__bright {
   border-right: 170vw solid #b3d6f5;
+}
+
+.mountain1 > * {
+  background-color: #a9a7a7;
 }
 
 body {
@@ -37,7 +45,7 @@ body {
   height: 80vh;
 }
 
-.sky--dark {
+.sky__dark {
   width: 0;
   height: 0;
   border-top: 3vw solid transparent;
@@ -45,33 +53,33 @@ body {
   position: absolute;
 }
 
-.sky--dark:nth-of-type(2) {
+.sky__dark:nth-of-type(2) {
   right: 0;
-  top: 4vh;
+  top: 2vh;
 }
 
-.sky--dark:nth-of-type(3) {
+.sky__dark:nth-of-type(3) {
   right: 0;
-  top: 33vh;
+  top: 24vh;
 }
 
-.sky--dark:nth-of-type(4) {
+.sky__dark:nth-of-type(4) {
   left: 0;
-  top: 10vh;
+  top: 8vh;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-.sky--dark:nth-of-type(5) {
+.sky__dark:nth-of-type(5) {
   left: 0;
-  top: 30vh;
+  top: 22vh;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-.sky--bright {
+.sky__bright {
   left: 0;
-  top: 26vh;
+  top: 17vh;
   border-top: 9vh solid transparent;
   border-bottom: 9vh solid transparent;
   -webkit-transform: rotateY(180deg);
@@ -79,15 +87,26 @@ body {
   position: absolute;
 }
 
+.mountains > *, .mountains > * > * {
+  position: absolute;
+}
+
+.land {
+  overflow: hidden;
+  height: 50vh;
+  width: 100vw;
+  position: absolute;
+  top: 55vh;
+}
+
 .ground {
   width: 160vw;
   height: 100vh;
   position: absolute;
   border-radius: 50%;
-  top: 64vh;
 }
 
-.ground--left {
+.ground__left {
   width: 40vw;
   height: 60vh;
   -webkit-transform: rotateZ(15deg);
@@ -97,14 +116,58 @@ body {
   top: -4.3vh;
 }
 
-.ground-block {
+.ground__greyblock {
   border-radius: 50%;
-  height: 30vw;
-  width: 60vw;
+  height: 20vw;
+  width: 52vw;
   position: absolute;
-  bottom: 45.4vh;
+  bottom: 39vh;
   left: -10vw;
   -webkit-transform: rotateZ(-10deg);
           transform: rotateZ(-10deg);
+}
+
+.ground__blueblock {
+  width: 8vw;
+  height: 17vh;
+  position: absolute;
+  bottom: 38vh;
+  left: -1vw;
+  -webkit-transform: rotateZ(19deg);
+          transform: rotateZ(19deg);
+}
+
+.mountain1 {
+  top: 28vh;
+  height: 50vh;
+  width: 34vw;
+}
+
+.mountain1__p1 {
+  height: 27vh;
+  width: 16vw;
+  -webkit-transform: rotateZ(23deg);
+          transform: rotateZ(23deg);
+  bottom: 12vh;
+  left: 5.2vw;
+}
+
+.mountain1__p2 {
+  height: 10vh;
+  width: 8vw;
+  -webkit-transform: rotateZ(60deg);
+          transform: rotateZ(60deg);
+  border-top-left-radius: 7%;
+  left: 10.4vw;
+  top: 5vh;
+}
+
+.mountain1__p3 {
+  height: 4vh;
+  width: 9vw;
+  left: 15vw;
+  top: 12vh;
+  -webkit-transform: rotateZ(29deg);
+          transform: rotateZ(29deg);
 }
 /*# sourceMappingURL=index.css.map */
