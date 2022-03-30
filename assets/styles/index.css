@@ -34,46 +34,46 @@ body {
 
 .sky {
   width: 100vw;
-  height: 80vh;
+  height: 50vw;
 }
 
 .sky--dark {
   width: 0;
   height: 0;
-  border-top: 3vw solid transparent;
-  border-bottom: 3vh solid transparent;
+  border-top: 1.8vw solid transparent;
+  border-bottom: 1.8vw solid transparent;
   position: absolute;
 }
 
 .sky--dark:nth-of-type(2) {
   right: 0;
-  top: 4vh;
+  top: 1.5vW;
 }
 
 .sky--dark:nth-of-type(3) {
   right: 0;
-  top: 33vh;
+  top: 10.5vw;
 }
 
 .sky--dark:nth-of-type(4) {
   left: 0;
-  top: 10vh;
+  top: 4vw;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
 .sky--dark:nth-of-type(5) {
   left: 0;
-  top: 30vh;
+  top: 12.5vw;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
 .sky--bright {
   left: 0;
-  top: 26vh;
-  border-top: 9vh solid transparent;
-  border-bottom: 9vh solid transparent;
+  top: 10vw;
+  border-top: 3.9vw solid transparent;
+  border-bottom: 3.9vw solid transparent;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   position: absolute;
@@ -81,29 +81,32 @@ body {
 
 .ground {
   width: 160vw;
-  height: 100vh;
+  height: 50vw;
   position: absolute;
   border-radius: 50%;
-  top: 64vh;
+  overflow: hidden;
+  top: 28vw;
 }
 
 .ground--left {
   width: 40vw;
-  height: 60vh;
+  height: 33.4vw;
   -webkit-transform: rotateZ(15deg);
           transform: rotateZ(15deg);
   position: absolute;
   left: -9vw;
-  top: -4.3vh;
+  top: -1.3vw;
 }
 
-.ground-block {
+.ground--left::before {
+  content: '';
   border-radius: 50%;
-  height: 30vw;
+  height: 20vw;
   width: 60vw;
+  background-color: #86c0f4;
   position: absolute;
-  bottom: 45.4vh;
-  left: -10vw;
+  bottom: 27vw;
+  left: -11vw;
   -webkit-transform: rotateZ(-10deg);
           transform: rotateZ(-10deg);
 }
