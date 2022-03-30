@@ -3,49 +3,56 @@ body {
     width: 100vw;
     overflow: hidden;
 }
-
 .sky {
     width: 100vw;
     height: 50vw;
+
+    &__dark {
+        width: 0; 
+        height: 0;
+        border-top: 1.8vw solid transparent;
+        border-bottom: 1.8vw solid transparent;  
+        position: absolute;
+    }
+    &__dark:nth-of-type(2) {
+        right: 0;
+        top: 1.5vw;
+        }
+    &__dark:nth-of-type(3) {
+        right: 0;
+        top: 10.5vw;
+        }
+    &__dark:nth-of-type(4) {
+        left: 0;
+        top: 4vw;
+        transform: rotateY(180deg);
+        }
+    &__dark:nth-of-type(5) {
+        left: 0;
+        top: 12.5vw;
+        transform: rotateY(180deg);
+        }
+
+    &__bright {
+        left: 0;
+        top: 10vw;
+        border-top: 3.9vw solid transparent;
+        border-bottom: 3.9vw solid transparent; 
+        transform: rotateY(180deg);
+        position: absolute;
+    }
 }
 
-
-.sky--dark {
-    width: 0; 
-    height: 0;
-    border-top: 1.8vw solid transparent;
-    border-bottom: 1.8vw solid transparent; 
+.mountains > * , .mountains > * > *{
     position: absolute;
 }
 
-.sky--dark:nth-of-type(2) {
-    right: 0;
-    top: 1.5vW;
-}
-
-.sky--dark:nth-of-type(3) {
-    right: 0;
-    top: 10.5vw;
-}
-
-.sky--dark:nth-of-type(4) {
-    left: 0;
-    top: 4vw;
-    transform: rotateY(180deg);
-}
-
-.sky--dark:nth-of-type(5) {
-    left: 0;
-    top: 12.5vw;
-    transform: rotateY(180deg);
-}
-.sky--bright {
-    left: 0;
-    top: 10vw;
-    border-top: 3.9vw solid transparent;
-    border-bottom: 3.9vw solid transparent; 
-    transform: rotateY(180deg);
+.land {
+    overflow: hidden;
+    height: 50vh;
+    width: 100vw;
     position: absolute;
+    top: 55vh;
 }
 
 .ground {
@@ -55,26 +62,61 @@ body {
     border-radius: 50%;
     overflow: hidden;
     top: 28vw;
+    
+    &__left {
+        width: 40vw;
+        height: 33.4vw;
+        transform: rotateZ(15deg);
+        position: absolute;
+        left: -9vw;
+        top: -1.3vw;
+    }
+
+    &__greyblock {
+        border-radius: 50%;
+        height: 20vw;
+        width: 52vw;
+        position: absolute;
+        bottom: 39vh;
+        left: -10vw;
+        transform: rotateZ(-10deg);
+    }
+
+    &__blueblock {
+        width: 8vw;
+        height: 17vh;
+        position: absolute;
+        bottom: 38vh;
+        left: -1vw;
+        transform: rotateZ(19deg);
+    }
+
 }
 
-.ground--left {
-    width: 40vw;
-    height: 33.4vw;
-    transform: rotateZ(15deg);
-    position: absolute;
-    left: -9vw;
-    top: -1.3vw;
-}
+.mountain1 {
+    top: 28vh;
+    height: 50vh;
+    width: 34vw;
 
-
-.ground--left::before {
-    content: '';
-    border-radius: 50%;
-    height: 20vw;
-    width: 60vw;
-    background-color: $sky-norwegian;
-    position: absolute;
-    bottom: 27vw;
-    left: -11vw;
-    transform: rotateZ(-10deg);
-}
+    &__p1 {
+        height: 27vh;
+        width: 16vw;
+        transform: rotateZ(23deg);
+        bottom: 12vh;
+        left: 5.2vw;
+    }
+    &__p2 {
+        height: 10vh;
+        width: 8vw;
+        transform: rotateZ(60deg);
+        border-top-left-radius: 7%;
+        left: 10.4vw;
+        top: 5vh;
+    }
+    &__p3 {
+        height: 4vh;
+        width: 9vw;
+        left: 15vw;
+        top: 12vh;
+        transform: rotateZ(29deg);
+    }
