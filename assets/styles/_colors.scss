@@ -7,31 +7,46 @@ $sky-norwegian-bright: hsl(208,76%,83%);
 $sky-african-bright: hsl(34,44%,83%);
 $grond-norwegian: hsl(100,75%,37%);
 $grond-african: hsl(31,74%,48%);
+$norwegian-mountian-1: hsl(0,1%,66%);
+$norwegian-mountian-2: hsl(0,3%,70%);
+$norwegian-mountian-3: hsl(0,4%,78%);
+$norwegian-mountian-4: hsl(212,19%,77%);
+$norwegian-mountian-5: hsl(210,39%,76%);
+$african-mountain-1: hsl(30,70%,56%);
 
-.sky, .ground-block {
-    background: $sky-norwegian;
+
+.sky, .ground__blueblock {
+    background-color: $sky-norwegian;
 }
 
-.ground, .ground--left {
+.ground__greyblock {
+    background-color: $norwegian-mountian-1;
+}
+
+.ground, .ground__left {
     background-color: $grond-norwegian;
 }
 
-.sky--dark:nth-of-type(2) {
-    border-right:65vw solid $sky-norwegian-dark;
+.sky__dark:nth-of-type(2) {
+    border-right: 65vw solid $sky-norwegian-dark;
 }
 
-.sky--dark:nth-of-type(3) {
+.sky__dark:nth-of-type(3) {
     border-right:40vw solid $sky-norwegian-dark;
 }
 
-.sky--dark:nth-of-type(4) {
+.sky__dark:nth-of-type(4) {
     border-right:59vw solid $sky-norwegian-dark;
 }
 
-.sky--dark:nth-of-type(5) {
+.sky__dark:nth-of-type(5) {
     border-right:45vw solid $sky-norwegian-dark;
 }
 
-.sky--bright {
+.sky__bright {
     border-right:170vw solid $sky-norwegian-bright;
+}
+
+.mountain1 > * {
+    background-color: $norwegian-mountian-1;
 }
