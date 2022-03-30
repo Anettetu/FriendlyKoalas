@@ -1,29 +1,49 @@
-.sky, .ground-block {
-  background: #86c0f4;
+.sky, .ground__blueblock {
+  background-color: #86c0f4;
 }
 
-.ground, .ground--left {
+.ground__greyblock {
+  background-color: #a9a7a7;
+}
+
+.ground__greyblock::before {
+  background-color: #b5b0b0;
+}
+
+.ground, .ground__left {
   background-color: #47a518;
 }
 
-.sky--dark:nth-of-type(2) {
+.sky__dark:nth-of-type(2) {
   border-right: 65vw solid #60a1e6;
 }
 
-.sky--dark:nth-of-type(3) {
+.sky__dark:nth-of-type(3) {
   border-right: 40vw solid #60a1e6;
 }
 
-.sky--dark:nth-of-type(4) {
+.sky__dark:nth-of-type(4) {
   border-right: 59vw solid #60a1e6;
 }
 
-.sky--dark:nth-of-type(5) {
+.sky__dark:nth-of-type(5) {
   border-right: 45vw solid #60a1e6;
 }
 
-.sky--bright {
+.sky__bright {
   border-right: 170vw solid #b3d6f5;
+}
+
+.mountain1 > * {
+  background-color: #a9a7a7;
+}
+
+.mountain2 > * {
+  background-color: #b5b0b0;
+}
+
+.mountain3 > * {
+  background-color: #c9c5c5;
 }
 
 body {
@@ -34,77 +54,176 @@ body {
 
 .sky {
   width: 100vw;
-  height: 80vh;
+  height: 50vw;
 }
-
-.sky--dark {
+.sky__dark {
   width: 0;
   height: 0;
-  border-top: 3vw solid transparent;
-  border-bottom: 3vh solid transparent;
+  border-top: 1.8vw solid transparent;
+  border-bottom: 1.8vw solid transparent;
+  position: absolute;
+}
+.sky__dark:nth-of-type(2) {
+  right: 0;
+  top: 1.5vw;
+}
+.sky__dark:nth-of-type(3) {
+  right: 0;
+  top: 10.5vw;
+}
+.sky__dark:nth-of-type(4) {
+  left: 0;
+  top: 4vw;
+  transform: rotateY(180deg);
+}
+.sky__dark:nth-of-type(5) {
+  left: 0;
+  top: 12.5vw;
+  transform: rotateY(180deg);
+}
+.sky__bright {
+  left: 0;
+  top: 10vw;
+  border-top: 3.9vw solid transparent;
+  border-bottom: 3.9vw solid transparent;
+  transform: rotateY(180deg);
   position: absolute;
 }
 
-.sky--dark:nth-of-type(2) {
-  right: 0;
-  top: 4vh;
-}
-
-.sky--dark:nth-of-type(3) {
-  right: 0;
-  top: 33vh;
-}
-
-.sky--dark:nth-of-type(4) {
-  left: 0;
-  top: 10vh;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.sky--dark:nth-of-type(5) {
-  left: 0;
-  top: 30vh;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.sky--bright {
-  left: 0;
-  top: 26vh;
-  border-top: 9vh solid transparent;
-  border-bottom: 9vh solid transparent;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+.mountains > *, .mountains > * > * {
   position: absolute;
+}
+
+.land {
+  overflow: hidden;
+  height: 30vw;
+  width: 100vw;
+  position: absolute;
+  top: 28vw;
 }
 
 .ground {
   width: 160vw;
-  height: 100vh;
+  height: 50vw;
   position: absolute;
   border-radius: 50%;
-  top: 64vh;
+  top: 0vw;
 }
-
-.ground--left {
+.ground__left {
   width: 40vw;
-  height: 60vh;
-  -webkit-transform: rotateZ(15deg);
-          transform: rotateZ(15deg);
+  height: 33.4vw;
+  transform: rotateZ(15deg);
   position: absolute;
   left: -9vw;
-  top: -4.3vh;
+  top: -1.3vw;
+  z-index: 3;
+}
+.ground__greyblock {
+  border-radius: 50%;
+  height: 15vw;
+  width: 51vw;
+  position: absolute;
+  bottom: 24vw;
+  left: -10vw;
+  transform: rotateZ(-10deg);
+  overflow: hidden;
+}
+.ground__greyblock::before {
+  content: "";
+  height: 100vw;
+  width: 100vw;
+  position: absolute;
+  transform: rotateZ(40deg);
+  left: 28.7vw;
+  top: -73.7vw;
+}
+.ground__blueblock {
+  width: 8vw;
+  height: 10vw;
+  position: absolute;
+  bottom: 23.4vw;
+  left: 0.4vw;
+  transform: rotateZ(19deg);
 }
 
-.ground-block {
-  border-radius: 50%;
+.mountain1 {
+  top: 18vw;
   height: 30vw;
-  width: 60vw;
-  position: absolute;
-  bottom: 45.4vh;
-  left: -10vw;
-  -webkit-transform: rotateZ(-10deg);
-          transform: rotateZ(-10deg);
+  width: 34vw;
 }
-/*# sourceMappingURL=index.css.map */
+.mountain1__p1 {
+  height: 21vw;
+  width: 8vw;
+  transform: rotateZ(20deg);
+  bottom: 8vw;
+  left: 3.6vw;
+}
+.mountain1__p2 {
+  height: 5vw;
+  width: 8vw;
+  transform: rotateZ(60deg);
+  border-radius: 7%;
+  left: 7.4vw;
+  top: 0.1vw;
+}
+.mountain1__p3 {
+  height: 10vw;
+  width: 8vw;
+  left: 9vw;
+  top: 1.4vw;
+  transform: rotateZ(29deg);
+  border-radius: 5%;
+}
+.mountain1__p4 {
+  height: 10vw;
+  width: 7vw;
+  left: 14.4vw;
+  border-radius: 4%;
+  top: 4.8vw;
+  transform: rotateZ(-27deg);
+}
+
+.mountain2 {
+  position: relative;
+  height: 30vw;
+  width: 30vw;
+  top: -52vw;
+  left: 20vw;
+}
+.mountain2__p1 {
+  height: 4vw;
+  width: 4vw;
+  top: 8.4vw;
+  left: 2.4vw;
+  transform: rotateZ(55deg);
+}
+
+.mountain3 {
+  height: 20vw;
+  width: 20vw;
+  position: relative;
+  top: -32vw;
+  left: 13vw;
+}
+.mountain3__p1 {
+  height: 4vw;
+  width: 16vw;
+  border-radius: 12%;
+  transform: rotateZ(37deg);
+  left: -1.1vw;
+  top: 3.9vw;
+}
+.mountain3__p2 {
+  height: 8vw;
+  width: 12vw;
+  transform: rotateZ(20deg);
+  left: 3vw;
+  top: 4vw;
+}
+.mountain3__p3 {
+  height: 8vw;
+  width: 8vw;
+  transform: rotateZ(5deg);
+  left: 12vw;
+  top: 5.5vw;
+}/*# sourceMappingURL=index.css.map */
