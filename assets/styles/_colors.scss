@@ -13,6 +13,7 @@ $norwegian-mountian-3: hsl(0,4%,78%);
 $norwegian-mountian-4: hsl(212,19%,77%);
 $norwegian-mountian-5: hsl(210,39%,76%);
 $african-mountain-1: hsl(30,70%,56%);
+$norwegian-sun: hsl(43,94%,72%);
 
 
 .sky, .ground__blueblock {
@@ -60,4 +61,8 @@ $african-mountain-1: hsl(30,70%,56%);
 
 .mountain3 > * {
     background-color: $norwegian-mountian-3;
+}
+
+.sun {
+    background-color: $norwegian-sun;
 }

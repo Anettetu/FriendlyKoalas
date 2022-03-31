@@ -43,7 +43,7 @@ body {
     }
 }
 
-.mountains > * , .mountains > * > *{
+.sun, .mountains > * , .mountains > * > *{
     position: absolute;
 }
 
@@ -104,6 +104,14 @@ body {
 
 }
 
+.sun {
+    border-radius: 50%;
+    height: 15vw;
+    width: 15vw;
+    top: 18vw;
+    left: 16vw;
+}
+
 .mountain1 {
     top: 18vw;
     height: 30vw;
@@ -155,6 +163,37 @@ body {
         left: 2.4vw;
         transform: rotateZ(55deg);
     }
+    &__p2 {
+        height:9vw;
+        width: 16vw;
+        top: 6vw;
+        left: 5.2vw;
+        transform: rotateZ(45deg);
+    }
+    &__p3 {
+        height:6vw;
+        width: 6vw;
+        left: 10vw;
+        transform: rotateZ(31deg);
+        border-radius: 8%;
+    }
+    &__p4 {
+        height:12vw;
+        width: 12vw;
+        left: 9vw;
+        top: 0.5vw;
+        transform: rotateZ(21deg);
+        border-radius: 8%;
+    }
+    &__p5 {
+        height:16vw;
+        width: 9vw;
+        left: 16.6vw;
+        top: 3.6vw;
+        transform: rotateZ(-21deg);
+        border-radius: 8%;
+    }
+
 }
 .mountain3 {
     height: 20vw;
@@ -185,4 +224,5 @@ body {
         left: 12vw;
         top: 5.5vw;
     }
+    
 }
