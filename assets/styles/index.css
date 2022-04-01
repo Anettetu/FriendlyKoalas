@@ -46,6 +46,14 @@
   background-color: hsl(0deg, 4%, 78%);
 }
 
+.mountain4 {
+  border-bottom: 10vw solid hsl(212deg, 19%, 77%);
+}
+
+.mountain5 {
+  border-bottom: 6vw solid hsl(210deg, 39%, 76%);
+}
+
 .sun {
   background-color: hsl(43deg, 94%, 72%);
 }
@@ -268,4 +276,23 @@ body {
   transform: rotateZ(5deg);
   left: 12vw;
   top: 5.5vw;
-}/*# sourceMappingURL=index.css.map */
+}
+
+.mountain4 {
+  right: 2vw;
+  top: 20vw;
+  border-left: 8vw solid transparent;
+  border-right: 8vw solid transparent;
+  transform: rotateY(180deg);
+  position: absolute;
+}
+
+.mountain5 {
+  right: 20vw;
+  top: 23vw;
+  border-left: 4vw solid transparent;
+  border-right: 4vw solid transparent;
+  transform: rotateY(180deg);
+  position: absolute;
+}
+/*# sourceMappingURL=index.css.map */
