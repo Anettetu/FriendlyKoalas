@@ -73,7 +73,7 @@ body {
 }
 .sky__dark:nth-of-type(3) {
   right: 0;
-  top: 10.5vw;
+  top: 12.5vw;
 }
 .sky__dark:nth-of-type(4) {
   left: 0;
@@ -167,15 +167,15 @@ body {
   height: 21vw;
   width: 8vw;
   transform: rotateZ(20deg);
-  bottom: 8vw;
-  left: 3.6vw;
+  bottom: 7.9vw;
+  left: 3.47vw;
 }
 .mountain1__p2 {
   height: 5vw;
   width: 8vw;
   transform: rotateZ(60deg);
   border-radius: 7%;
-  left: 7.4vw;
+  left: 7.2vw;
   top: 0.1vw;
 }
 .mountain1__p3 {
