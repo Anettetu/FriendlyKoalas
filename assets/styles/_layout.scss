@@ -1,8 +1,11 @@
 body {
     margin: 0;
     width: 100vw;
-    overflow: hidden;
+    height: 800vh;
+    overflow-x: hidden;
+    
 }
+
 .sky {
     width: 100vw;
     height: 50vw;
@@ -69,7 +72,6 @@ body {
         position: absolute;
         left: -9vw;
         top: -1.3vw;
-        z-index: 3;
     }
 
     &__greyblock {
@@ -226,6 +228,20 @@ body {
     }
     
 }
-.mountian4 {
-    
+.mountain4 {
+    right: 2vw;
+    top: 20vw;
+    border-left: 8vw solid transparent;
+    border-right: 8vw solid transparent; 
+    transform: rotateY(180deg);
+    position: absolute;
+}
+
+.mountain5 {
+    right: 20vw;
+    top: 23vw;
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent; 
+    transform: rotateY(180deg);
+    position: absolute;
 }
