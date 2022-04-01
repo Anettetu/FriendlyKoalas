@@ -793,7 +793,6 @@
     &__water:nth-of-type(1) {
       width: 370px; 
       height: 115px; 
-      background-color: lightblue;
       border-radius: 50%;
       margin-left: 2rem;
     }
@@ -801,7 +800,6 @@
     &__water:nth-of-type(2) {
       width: 350px; 
       height: 140px; 
-      background-color: lightblue;
       border-radius: 50%;
       margin-top: -4.4rem;
       margin-left: 1rem;
@@ -811,7 +809,6 @@
     &__water:nth-of-type(3) {
       width: 210px; 
       height: 70px; 
-      background-color: #44BBC2;
       border-radius: 50%;
       margin-top: -5.4rem;
       margin-left: 16rem;
@@ -836,9 +833,6 @@
       transform: rotate(30deg)
     }
   
-    &__water:nth-of-type(1), &__water:nth-of-type(2), &__water:nth-of-type(3), &__water:nth-of-type(4), &__water:nth-of-type(5) {
-      background-color: #44BBC2;
-    }
     
     &__bubble:nth-of-type(1) {
       width: 188px; 
