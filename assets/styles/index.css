@@ -53,7 +53,8 @@
 body {
   margin: 0;
   width: 100vw;
-  overflow: hidden;
+  height: 800vh;
+  overflow-x: hidden;
 }
 
 .sky {
@@ -120,7 +121,6 @@ body {
   position: absolute;
   left: -9vw;
   top: -1.3vw;
-  z-index: 3;
 }
 .ground__greyblock {
   border-radius: 50%;
