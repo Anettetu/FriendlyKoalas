@@ -14,6 +14,14 @@ $norwegian-mountian-4: hsl(212,19%,77%);
 $norwegian-mountian-5: hsl(210,39%,76%);
 $african-mountain-1: hsl(30,70%,56%);
 $norwegian-sun: hsl(43,94%,72%);
+$water: hsl(183,51%,51%);
+$bubbles: hsl(183,47%,59%);
+$top-bubble: hsl(183,54%,74%);
+$edge: hsl(31,75%,48%);
+$grey-edge: hsl(29,41%,50%);
+
+
+
 
 
 .sky, .ground__blueblock {
@@ -65,4 +73,24 @@ $norwegian-sun: hsl(43,94%,72%);
 
 .sun {
     background-color: $norwegian-sun;
+}
+
+.pond__water > * {
+    background-color: $water;
+}
+
+.pond__bubble:nth-of-type(1), .pond__bubble:nth-of-type(2), .pond__bubble:nth-of-type(3), .pond__bubble:nth-of-type(4), .pond__bubble:nth-of-type(5), .pond__bubble:nth-of-type(6), .pond__bubble:nth-of-type(7), .pond__bubble:nth-of-type(8), .pond__bubble:nth-of-type(13), .pond__bubble:nth-of-type(14) {
+    background-color: $bubbles; }
+
+
+.pond__bubble:nth-of-type(9), .pond__bubble:nth-of-type(10), .pond__bubble:nth-of-type(11), .pond__bubble:nth-of-type(12) {
+    background-color: $top-bubble;
+}
+
+.edge__1:nth-of-type(1), .edge__2:nth-of-type(2), .edge__3:nth-of-type(3), .edge__4:nth-of-type(4) {
+    background-color: $edge;
+}
+
+.edge__5:nth-of-type(5), .edge__6:nth-of-type(6), .edge__7:nth-of-type(7), .edge__8:nth-of-type(8), .edge__9:nth-of-type(9), .edge__10:nth-of-type(10) {
+    background-color: $grey-edge;
 }

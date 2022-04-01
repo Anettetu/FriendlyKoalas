@@ -50,6 +50,26 @@
   background-color: hsl(43deg, 94%, 72%);
 }
 
+.pond__water > * {
+  background-color: hsl(183deg, 51%, 51%);
+}
+
+.pond__bubble:nth-of-type(1), .pond__bubble:nth-of-type(2), .pond__bubble:nth-of-type(3), .pond__bubble:nth-of-type(4), .pond__bubble:nth-of-type(5), .pond__bubble:nth-of-type(6), .pond__bubble:nth-of-type(7), .pond__bubble:nth-of-type(8), .pond__bubble:nth-of-type(13), .pond__bubble:nth-of-type(14) {
+  background-color: hsl(183deg, 47%, 59%);
+}
+
+.pond__bubble:nth-of-type(9), .pond__bubble:nth-of-type(10), .pond__bubble:nth-of-type(11), .pond__bubble:nth-of-type(12) {
+  background-color: hsl(183deg, 54%, 74%);
+}
+
+.edge__1:nth-of-type(1), .edge__2:nth-of-type(2), .edge__3:nth-of-type(3), .edge__4:nth-of-type(4) {
+  background-color: hsl(31deg, 75%, 48%);
+}
+
+.edge__5:nth-of-type(5), .edge__6:nth-of-type(6), .edge__7:nth-of-type(7), .edge__8:nth-of-type(8), .edge__9:nth-of-type(9), .edge__10:nth-of-type(10) {
+  background-color: hsl(29deg, 41%, 50%);
+}
+
 body {
   margin: 0;
   width: 100vw;
@@ -1041,4 +1061,249 @@ body {
   left: -30px;
   border-radius: 0 50% 50% 50%;
   transform: rotate(-45deg);
+}
+
+.pond {
+  margin-top: 1.2rem;
+  margin-left: 3.2rem;
+  position: absolute;
+}
+.pond__water:nth-of-type(1) {
+  width: 370px;
+  height: 115px;
+  background-color: lightblue;
+  border-radius: 50%;
+  margin-left: 2rem;
+}
+.pond__water:nth-of-type(2) {
+  width: 350px;
+  height: 140px;
+  background-color: lightblue;
+  border-radius: 50%;
+  margin-top: -4.4rem;
+  margin-left: 1rem;
+  transform: skew(15deg, 3deg);
+}
+.pond__water:nth-of-type(3) {
+  width: 210px;
+  height: 70px;
+  background-color: #44BBC2;
+  border-radius: 50%;
+  margin-top: -5.4rem;
+  margin-left: 16rem;
+  transform: skew(-10deg, -11deg);
+}
+.pond__water:nth-of-type(4) {
+  width: 125px;
+  height: 80px;
+  border-radius: 70%;
+  margin-left: 20.3rem;
+  margin-top: -7.6rem;
+  transform: skew(-15deg);
+}
+.pond__water:nth-of-type(5) {
+  width: 88px;
+  height: 45px;
+  border-radius: 50%;
+  margin-top: -2.5rem;
+  margin-left: 0.25rem;
+  transform: rotate(30deg);
+}
+.pond__water:nth-of-type(1), .pond__water:nth-of-type(2), .pond__water:nth-of-type(3), .pond__water:nth-of-type(4), .pond__water:nth-of-type(5) {
+  background-color: #44BBC2;
+}
+.pond__bubble:nth-of-type(1) {
+  width: 188px;
+  height: 52px;
+  border-radius: 50%;
+  margin-left: 6.3rem;
+  margin-top: -6.5rem;
+}
+.pond__bubble:nth-of-type(2) {
+  width: 146px;
+  height: 47px;
+  border-radius: 50%;
+  margin-left: 14rem;
+  margin-top: -4.6rem;
+}
+.pond__bubble:nth-of-type(3) {
+  width: 140px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 15rem;
+  margin-top: -2.3rem;
+}
+.pond__bubble:nth-of-type(4) {
+  width: 155px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 4.5rem;
+  margin-top: -2.4rem;
+}
+.pond__bubble:nth-of-type(5) {
+  width: 8px;
+  height: 6px;
+  border-radius: 50%;
+  margin-left: 13rem;
+  margin-top: -2.5rem;
+}
+.pond__bubble:nth-of-type(6) {
+  width: 8px;
+  height: 6px;
+  border-radius: 50%;
+  margin-left: 12.2rem;
+  margin-top: -2.9rem;
+}
+.pond__bubble:nth-of-type(7) {
+  width: 8px;
+  height: 6px;
+  border-radius: 50%;
+  margin-left: 10.5rem;
+  margin-top: 2.2rem;
+}
+.pond__bubble:nth-of-type(8) {
+  width: 9px;
+  height: 6px;
+  border-radius: 50%;
+  margin-left: 11.8rem;
+  margin-top: 1.8rem;
+}
+.pond__bubble:nth-of-type(9) {
+  width: 10px;
+  height: 6px;
+  border-radius: 50%;
+  margin-left: 16.8rem;
+  margin-top: -3.5rem;
+}
+.pond__bubble:nth-of-type(10) {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-left: 21.2rem;
+  margin-top: -0.4rem;
+}
+.pond__bubble:nth-of-type(11) {
+  width: 10px;
+  height: 7px;
+  border-radius: 50%;
+  margin-left: 20.4rem;
+  margin-top: 0.1rem;
+}
+.pond__bubble:nth-of-type(12) {
+  width: 8px;
+  height: 5px;
+  border-radius: 50%;
+  margin-left: 15.2rem;
+  margin-top: -5.6rem;
+}
+.pond__bubble:nth-of-type(13) {
+  width: 13px;
+  height: 9px;
+  border-radius: 50%;
+  margin-left: 3.7rem;
+  margin-top: -3.4rem;
+}
+.pond__bubble:nth-of-type(14) {
+  width: 8px;
+  height: 6px;
+  border-radius: 50%;
+  margin-left: 4.8rem;
+  margin-top: -3.1rem;
+}
+.pond__bubble:nth-of-type(1), .pond__bubble:nth-of-type(2), .pond__bubble:nth-of-type(3), .pond__bubble:nth-of-type(4), .pond__bubble:nth-of-type(5), .pond__bubble:nth-of-type(6), .pond__bubble:nth-of-type(7), .pond__bubble:nth-of-type(8), .pond__bubble:nth-of-type(13), .pond__bubble:nth-of-type(14) {
+  position: absolute;
+}
+.pond__bubble:nth-of-type(9), .pond__bubble:nth-of-type(10), .pond__bubble:nth-of-type(11), .pond__bubble:nth-of-type(12) {
+  position: absolute;
+}
+
+.edge {
+  z-index: -1;
+  /* grey */
+}
+.edge__1:nth-of-type(1) {
+  width: 410px;
+  height: 145px;
+  border-radius: 50%;
+  margin-left: 4.2rem;
+  margin-top: 18rem;
+  z-index: -1;
+}
+.edge__2:nth-of-type(2) {
+  width: 100px;
+  height: 75px;
+  border-radius: 50%;
+  margin-left: 26.5rem;
+  margin-top: -5.5rem;
+}
+.edge__3:nth-of-type(3) {
+  width: 70px;
+  height: 45px;
+  border-radius: 50%;
+  margin-left: 28.3rem;
+  margin-top: -1.5rem;
+  transform: skew(-32deg);
+  z-index: -1;
+  position: absolute;
+}
+.edge__4:nth-of-type(4) {
+  width: 60px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 3.4rem;
+  margin-top: -3.8rem;
+  transform: rotate(-40deg);
+  z-index: -1;
+  position: absolute;
+}
+.edge__5:nth-of-type(5) {
+  width: 422px;
+  height: 165px;
+  border-radius: 50%;
+  margin-left: 3.8rem;
+  margin-top: -9rem;
+}
+.edge__6:nth-of-type(6) {
+  width: 100px;
+  height: 90px;
+  border-radius: 50%;
+  margin-left: 27.2rem;
+  margin-top: -5.3rem;
+  transform: rotate(-30deg);
+}
+.edge__7:nth-of-type(7) {
+  width: 190px;
+  height: 75px;
+  border-radius: 50%;
+  margin-left: 21rem;
+  margin-top: -2rem;
+  transform: skew(-55deg);
+}
+.edge__8:nth-of-type(8) {
+  width: 192px;
+  height: 55px;
+  border-radius: 50%;
+  margin-left: 21.6rem;
+  margin-top: 0rem;
+  transform: rotate(-19deg);
+}
+.edge__9:nth-of-type(9) {
+  width: 370px;
+  height: 135px;
+  border-radius: 50%;
+  margin-left: 2rem;
+  margin-top: -3.8rem;
+  transform: rotate(12deg);
+}
+.edge__10:nth-of-type(10) {
+  width: 90px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 20rem;
+  margin-top: 2.6rem;
+  transform: rotate(-8deg);
+}
+.edge__5:nth-of-type(5), .edge__6:nth-of-type(6), .edge__7:nth-of-type(7), .edge__8:nth-of-type(8), .edge__9:nth-of-type(9), .edge__10:nth-of-type(10) {
+  position: absolute;
+  z-index: -2;
 }/*# sourceMappingURL=index.css.map */
