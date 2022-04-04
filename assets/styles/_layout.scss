@@ -6,6 +6,19 @@ body {
     
 }
 
+.hidden {
+    display: none;
+}
+
+main {
+    height: 400vh;
+}
+
+.background {
+    position: sticky;
+    top: 0;
+}
+
 .sky {
     width: 100vw;
     height: 50vw;
