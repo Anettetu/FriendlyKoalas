@@ -591,4 +591,13 @@ main {
   height: 100vw;
   top: 23vw;
   z-index: 1;
+}
+
+.lynx {
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  top: 43vw;
+  left: 51vw;
+  z-index: 1;
 }/*# sourceMappingURL=index.css.map */
