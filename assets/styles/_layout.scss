@@ -1,9 +1,8 @@
 body {
     margin: 0;
     width: 100vw;
-    height: 800vh;
+    height: 1600vh;
     overflow-x: hidden;
-    
 }
 
 .hidden {
@@ -11,7 +10,12 @@ body {
 }
 
 main {
+    height: 800vh;
+}
+
+.frame__1{
     height: 400vh;
+    
 }
 
 .background {
@@ -19,3 +23,9 @@ main {
     top: 0;
 }
 
+.box1 {
+    position: absolute;
+    top: 150vw;
+    height: 40px;
+    width: 40px;
+}

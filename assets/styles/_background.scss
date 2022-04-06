@@ -1,62 +1,62 @@
 
 
 .sky, .ground__blueblock {
-    background-color: $sky-norwegian;
+    background-color: $sky;
 }
 
 .ground__greyblock {
-    background-color: $norwegian-mountian-1;
+    background-color: $mountain-1;
 }
 
 .ground__greyblock::before {
-    background-color: $norwegian-mountian-2;
+    background-color: $mountain-2;
 }
 .ground, .ground__left {
-    background-color: $ground-norwegian;
+    background-color: $ground;
 }
 
 .sky__dark:nth-of-type(2) {
-    border-right: 65vw solid $sky-norwegian-dark;
+    border-right: 65vw solid $sky-dark;
 }
 
 .sky__dark:nth-of-type(3) {
-    border-right:40vw solid $sky-norwegian-dark;
+    border-right:40vw solid $sky-dark;
 }
 
 .sky__dark:nth-of-type(4) {
-    border-right:59vw solid $sky-norwegian-dark;
+    border-right:59vw solid $sky-dark;
 }
 
 .sky__dark:nth-of-type(5) {
-    border-right:45vw solid $sky-norwegian-dark;
+    border-right:45vw solid $sky-dark;
 }
 
 .sky__bright {
-    border-right:170vw solid $sky-norwegian-bright;
+    border-right:170vw solid $sky-bright;
 }
 
 .mountain1 > * {
-    background-color: $norwegian-mountian-1;
+    background-color: $mountain-1;
 }
 
 .mountain2 > * {
-    background-color: $norwegian-mountian-2;
+    background-color: $mountain-2;
 }
 
 .mountain3 > * {
-    background-color: $norwegian-mountian-3;
+    background-color: $mountain-3;
 }
 
 .mountain4 {
-    border-bottom: 10vw solid $norwegian-mountian-4;
+    border-bottom: 10vw solid $mountain-4;
 }
 
 .mountain5 {
-    border-bottom: 6vw solid $norwegian-mountian-5;
+    border-bottom: 6vw solid $mountain-5;
 }
 
 .sun {
-    background-color: $norwegian-sun;
+    background-color: $sun;
 }
 
 .pond__water > * {
