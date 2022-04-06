@@ -583,4 +583,12 @@ main {
   height: 23vw;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.norwegian-trees {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  top: 23vw;
+  z-index: 1;
 }/*# sourceMappingURL=index.css.map */
