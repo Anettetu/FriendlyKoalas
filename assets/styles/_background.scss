@@ -1,58 +1,70 @@
-
-
 .sky, .ground__blueblock {
-    background-color: $sky;
+    background-color: var(--sky);
+    transition: 2s;
 }
 
 .ground__greyblock {
-    background-color: $mountain-1;
+    background-color: var(--mountain-1);
+    transition: 2s;
 }
 
 .ground__greyblock::before {
-    background-color: $mountain-2;
+    background-color: var(--mountain-2);
+    transition: 2s;
 }
 .ground, .ground__left {
-    background-color: $ground;
+    background-color: var(--ground);
+    transition: 2s;
 }
 
 .sky__dark:nth-of-type(2) {
-    border-right: 65vw solid $sky-dark;
+    border-right: 65vw solid var(--sky-dark);
+    transition: 2s;
 }
 
 .sky__dark:nth-of-type(3) {
-    border-right:40vw solid $sky-dark;
+    border-right:40vw solid var(--sky-dark);
+    transition: 2s;
 }
 
 .sky__dark:nth-of-type(4) {
-    border-right:59vw solid $sky-dark;
+    border-right:59vw solid var(--sky-dark);
+    transition: 2s;
 }
 
 .sky__dark:nth-of-type(5) {
-    border-right:45vw solid $sky-dark;
+    border-right:45vw solid var(--sky-dark);
+    transition: 2s;
 }
 
 .sky__bright {
-    border-right:170vw solid $sky-bright;
+    border-right:170vw solid var(--sky-bright);
+    transition: 2s;
 }
 
 .mountain1 > * {
-    background-color: $mountain-1;
+    background-color: var(--mountain-1);
+    transition: 2s;
 }
 
 .mountain2 > * {
-    background-color: $mountain-2;
+    background-color: var(--mountain-2);
+    transition: 2s;
 }
 
 .mountain3 > * {
-    background-color: $mountain-3;
+    background-color: var(--mountain-3);
+    transition: 2s;
 }
 
 .mountain4 {
-    border-bottom: 10vw solid $mountain-4;
+    border-bottom: 10vw solid var(--mountain-4);
+    transition: 2s;
 }
 
 .mountain5 {
-    border-bottom: 6vw solid $mountain-5;
+    border-bottom: 6vw solid var(--mountain-5);
+    transition: 2s;
 }
 
 .sun {
