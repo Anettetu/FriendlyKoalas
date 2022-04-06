@@ -1,0 +1,14 @@
+.norwegian-river {
+    position: relative;
+    top: -78vw;   
+    &__img {
+        width: 60vw;
+        height: 50vw;
+    }
+}
+
+#norwegian-river {
+    width: 60vw;
+    height: 23vw;
+    object-fit: cover;
+}
