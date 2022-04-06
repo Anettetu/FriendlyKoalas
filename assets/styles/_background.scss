@@ -140,7 +140,7 @@
     top: 0vw;
     
     &__left {
-        width: 40vw;
+        width: 30vw;
         height: 33.4vw;
         transform: rotateZ(15deg);
         position: absolute;
@@ -150,12 +150,12 @@
 
     &__greyblock {
         border-radius: 50%;
-        height: 15vw;
+        height: 16vw;
         width: 51vw;
         position: absolute;
-        bottom: 24vw;
-        left: -10vw;
-        transform: rotateZ(-10deg);
+        bottom: 27vw;
+        left: -12vw;
+        transform: rotateZ(-19deg);
         overflow: hidden;
     }
 
@@ -164,8 +164,8 @@
         height: 100vw;
         width: 100vw;
         position: absolute;
-        transform: rotateZ(40deg);
-        left: 28.7vw;
+        transform: rotateZ(54deg);
+        left: 24.1vw;
         top: -73.7vw;
     }
 
@@ -174,7 +174,7 @@
         height: 10vw;
         position: absolute;
         bottom: 23.4vw;
-        left: 0.4vw;
+        left: -0.3vw;
         transform: rotateZ(19deg);
     }
 
@@ -233,16 +233,16 @@
     left: 20vw;
 
     &__p1 {
-        height: 4vw;
-        width: 4vw;
+        height: 6vw;
+        width: 6vw;
         top: 8.4vw;
         left: 2.4vw;
         transform: rotateZ(55deg);
     }
     &__p2 {
-        height:9vw;
+        height:15vw;
         width: 16vw;
-        top: 6vw;
+        top: 3vw;
         left: 5.2vw;
         transform: rotateZ(45deg);
     }

@@ -11,7 +11,7 @@
 	.st5{fill:#525251;}
 	.st6{fill:#695D51;}
 	.st7{fill:#7BB4EA;}
-	.st8{fill:#45A817;}
+	.st8{fill:hsl(100,75%,37%);}
 	.st9{fill:#B7B2B2;}
 	.st10{fill:#ABA9A9;}
 </style>
