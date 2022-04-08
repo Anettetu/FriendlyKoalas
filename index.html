@@ -13,7 +13,6 @@
     <main>
       <div class="frame1"></div>
       <div class="background">
-        <div class="sun"></div>
         <div class="sky">
           <div class="overflow-hidden">
             <div class="sky__bright"></div>
@@ -23,6 +22,7 @@
             <div class="sky__dark"></div>
           </div>
         </div>
+        <div id="sun" class="sun"></div>
         <div class="mountains">
           <div class="mountain3">
             <div class="mountain3__p1"></div>
@@ -62,17 +62,19 @@
             <div class="lynx">
               <img src="assets/svg/lynx1.svg">
             </div>
-            <div class="norwegian-river">
-              <div class="norwegian-river__img">
+            <div class="river">
+              <div class="river__img">
                 <img
                   id="norwegian-river"
-                  src="assets/svg/norwegian-canyon.svg"
+                  src="assets/svg/river.svg"
                   alt=""
                 />
+                
               </div>
             </div>
           </div>
-          <div class="frame__2"></div>
+          <div class="frame__2">
+          </div>
           <div class="frame__3"></div>
           <div class="frame__4"></div>
           <div class="frame__5">
@@ -102,8 +104,9 @@
       </div>
     </main>
     <script type="text/javascript">
-      const frame1 = document.getElementById('frame1');
+      const frame1 = document.querySelector('#frame1');
       const body = document.querySelector('body');
+      const sun = document.querySelector('#sun');
       const scroller = scrollama();
 
       scroller
@@ -113,6 +116,7 @@
           .onStepEnter(() => {
               frame1.classList.add('hidden');
               body.classList.add('african');
+              sun.classList.add('sun-african');
               console.log('hei');
           })
           .onStepExit((response) => {
