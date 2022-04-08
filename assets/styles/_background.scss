@@ -1,62 +1,74 @@
-
-
 .sky, .ground__blueblock {
-    background-color: $sky-norwegian;
+    background-color: var(--sky);
+    transition: 2s;
 }
 
 .ground__greyblock {
-    background-color: $norwegian-mountian-1;
+    background-color: var(--mountain-1);
+    transition: 2s;
 }
 
 .ground__greyblock::before {
-    background-color: $norwegian-mountian-2;
+    background-color: var(--mountain-2);
+    transition: 2s;
 }
 .ground, .ground__left {
-    background-color: $ground-norwegian;
+    background-color: var(--ground);
+    transition: 2s;
 }
 
 .sky__dark:nth-of-type(2) {
-    border-right: 65vw solid $sky-norwegian-dark;
+    border-right: 65vw solid var(--sky-dark);
+    transition: 2s;
 }
 
 .sky__dark:nth-of-type(3) {
-    border-right:40vw solid $sky-norwegian-dark;
+    border-right:40vw solid var(--sky-dark);
+    transition: 2s;
 }
 
 .sky__dark:nth-of-type(4) {
-    border-right:59vw solid $sky-norwegian-dark;
+    border-right:59vw solid var(--sky-dark);
+    transition: 2s;
 }
 
 .sky__dark:nth-of-type(5) {
-    border-right:45vw solid $sky-norwegian-dark;
+    border-right:45vw solid var(--sky-dark);
+    transition: 2s;
 }
 
 .sky__bright {
-    border-right:170vw solid $sky-norwegian-bright;
+    border-right:170vw solid var(--sky-bright);
+    transition: 2s;
 }
 
 .mountain1 > * {
-    background-color: $norwegian-mountian-1;
+    background-color: var(--mountain-1);
+    transition: 2s;
 }
 
 .mountain2 > * {
-    background-color: $norwegian-mountian-2;
+    background-color: var(--mountain-2);
+    transition: 2s;
 }
 
 .mountain3 > * {
-    background-color: $norwegian-mountian-3;
+    background-color: var(--mountain-3);
+    transition: 2s;
 }
 
 .mountain4 {
-    border-bottom: 10vw solid $norwegian-mountian-4;
+    border-bottom: 10vw solid var(--mountain-4);
+    transition: 2s;
 }
 
 .mountain5 {
-    border-bottom: 6vw solid $norwegian-mountian-5;
+    border-bottom: 6vw solid var(--mountain-5);
+    transition: 2s;
 }
 
 .sun {
-    background-color: $norwegian-sun;
+    background-color: $sun;
 }
 
 .pond__water > * {
@@ -319,3 +331,13 @@
     transform: rotateY(180deg);
     position: absolute;
 }
+
+.sun-african {
+    height: 30vw;
+    width: 60vw;
+    border-radius: 45vw 45vw 0 0;
+    top: 10vw;
+    left: 6vw;
+    transition: 2s;
+}
+

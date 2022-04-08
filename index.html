@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FriendlyKoalas</title>
     <link rel="stylesheet" href="assets/styles/index.css" />
+    <script src="https://unpkg.com/scrollama"></script>
   </head>
-  <body>
+  <body class=>
+    <div class="box1"></div>
     <main>
       <div class="frame1"></div>
       <div class="background">
-        <div class="sun"></div>
         <div class="sky">
           <div class="overflow-hidden">
             <div class="sky__bright"></div>
@@ -21,6 +22,7 @@
             <div class="sky__dark"></div>
           </div>
         </div>
+        <div id="sun" class="sun"></div>
         <div class="mountains">
           <div class="mountain3">
             <div class="mountain3__p1"></div>
@@ -53,10 +55,11 @@
           </div>
         </div>
         <div class="frame">
-          <div class="frame__1">
+          <div id="frame1" class="frame__1">
             <div class="norwegian-trees">
               <img src="assets/svg/woods-norway.svg"></img>
             </div>
+
             <div class="lynx">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	              viewBox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
@@ -160,44 +163,80 @@
               </g>
             </svg>
             </div>
-            <div class="norwegian-river">
-              <div class="norwegian-river__img">
+            <div class="river">
+              <div class="river__img">
                 <img
                   id="norwegian-river"
-                  src="assets/svg/norwegian-canyon.svg"
+                  src="assets/svg/river.svg"
                   alt=""
                 />
+                
               </div>
             </div>
+
+            <div class="well1">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	            viewBox="0 0 1280 480" style="enable-background:new 0 0 1280 480;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0{fill:#583C2C;}
+                      .st1{fill:#A3765D;}
+                      .st2{fill:#A4A4A4;}
+                      .st3{fill:#727272;}
+                      .st4{fill:#A8643E;}
+                      .st5{fill:#C4C4C4;}
+                    </style>
+                    <rect x="774.88" y="166.1" class="st0" width="55.68" height="9.28"/>
+                    <rect x="774.88" y="133.62" class="st0" width="9.28" height="46.4"/>
+                    <rect x="795.76" y="166.1" class="st1" width="23.2" height="9.28"/>
+                    <path class="st2" d="M430.35,240.35l69.02,35.21l92.8,8.29l84.68-8.29l80.62-35.21v163.57H430.35V240.35z"/>
+                    <ellipse class="st3" cx="592.17" cy="242.09" rx="116.59" ry="36.54"/>
+                    <rect x="445.43" y="89.54" class="st4" width="9.28" height="153.13"/>
+                    <rect x="733.12" y="89.54" class="st4" width="9.28" height="153.13"/>
+                    <rect x="412.94" y="80.26" class="st4" width="361.94" height="30.16"/>
+                    <rect x="445.43" y="133.62" class="st4" width="296.97" height="9.28"/>
+                    <rect x="742.4" y="133.62" class="st0" width="46.4" height="9.28"/>
+                    <ellipse class="st2" cx="593.91" cy="403.91" rx="163.57" ry="45.24"/>
+                    <path class="st5" d="M757.48,242.09c0,25.95-73.23,46.98-163.57,46.98s-163.57-21.03-163.57-46.98s73.23-46.98,163.57-46.98
+                      S757.48,216.14,757.48,242.09z M481.99,242.09c0,17.76,50.11,32.15,111.93,32.15s111.93-14.39,111.93-32.15
+                      s-50.11-32.15-111.93-32.15S481.99,224.33,481.99,242.09z"/>
+                    <rect x="591.6" y="140.58" class="st4" width="4.24" height="133.6"/>
+                    </svg>
+
+
+            </div>
+
           </div>
-          <div class="frame__2"></div>
+
+          <div class="frame__2">
+          </div>
+
           <div class="frame__3"></div>
           <div class="frame__4"></div>
           <div class="frame__5">
-            <div class="water_pond">
-              <div class="water"></div>
-              <div class="water1"></div>
-              <div class="water2"></div>
-              <div class="water3"></div>
-              <div class="water4"></div>
-              <div class="bubble"></div>
-              <div class="bubble1"></div>
-              <div class="bubble2"></div>
-              <div class="bubble3"></div>
-              <div class="bubble4"></div>
-              <div class="bubble5"></div>
-              <div class="bubble6"></div>
-              <div class="bubble7"></div>
-              <div class="bubble8"></div>
-              <div class="bubble9"></div>
-              <div class="bubble10"></div>
-              <div class="bubble11"></div>
-              <div class="bubble12"></div>
-              <div class="bubble13"></div>
             </div>
           </div>
         </div>
       </div>
     </main>
+    <script type="text/javascript">
+      const frame1 = document.querySelector('#frame1');
+      const body = document.querySelector('body');
+      const sun = document.querySelector('#sun');
+      const scroller = scrollama();
+
+      scroller
+          .setup({
+              step: '.box1'
+          })
+          .onStepEnter(() => {
+              frame1.classList.add('hidden');
+              body.classList.add('african');
+              sun.classList.add('sun-african');
+              console.log('hei');
+          })
+          .onStepExit((response) => {
+              response.element.classList.add('hidden');
+          })
+  </script>
   </body>
 </html>
