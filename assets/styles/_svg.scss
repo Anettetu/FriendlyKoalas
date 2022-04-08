@@ -17,7 +17,9 @@
 
 .trees--african {
   position: relative;
-  top: 100vw;
+  top: -100vw;
+  left: 20vw;
+  z-index: 1;
 }
 
 .lynx{

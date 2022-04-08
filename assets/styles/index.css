@@ -75,7 +75,7 @@ main {
 }
 
 .frame__2 {
-  position: absolute;
+  position: relative;
 }
 
 .background {
@@ -762,7 +762,9 @@ main {
 
 .trees--african {
   position: relative;
-  top: 100vw;
+  top: -100vw;
+  left: 20vw;
+  z-index: 1;
 }
 
 .lynx .st0 {
