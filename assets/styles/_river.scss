@@ -1,14 +1,14 @@
-.norwegian-river {
+.river {
     position: relative;
     top: -69vw;
     left: 3vw;   
     &__img {
         width: 60vw;
-        height: 54vw;
+        height: 120vw;
     }
 }
 
-#norwegian-river {
+#norwegian-river, #african-river {
     width: 74vw;
     height: 27vw;
     object-fit: cover;

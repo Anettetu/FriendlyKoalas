@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FriendlyKoalas</title>
     <link rel="stylesheet" href="assets/styles/index.css" />
+    <script src="https://unpkg.com/scrollama"></script>
   </head>
-  <body>
+  <body class=>
+    <div class="box1"></div>
     <main>
       <div class="frame1"></div>
       <div class="background">
-        <div class="sun"></div>
         <div class="sky">
           <div class="overflow-hidden">
             <div class="sky__bright"></div>
@@ -21,6 +22,7 @@
             <div class="sky__dark"></div>
           </div>
         </div>
+        <div id="sun" class="sun"></div>
         <div class="mountains">
           <div class="mountain3">
             <div class="mountain3__p1"></div>
@@ -53,8 +55,7 @@
           </div>
         </div>
         <div class="frame">
-
-          <div class="frame__1">
+          <div id="frame1" class="frame__1">
             <div class="norwegian-trees">
               <img src="assets/svg/woods-norway.svg"></img>
             </div>
@@ -62,14 +63,14 @@
             <div class="lynx">
               <img src="assets/svg/lynx1.svg">
             </div>
-
-            <div class="norwegian-river">
-              <div class="norwegian-river__img">
+            <div class="river">
+              <div class="river__img">
                 <img
                   id="norwegian-river"
-                  src="assets/svg/norwegian-canyon.svg"
+                  src="assets/svg/river.svg"
                   alt=""
                 />
+                
               </div>
             </div>
 
@@ -103,7 +104,9 @@
 
           </div>
 
-          <div class="frame__2"></div>
+          <div class="frame__2">
+          </div>
+
           <div class="frame__3"></div>
           <div class="frame__4"></div>
           <div class="frame__5">
@@ -112,5 +115,25 @@
         </div>
       </div>
     </main>
+    <script type="text/javascript">
+      const frame1 = document.querySelector('#frame1');
+      const body = document.querySelector('body');
+      const sun = document.querySelector('#sun');
+      const scroller = scrollama();
+
+      scroller
+          .setup({
+              step: '.box1'
+          })
+          .onStepEnter(() => {
+              frame1.classList.add('hidden');
+              body.classList.add('african');
+              sun.classList.add('sun-african');
+              console.log('hei');
+          })
+          .onStepExit((response) => {
+              response.element.classList.add('hidden');
+          })
+  </script>
   </body>
 </html>
