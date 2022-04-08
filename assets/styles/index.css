@@ -750,20 +750,76 @@ main {
   z-index: 1;
 }
 #well1 .st0 {
-  fill: #583C2C;
+  fill: none;
+  stroke: #000000;
+  stroke-width: 0.5;
 }
 #well1 .st1 {
-  fill: #A3765D;
+  fill: #6C4949;
+  stroke: #000000;
+  stroke-width: 0.5;
 }
 #well1 .st2 {
-  fill: #A4A4A4;
+  fill: #6C4949;
 }
 #well1 .st3 {
-  fill: #727272;
+  fill: #3586FF;
 }
 #well1 .st4 {
-  fill: #A8643E;
+  fill: none;
+  stroke: #000000;
+  stroke-width: 0.6;
 }
 #well1 .st5 {
+  fill: #583C2C;
+}
+#well1 .st6 {
+  fill: #A3765D;
+}
+#well1 .st7 {
+  fill: #A4A4A4;
+}
+#well1 .st8 {
+  fill: #727272;
+}
+#well1 .st9 {
+  fill: #A8643E;
+}
+#well1 .st10 {
   fill: #C4C4C4;
+}
+
+.handle {
+  -webkit-animation: drag 4s infinite;
+          animation: drag 4s infinite;
+}
+
+@-webkit-keyframes drag {
+  50% {
+    transform: translateY(-1.5em);
+  }
+}
+
+@keyframes drag {
+  50% {
+    transform: translateY(-1.5em);
+  }
+}
+#bucket {
+  -webkit-animation: pull 20s infinite;
+          animation: pull 20s infinite;
+}
+
+@-webkit-keyframes pull {
+  50% {
+    transform: translateY(-6rem);
+    z-index: 1;
+  }
+}
+
+@keyframes pull {
+  50% {
+    transform: translateY(-6rem);
+    z-index: 1;
+  }
 }/*# sourceMappingURL=index.css.map */

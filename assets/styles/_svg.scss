@@ -57,11 +57,37 @@
     left: -6vw;
     z-index: 1;
 
-    .st0{fill:#583C2C;}
-    .st1{fill:#A3765D;}
-    .st2{fill:#A4A4A4;}
-    .st3{fill:#727272;}
-    .st4{fill:#A8643E;}
-    .st5{fill:#C4C4C4;}
+        .st0{fill:none;stroke:#000000;stroke-width:0.5;}
+        .st1{fill:#6C4949;stroke:#000000;stroke-width:0.5;}
+        .st2{fill:#6C4949;}
+        .st3{fill:#3586FF;}
+        .st4{fill:none;stroke:#000000;stroke-width:0.6;}
+        .st5{fill:#583C2C;}
+        .st6{fill:#A3765D;}
+        .st7{fill:#A4A4A4;}
+        .st8{fill:#727272;}
+        .st9{fill:#A8643E;}
+        .st10{fill:#C4C4C4;}
 }
 
+.handle{
+  animation: drag 4s infinite;
+}
+
+@keyframes drag {
+  50% {
+    transform: translateY(-1.5em);
+  }
+}
+
+
+#bucket{
+  animation: pull 20s infinite;
+}
+
+@keyframes pull {
+  50% {
+    transform: translateY(-6rem);
+    z-index: 1;
+  }
+}
