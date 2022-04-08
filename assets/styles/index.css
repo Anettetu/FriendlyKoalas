@@ -50,6 +50,22 @@ body.african {
     transform: translate(0);
   }
 }
+@-webkit-keyframes rotate-s-loader {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-s-loader {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 body {
   margin: 0;
   width: 100vw;
@@ -796,4 +812,16 @@ main {
   left: -9vw;
   top: 1vw;
   z-index: 3;
+}
+
+.handle {
+  transform-origin: center;
+  -webkit-animation-name: rotate-s-loader;
+          animation-name: rotate-s-loader;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }/*# sourceMappingURL=index.css.map */
