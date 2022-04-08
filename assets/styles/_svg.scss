@@ -50,11 +50,18 @@
     }
   }
 
-.well1 {
+#well1 {
     position: absolute;
     width: 25vw;
-    top: 43vw;
+    top: 46vw;
     left: -6vw;
     z-index: 1;
+
+    .st0{fill:#583C2C;}
+    .st1{fill:#A3765D;}
+    .st2{fill:#A4A4A4;}
+    .st3{fill:#727272;}
+    .st4{fill:#A8643E;}
+    .st5{fill:#C4C4C4;}
 }
 

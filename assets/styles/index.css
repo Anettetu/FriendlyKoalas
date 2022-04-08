@@ -742,10 +742,28 @@ main {
     transform: translate(0);
   }
 }
-.well1 {
+#well1 {
   position: absolute;
   width: 25vw;
-  top: 43vw;
+  top: 46vw;
   left: -6vw;
   z-index: 1;
+}
+#well1 .st0 {
+  fill: #583C2C;
+}
+#well1 .st1 {
+  fill: #A3765D;
+}
+#well1 .st2 {
+  fill: #A4A4A4;
+}
+#well1 .st3 {
+  fill: #727272;
+}
+#well1 .st4 {
+  fill: #A8643E;
+}
+#well1 .st5 {
+  fill: #C4C4C4;
 }/*# sourceMappingURL=index.css.map */
