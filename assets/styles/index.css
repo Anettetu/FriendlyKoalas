@@ -298,6 +298,11 @@ main {
   z-index: -2;
 }
 
+.intro {
+  height: 58vw;
+  background: #a2caf0;
+}
+
 .sky, .ground__blueblock {
   background-color: var(--sky);
   transition: 2s;

@@ -1,3 +1,10 @@
+.intro {
+    height: 58vw;
+    background: $intro;
+    
+}
+
+
 .sky, .ground__blueblock {
     background-color: var(--sky);
     transition: 2s;
