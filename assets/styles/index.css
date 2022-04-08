@@ -862,6 +862,7 @@ main {
 }
 #well1 .st5 {
   fill: #583C2C;
+  fill-opacity: 1;
 }
 #well1 .st6 {
   fill: #A3765D;
@@ -879,37 +880,93 @@ main {
   fill: #C4C4C4;
 }
 
+.handle1 {
+  -webkit-animation: drag-inner 4s linear 3;
+          animation: drag-inner 4s linear 3;
+}
+
+.rope {
+  -webkit-animation: rope 12s forwards;
+          animation: rope 12s forwards;
+}
+
 .handle {
-  -webkit-animation: drag 4s infinite;
-          animation: drag 4s infinite;
+  -webkit-animation: drag 4s linear 3;
+          animation: drag 4s linear 3;
 }
 
 @-webkit-keyframes drag {
   50% {
-    transform: translateY(-1.5em);
+    transform: translateY(-6.5vw);
   }
 }
 
 @keyframes drag {
   50% {
-    transform: translateY(-1.5em);
+    transform: translateY(-6.5vw);
+  }
+}
+@-webkit-keyframes drag-inner {
+  25% {
+    height: 1vw;
+    transform: translateY(-1vw);
+  }
+  50% {
+    height: 5vw;
+    transform: translateY(-4.3vw);
+  }
+  75% {
+    height: 1vw;
+    transform: translateY(-1vw);
+  }
+}
+@keyframes drag-inner {
+  25% {
+    height: 1vw;
+    transform: translateY(-1vw);
+  }
+  50% {
+    height: 5vw;
+    transform: translateY(-4.3vw);
+  }
+  75% {
+    height: 1vw;
+    transform: translateY(-1vw);
   }
 }
 #bucket {
-  -webkit-animation: pull 20s infinite;
-          animation: pull 20s infinite;
+  -webkit-animation: pull 12s forwards;
+          animation: pull 12s forwards;
 }
 
 @-webkit-keyframes pull {
-  50% {
-    transform: translateY(-6rem);
+  100% {
+    transform: translateY(-6.6vw);
     z-index: 1;
   }
 }
 
 @keyframes pull {
-  50% {
-    transform: translateY(-6rem);
+  100% {
+    transform: translateY(-6.6vw);
+    z-index: 1;
+  }
+}
+@-webkit-keyframes rope {
+  10% {
+    height: 11vw;
+  }
+  100% {
+    height: 6vw;
+    z-index: 1;
+  }
+}
+@keyframes rope {
+  10% {
+    height: 11vw;
+  }
+  100% {
+    height: 6vw;
     z-index: 1;
   }
 }/*# sourceMappingURL=index.css.map */
