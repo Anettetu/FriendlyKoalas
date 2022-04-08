@@ -1,0 +1,15 @@
+#head {
+    animation: beat 4s infinite;
+}
+
+@keyframes beat {
+    0% {
+      transform: translate(0);
+    }
+    50% {
+      transform: translate(-50px, 100px);
+    }
+    100%{
+      transform: translate(0);
+    }
+}
