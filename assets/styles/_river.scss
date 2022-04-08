@@ -33,3 +33,13 @@
         .st13{fill:var(--riverst13);}
         .st14{fill:var(--riverst14);}
 }
+
+#cover {
+    width: 4rem;
+    height: 1rem;
+    margin-left: 14.5rem;
+    margin-top: -0.5rem;
+    background-color: var(--mountain-2);
+    position: absolute;
+    z-index: 1;
+}
