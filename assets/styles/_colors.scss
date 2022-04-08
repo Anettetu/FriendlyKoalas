@@ -1,104 +1,59 @@
-$color-square: rgb(229, 157, 169);
-$sky-norwegian: hsl(208,83%,74%);
-$sky-african:hsl(32,83%,74%);
-$sky-norwegian-dark: hsl(211,73%,64%);
-$sky-african-dark: hsl(19,73%,64%);
-$sky-norwegian-bright: hsl(208,76%,83%);
-$sky-african-bright: hsl(34,44%,83%);
-$ground-norwegian: hsl(100,75%,37%);
-$ground-african: hsl(31,74%,48%);
-$norwegian-mountian-1: hsl(0,1%,66%);
-$norwegian-mountian-2: hsl(0,3%,70%);
-$norwegian-mountian-3: hsl(0,4%,78%);
-$norwegian-mountian-4: hsl(212,19%,77%);
-$norwegian-mountian-5: hsl(210,39%,76%);
-$african-mountain-1: hsl(30,70%,56%);
-$norwegian-sun: hsl(43,94%,72%);
+
+body {
+    --mountain-1: hsl(0,1%,66%);
+    --mountain-2: hsl(0,3%,70%);
+    --mountain-3: hsl(0,4%,78%);
+    --mountain-4: hsl(212,19%,77%);
+    --mountain-5: hsl(210,39%,76%);
+    --ground: hsl(100,75%,37%);
+    --sky: hsl(208,83%,74%);
+    --sky-dark: hsl(211,73%,64%);
+    --sky-bright: hsl(208,76%,83%);
+    --riverst0: #493F35;
+    --riverst1: #544639;
+    --riverst2: #605954;
+    --riverst3: #6D6155;
+    --riverst4: #585654;
+    --riverst5: #525251;
+    --riverst6: #695D51;
+    --riverst7: #636363;
+    --riverst8: #504d49;
+    --riverst9: #9b9792;
+    --riverst10:#5b5957;
+    --riverst12:#565553;
+    --riverst13:#7BB4EA;
+    --riverst14:#7BB4EA;
+}
+
+body.african {
+    --mountain-1: hsl(30,70%,56%);
+    --mountain-2: hsl(31,78%,58%);
+    --mountain-3: hsl(31,76%,66%);
+    --mountain-4: hsl(32,31%,54%);
+    --mountain-5: rgb(192, 161, 126);
+    --ground: hsl(31,74%,48%);
+    --sky: hsl(32,83%,74%);
+    --sky-dark:hsl(19,73%,64%);
+    --sky-bright: hsl(34,44%,83%);
+    --riverst0: #9B5E15;
+    --riverst1: #AC601B;
+    --riverst2: #B65F10;
+    --riverst3: #BC600A;
+    --riverst4: #BD7117;
+    --riverst5: #AF6610;
+    --riverst6: #AA5F07;
+    --riverst7: #AF6917;
+    --riverst8: #C67D28;
+    --riverst9: #E89740;
+    --riverst10:#E89740;
+    --riverst12:#824106;
+    --riverst13:#7BB4EA;
+    --riverst14:#7bb4ea00;
+}
+
 $water: hsl(183,51%,51%);
 $bubbles: hsl(183,47%,59%);
 $top-bubble: hsl(183,54%,74%);
 $edge: hsl(31,75%,48%);
 $grey-edge: hsl(29,41%,50%);
-
-
-
-
-
-.sky, .ground__blueblock {
-    background-color: $sky-norwegian;
-}
-
-.ground__greyblock {
-    background-color: $norwegian-mountian-1;
-}
-
-.ground__greyblock::before {
-    background-color: $norwegian-mountian-2;
-}
-.ground, .ground__left {
-    background-color: $ground-norwegian;
-}
-
-.sky__dark:nth-of-type(2) {
-    border-right: 65vw solid $sky-norwegian-dark;
-}
-
-.sky__dark:nth-of-type(3) {
-    border-right:40vw solid $sky-norwegian-dark;
-}
-
-.sky__dark:nth-of-type(4) {
-    border-right:59vw solid $sky-norwegian-dark;
-}
-
-.sky__dark:nth-of-type(5) {
-    border-right:45vw solid $sky-norwegian-dark;
-}
-
-.sky__bright {
-    border-right:170vw solid $sky-norwegian-bright;
-}
-
-.mountain1 > * {
-    background-color: $norwegian-mountian-1;
-}
-
-.mountain2 > * {
-    background-color: $norwegian-mountian-2;
-}
-
-.mountain3 > * {
-    background-color: $norwegian-mountian-3;
-}
-
-.mountain4 {
-    border-bottom: 10vw solid $norwegian-mountian-4;
-}
-
-.mountain5 {
-    border-bottom: 6vw solid $norwegian-mountian-5;
-}
-
-.sun {
-    background-color: $norwegian-sun;
-}
-
-.pond__water > * {
-    background-color: $water;
-}
-
-.pond__bubble:nth-of-type(1), .pond__bubble:nth-of-type(2), .pond__bubble:nth-of-type(3), .pond__bubble:nth-of-type(4), .pond__bubble:nth-of-type(5), .pond__bubble:nth-of-type(6), .pond__bubble:nth-of-type(7), .pond__bubble:nth-of-type(8), .pond__bubble:nth-of-type(13), .pond__bubble:nth-of-type(14) {
-    background-color: $bubbles; }
-
-
-.pond__bubble:nth-of-type(9), .pond__bubble:nth-of-type(10), .pond__bubble:nth-of-type(11), .pond__bubble:nth-of-type(12) {
-    background-color: $top-bubble;
-}
-
-.edge__1:nth-of-type(1), .edge__2:nth-of-type(2), .edge__3:nth-of-type(3), .edge__4:nth-of-type(4) {
-    background-color: $edge;
-}
-
-.edge__5:nth-of-type(5), .edge__6:nth-of-type(6), .edge__7:nth-of-type(7), .edge__8:nth-of-type(8), .edge__9:nth-of-type(9), .edge__10:nth-of-type(10) {
-    background-color: $grey-edge;
-}
+$sun: hsl(43,94%,72%);

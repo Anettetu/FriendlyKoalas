@@ -1,0 +1,35 @@
+.river {
+    position: absolute;
+    top: 30.8vw;
+    left: 3vw;   
+    &__img {
+        width: 60vw;
+        height: 27.2vw;
+        overflow: hidden;
+    }
+}
+#river > * {
+    transition: 2s;
+}
+#river {
+    width: 74vw;
+    height: 40vw;
+    position: relative;
+    top: -5vw;
+    object-fit: cover;
+        .st0{fill:var(--riverst0);}
+        .st1{fill:var(--riverst1);}
+        .st2{fill:var(--riverst2);}
+        .st3{fill:var(--riverst3);}
+        .st4{fill:var(--riverst4);}
+        .st5{fill:var(--riverst5);}
+        .st6{fill:var(--riverst6);}
+        .st7{fill:var(--riverst7);}
+        .st8{fill:var(--riverst8);}
+        .st9{fill:var(--riverst9);}
+        .st10{fill:var(--riverst10);}
+        .st11{fill:var(--ground);}
+        .st12{fill:var(--riverst12);}
+        .st13{fill:var(--riverst13);}
+        .st14{fill:var(--riverst14);}
+}

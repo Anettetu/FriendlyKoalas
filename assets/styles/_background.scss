@@ -1,0 +1,343 @@
+.sky, .ground__blueblock {
+    background-color: var(--sky);
+    transition: 2s;
+}
+
+.ground__greyblock {
+    background-color: var(--mountain-1);
+    transition: 2s;
+}
+
+.ground__greyblock::before {
+    background-color: var(--mountain-2);
+    transition: 2s;
+}
+.ground, .ground__left {
+    background-color: var(--ground);
+    transition: 2s;
+}
+
+.sky__dark:nth-of-type(2) {
+    border-right: 65vw solid var(--sky-dark);
+    transition: 2s;
+}
+
+.sky__dark:nth-of-type(3) {
+    border-right:40vw solid var(--sky-dark);
+    transition: 2s;
+}
+
+.sky__dark:nth-of-type(4) {
+    border-right:59vw solid var(--sky-dark);
+    transition: 2s;
+}
+
+.sky__dark:nth-of-type(5) {
+    border-right:45vw solid var(--sky-dark);
+    transition: 2s;
+}
+
+.sky__bright {
+    border-right:170vw solid var(--sky-bright);
+    transition: 2s;
+}
+
+.mountain1 > * {
+    background-color: var(--mountain-1);
+    transition: 2s;
+}
+
+.mountain2 > * {
+    background-color: var(--mountain-2);
+    transition: 2s;
+}
+
+.mountain3 > * {
+    background-color: var(--mountain-3);
+    transition: 2s;
+}
+
+.mountain4 {
+    border-bottom: 10vw solid var(--mountain-4);
+    transition: 2s;
+}
+
+.mountain5 {
+    border-bottom: 6vw solid var(--mountain-5);
+    transition: 2s;
+}
+
+.sun {
+    background-color: $sun;
+}
+
+.pond__water > * {
+    background-color: $water;
+}
+
+.pond__bubble:nth-of-type(1), .pond__bubble:nth-of-type(2), .pond__bubble:nth-of-type(3), .pond__bubble:nth-of-type(4), .pond__bubble:nth-of-type(5), .pond__bubble:nth-of-type(6), .pond__bubble:nth-of-type(7), .pond__bubble:nth-of-type(8), .pond__bubble:nth-of-type(13), .pond__bubble:nth-of-type(14) {
+    background-color: $bubbles; }
+
+
+.pond__bubble:nth-of-type(9), .pond__bubble:nth-of-type(10), .pond__bubble:nth-of-type(11), .pond__bubble:nth-of-type(12) {
+    background-color: $top-bubble;
+}
+
+.edge__1:nth-of-type(1), .edge__2:nth-of-type(2), .edge__3:nth-of-type(3), .edge__4:nth-of-type(4) {
+    background-color: $edge;
+}
+
+.edge__5:nth-of-type(5), .edge__6:nth-of-type(6), .edge__7:nth-of-type(7), .edge__8:nth-of-type(8), .edge__9:nth-of-type(9), .edge__10:nth-of-type(10) {
+    background-color: $grey-edge;
+}
+
+
+.sky {
+    width: 100vw;
+    height: 50vw;
+
+    &__dark {
+        width: 0; 
+        height: 0;
+        border-top: 1.8vw solid transparent;
+        border-bottom: 1.8vw solid transparent;  
+        position: absolute;
+    }
+    &__dark:nth-of-type(2) {
+        right: 0;
+        top: 1.5vw;
+        }
+    &__dark:nth-of-type(3) {
+        right: 0;
+        top: 12.5vw;
+        }
+    &__dark:nth-of-type(4) {
+        left: 0;
+        top: 4vw;
+        transform: rotateY(180deg);
+        }
+    &__dark:nth-of-type(5) {
+        left: 0;
+        top: 12.5vw;
+        transform: rotateY(180deg);
+        }
+
+    &__bright {
+        left: 0;
+        top: 10vw;
+        border-top: 3.9vw solid transparent;
+        border-bottom: 3.9vw solid transparent; 
+        transform: rotateY(180deg);
+        position: absolute;
+    }
+}
+
+.sun, .mountains > * , .mountains > * > *{
+    position: absolute;
+}
+
+.land {
+    overflow: hidden;
+    height: 30vw;
+    width: 100vw;
+    position: absolute;
+    top: 28vw;
+}
+
+.ground {
+    width: 160vw;
+    height: 50vw;
+    position: absolute;
+    border-radius: 50%;
+    top: 0vw;
+    
+    &__left {
+        width: 30vw;
+        height: 33.4vw;
+        transform: rotateZ(15deg);
+        position: absolute;
+        left: -9vw;
+        top: -1.3vw;
+    }
+
+    &__greyblock {
+        border-radius: 50%;
+        height: 16vw;
+        width: 51vw;
+        position: absolute;
+        bottom: 27vw;
+        left: -12vw;
+        transform: rotateZ(-19deg);
+        overflow: hidden;
+    }
+
+    &__greyblock::before {
+        content: '';
+        height: 100vw;
+        width: 100vw;
+        position: absolute;
+        transform: rotateZ(54deg);
+        left: 24.1vw;
+        top: -73.7vw;
+    }
+
+    &__blueblock {
+        width: 8vw;
+        height: 10vw;
+        position: absolute;
+        bottom: 23.4vw;
+        left: -0.3vw;
+        transform: rotateZ(19deg);
+    }
+
+}
+
+.sun {
+    border-radius: 50%;
+    height: 15vw;
+    width: 15vw;
+    top: 18vw;
+    left: 16vw;
+}
+
+.mountain1 {
+    top: 18vw;
+    height: 30vw;
+    width: 34vw;
+
+    &__p1 {
+        height: 21vw;
+        width: 8vw;
+        transform: rotateZ(20deg);
+        bottom: 7.9vw;
+        left: 3.47vw;
+    }
+    &__p2 {
+        height: 5vw;
+        width: 8vw;
+        transform: rotateZ(60deg);
+        border-radius: 7%;
+        left: 7.2vw;
+        top: 0.1vw;
+    }
+    &__p3 {
+        height: 10vw;
+        width: 8vw;
+        left: 9vw;
+        top: 1.4vw;
+        transform: rotateZ(29deg);
+        border-radius: 5%;
+    }
+    &__p4 {
+        height: 10vw;
+        width: 7vw;
+        left: 14.4vw;
+        border-radius: 4%;
+        top: 4.8vw;
+        transform: rotateZ(-27deg);
+    }
+}
+.mountain2 {
+    position: relative;
+    height: 30vw;
+    width: 30vw;
+    top: -52vw;
+    left: 20vw;
+
+    &__p1 {
+        height: 6vw;
+        width: 6vw;
+        top: 8.4vw;
+        left: 2.4vw;
+        transform: rotateZ(55deg);
+    }
+    &__p2 {
+        height:15vw;
+        width: 16vw;
+        top: 3vw;
+        left: 5.2vw;
+        transform: rotateZ(45deg);
+    }
+    &__p3 {
+        height:6vw;
+        width: 6vw;
+        left: 10vw;
+        transform: rotateZ(31deg);
+        border-radius: 8%;
+    }
+    &__p4 {
+        height:12vw;
+        width: 12vw;
+        left: 9vw;
+        top: 0.5vw;
+        transform: rotateZ(21deg);
+        border-radius: 8%;
+    }
+    &__p5 {
+        height:16vw;
+        width: 9vw;
+        left: 16.6vw;
+        top: 3.6vw;
+        transform: rotateZ(-21deg);
+        border-radius: 8%;
+    }
+
+}
+.mountain3 {
+    height: 20vw;
+    width: 20vw;
+    position: relative;
+    top: -32vw;
+    left: 13vw;
+
+    &__p1 {
+        height: 4vw;
+        width: 16vw;
+        border-radius: 12%;
+        transform: rotateZ(37deg);
+        left: -1.1vw;
+        top: 3.9vw;
+    }
+    &__p2 {
+        height: 8vw;
+        width: 12vw;
+        transform: rotateZ(20deg);
+        left: 3vw;
+        top: 4vw;
+    }
+    &__p3 {
+        height: 8vw;
+        width: 8vw;
+        transform: rotateZ(5deg);
+        left: 12vw;
+        top: 5.5vw;
+    }
+    
+}
+.mountain4 {
+    right: 2vw;
+    top: 20vw;
+    border-left: 8vw solid transparent;
+    border-right: 8vw solid transparent; 
+    transform: rotateY(180deg);
+    position: absolute;
+}
+
+.mountain5 {
+    right: 20vw;
+    top: 23vw;
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent; 
+    transform: rotateY(180deg);
+    position: absolute;
+}
+
+.sun-african {
+    height: 30vw;
+    width: 60vw;
+    border-radius: 45vw 45vw 0 0;
+    top: 10vw;
+    left: 6vw;
+    transition: 2s;
+}
+

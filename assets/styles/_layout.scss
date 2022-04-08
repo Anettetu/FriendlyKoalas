@@ -1,247 +1,36 @@
 body {
     margin: 0;
     width: 100vw;
-    height: 800vh;
+    height: 1600vh;
     overflow-x: hidden;
+    transition: 2s;
+}
+
+body.african {
+    transition: 2s;
+}
+
+.hidden {
+    display: none;
+}
+
+main {
+    height: 800vh;
+}
+
+.frame__1{
+    height: 400vh;
     
 }
 
-.sky {
-    width: 100vw;
-    height: 50vw;
-
-    &__dark {
-        width: 0; 
-        height: 0;
-        border-top: 1.8vw solid transparent;
-        border-bottom: 1.8vw solid transparent;  
-        position: absolute;
-    }
-    &__dark:nth-of-type(2) {
-        right: 0;
-        top: 1.5vw;
-        }
-    &__dark:nth-of-type(3) {
-        right: 0;
-        top: 12.5vw;
-        }
-    &__dark:nth-of-type(4) {
-        left: 0;
-        top: 4vw;
-        transform: rotateY(180deg);
-        }
-    &__dark:nth-of-type(5) {
-        left: 0;
-        top: 12.5vw;
-        transform: rotateY(180deg);
-        }
-
-    &__bright {
-        left: 0;
-        top: 10vw;
-        border-top: 3.9vw solid transparent;
-        border-bottom: 3.9vw solid transparent; 
-        transform: rotateY(180deg);
-        position: absolute;
-    }
+.background {
+    position: sticky;
+    top: 0;
 }
 
-.sun, .mountains > * , .mountains > * > *{
+.box1 {
     position: absolute;
-}
-
-.land {
-    overflow: hidden;
-    height: 30vw;
-    width: 100vw;
-    position: absolute;
-    top: 28vw;
-}
-
-.ground {
-    width: 160vw;
-    height: 50vw;
-    position: absolute;
-    border-radius: 50%;
-    top: 0vw;
-    
-    &__left {
-        width: 40vw;
-        height: 33.4vw;
-        transform: rotateZ(15deg);
-        position: absolute;
-        left: -9vw;
-        top: -1.3vw;
-    }
-
-    &__greyblock {
-        border-radius: 50%;
-        height: 15vw;
-        width: 51vw;
-        position: absolute;
-        bottom: 24vw;
-        left: -10vw;
-        transform: rotateZ(-10deg);
-        overflow: hidden;
-    }
-
-    &__greyblock::before {
-        content: '';
-        height: 100vw;
-        width: 100vw;
-        position: absolute;
-        transform: rotateZ(40deg);
-        left: 28.7vw;
-        top: -73.7vw;
-    }
-
-    &__blueblock {
-        width: 8vw;
-        height: 10vw;
-        position: absolute;
-        bottom: 23.4vw;
-        left: 0.4vw;
-        transform: rotateZ(19deg);
-    }
-
-}
-
-.sun {
-    border-radius: 50%;
-    height: 15vw;
-    width: 15vw;
-    top: 18vw;
-    left: 16vw;
-}
-
-.mountain1 {
-    top: 18vw;
-    height: 30vw;
-    width: 34vw;
-
-    &__p1 {
-        height: 21vw;
-        width: 8vw;
-        transform: rotateZ(20deg);
-        bottom: 7.9vw;
-        left: 3.47vw;
-    }
-    &__p2 {
-        height: 5vw;
-        width: 8vw;
-        transform: rotateZ(60deg);
-        border-radius: 7%;
-        left: 7.2vw;
-        top: 0.1vw;
-    }
-    &__p3 {
-        height: 10vw;
-        width: 8vw;
-        left: 9vw;
-        top: 1.4vw;
-        transform: rotateZ(29deg);
-        border-radius: 5%;
-    }
-    &__p4 {
-        height: 10vw;
-        width: 7vw;
-        left: 14.4vw;
-        border-radius: 4%;
-        top: 4.8vw;
-        transform: rotateZ(-27deg);
-    }
-}
-.mountain2 {
-    position: relative;
-    height: 30vw;
-    width: 30vw;
-    top: -52vw;
-    left: 20vw;
-
-    &__p1 {
-        height: 4vw;
-        width: 4vw;
-        top: 8.4vw;
-        left: 2.4vw;
-        transform: rotateZ(55deg);
-    }
-    &__p2 {
-        height:9vw;
-        width: 16vw;
-        top: 6vw;
-        left: 5.2vw;
-        transform: rotateZ(45deg);
-    }
-    &__p3 {
-        height:6vw;
-        width: 6vw;
-        left: 10vw;
-        transform: rotateZ(31deg);
-        border-radius: 8%;
-    }
-    &__p4 {
-        height:12vw;
-        width: 12vw;
-        left: 9vw;
-        top: 0.5vw;
-        transform: rotateZ(21deg);
-        border-radius: 8%;
-    }
-    &__p5 {
-        height:16vw;
-        width: 9vw;
-        left: 16.6vw;
-        top: 3.6vw;
-        transform: rotateZ(-21deg);
-        border-radius: 8%;
-    }
-
-}
-.mountain3 {
-    height: 20vw;
-    width: 20vw;
-    position: relative;
-    top: -32vw;
-    left: 13vw;
-
-    &__p1 {
-        height: 4vw;
-        width: 16vw;
-        border-radius: 12%;
-        transform: rotateZ(37deg);
-        left: -1.1vw;
-        top: 3.9vw;
-    }
-    &__p2 {
-        height: 8vw;
-        width: 12vw;
-        transform: rotateZ(20deg);
-        left: 3vw;
-        top: 4vw;
-    }
-    &__p3 {
-        height: 8vw;
-        width: 8vw;
-        transform: rotateZ(5deg);
-        left: 12vw;
-        top: 5.5vw;
-    }
-    
-}
-.mountain4 {
-    right: 2vw;
-    top: 20vw;
-    border-left: 8vw solid transparent;
-    border-right: 8vw solid transparent; 
-    transform: rotateY(180deg);
-    position: absolute;
-}
-
-.mountain5 {
-    right: 20vw;
-    top: 23vw;
-    border-left: 4vw solid transparent;
-    border-right: 4vw solid transparent; 
-    transform: rotateY(180deg);
-    position: absolute;
+    top: 150vw;
+    height: 40px;
+    width: 40px;
 }
