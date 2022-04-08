@@ -671,6 +671,10 @@ main {
   overflow: hidden;
 }
 
+#river > * {
+  transition: 2s;
+}
+
 #river {
   width: 74vw;
   height: 40vw;
