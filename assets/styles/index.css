@@ -835,8 +835,8 @@ main {
 #well1 {
   position: absolute;
   width: 25vw;
-  top: 46vw;
-  left: -6vw;
+  top: 3vw;
+  left: -56vw;
   z-index: 1;
 }
 #well1 .st0 {
