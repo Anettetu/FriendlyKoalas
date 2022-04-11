@@ -74,6 +74,10 @@ main {
   height: 400vh;
 }
 
+.frame__2 {
+  position: relative;
+}
+
 .background {
   position: -webkit-sticky;
   position: sticky;
@@ -730,10 +734,10 @@ main {
 }
 
 #cover {
-  width: 4rem;
-  height: 1rem;
-  margin-left: 14.5rem;
-  margin-top: -0.5rem;
+  width: 6vw;
+  height: 2vw;
+  margin-left: 29vw;
+  margin-top: -1vw;
   background-color: var(--mountain-2);
   position: absolute;
   z-index: 1;
@@ -754,6 +758,13 @@ main {
   top: 43vw;
   left: 51vw;
   z-index: 2;
+}
+
+.trees--african {
+  position: relative;
+  top: -100vw;
+  left: 20vw;
+  z-index: 1;
 }
 
 .lynx .st0 {
