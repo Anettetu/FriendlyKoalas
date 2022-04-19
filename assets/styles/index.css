@@ -211,6 +211,22 @@ body.african {
     transform: translateY(-1vw);
   }
 }
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(350deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(350deg);
+  }
+}
 body {
   margin: 0;
   width: 100vw;
@@ -1024,8 +1040,8 @@ main {
 
 .water-tap > * {
   position: absolute;
-  z-index: 2;
-  top: -8vw;
+  z-index: 0.9;
+  top: -6vw;
   left: 13vw;
 }
 .water-tap > * .st0 {
@@ -1326,4 +1342,25 @@ main {
   z-index: 1;
   -webkit-animation: growing 23s forwards;
           animation: growing 23s forwards;
+}
+
+.tap-handle {
+  z-index: 2;
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  top: -36.5vw;
+  left: 9vw;
+  background-color: transparent;
+  -webkit-animation: spin 3s infinite linear;
+          animation: spin 3s infinite linear;
+}
+
+#handling {
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
+  height: 100vw;
+  top: 5.3vw;
+  left: -3.2vw;
 }/*# sourceMappingURL=index.css.map */
