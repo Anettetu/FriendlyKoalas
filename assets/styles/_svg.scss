@@ -54,7 +54,7 @@
   z-index: 1;
 }
 
-.trees--african > svg {
+.trees--african {
   .st0{fill: $african-tree-trunk;}
   .st1{fill: var(--ground);}
   .st2{fill: $african-tree-green;}
@@ -155,28 +155,20 @@
   z-index: 3;
 }
 
-.handl{
-  transform-origin: center;
-  animation-name: rotate-s-loader;
-  animation-iteration-count: infinite;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-}
 
 .tumbleweed {
   position: absolute;
   width: 8vw;
-  top: -60vw;
+  top: -55vw;
   left: 90vw;
-  z-index: 1;
+
 }
 
 .village {
   position: absolute;
   width: 25vw;
-  top: -76vw;
-  left: 6vw;
-  z-index: 1;
+  top: -79vw;
+  left: 15vw;
 }
 
 .small-trees-african-2 {
@@ -191,6 +183,8 @@
   .st3{fill:$african-tree-lightgreen;}
 }
 
+
+
 .big-trees-african-2 {
   position: absolute;
   width: 100vw;
@@ -202,6 +196,11 @@
   .st2{fill:$african-tree-lightgreen;}
 }
 
+.no-leaf {
+  .st2{fill:rgba(55, 179, 59, 0);}
+  .st1{fill:rgba(55, 179, 59, 0);}
+  .st3{fill:rgba(55, 179, 59, 0);}
+}
 .pond {
   position: absolute;
   width: 20vw;

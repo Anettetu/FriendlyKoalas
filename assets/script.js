@@ -3,11 +3,15 @@ const frame2 = document.querySelector('#frame2');
 const frame3 = document.querySelector('#frame3');
 const frame4 = document.querySelector('#frame4');
 const river = document.querySelector('#river');
+const bigTrees = document.querySelector('#big-african-trees');
+const smallTrees = document.querySelector('#small-african-trees');
+const forrest = document.querySelector('#african-forrest');
 const riverCover = document.querySelector('#cover');
 const body = document.querySelector('body');
 const sun = document.querySelector('#sun');
 const box1Scroller = scrollama();
 const box2Scroller = scrollama();
+const noLeaf = scrollama();
 
 box1Scroller
     .setup({
@@ -49,4 +53,19 @@ box1Scroller
         body.classList.add('african');
         sun.classList.add('sun-african');
         console.log('hei');
+    })
+
+    noLeaf
+    .setup({
+        step: '.leaf-trigger'
+    })
+    .onStepEnter(() => {
+        bigTrees.classList.add('no-leaf');
+        smallTrees.classList.add('no-leaf');
+        forrest.classList.add('no-leaf');
+    })
+    .onStepExit(() => {
+        bigTrees.classList.remove('no-leaf');
+        smallTrees.classList.remove('no-leaf');
+        forrest.classList.remove('no-leaf');
     })

@@ -104,7 +104,7 @@ body.african {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100vw);
+    transform: translateX(-100vw) rotateZ(-1500deg);
   }
 }
 
@@ -113,7 +113,7 @@ body.african {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100vw);
+    transform: translateX(-100vw) rotateZ(-1500deg);
   }
 }
 @-webkit-keyframes pull {
@@ -265,7 +265,18 @@ main {
 }
 
 .box2 {
+  top: 500vw;
+}
+
+.leaf-trigger {
+  position: absolute;
   top: 400vw;
+  height: 100vw;
+  width: 10px;
+}
+
+.leaf-trigger:nth-of-type(2n) {
+  top: 800vw;
 }
 
 .frame4-block {
@@ -1044,19 +1055,19 @@ main {
   z-index: 1;
 }
 
-.trees--african > svg {
+.trees--african {
   transition: 2s;
 }
-.trees--african > svg .st0 {
+.trees--african .st0 {
   fill: #824106;
 }
-.trees--african > svg .st1 {
+.trees--african .st1 {
   fill: var(--ground);
 }
-.trees--african > svg .st2 {
+.trees--african .st2 {
   fill: #7CAE18;
 }
-.trees--african > svg .st3 {
+.trees--african .st3 {
   fill: #91B549;
 }
 
@@ -1215,32 +1226,18 @@ main {
   z-index: 3;
 }
 
-.handl {
-  transform-origin: center;
-  -webkit-animation-name: rotate-s-loader;
-          animation-name: rotate-s-loader;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
 .tumbleweed {
   position: absolute;
   width: 8vw;
-  top: -60vw;
+  top: -55vw;
   left: 90vw;
-  z-index: 1;
 }
 
 .village {
   position: absolute;
   width: 25vw;
-  top: -76vw;
-  left: 6vw;
-  z-index: 1;
+  top: -79vw;
+  left: 15vw;
 }
 
 .small-trees-african-2 {
@@ -1278,6 +1275,16 @@ main {
 }
 .big-trees-african-2 .st2 {
   fill: #91B549;
+}
+
+.no-leaf .st2 {
+  fill: rgba(55, 179, 59, 0);
+}
+.no-leaf .st1 {
+  fill: rgba(55, 179, 59, 0);
+}
+.no-leaf .st3 {
+  fill: rgba(55, 179, 59, 0);
 }
 
 .pond {
