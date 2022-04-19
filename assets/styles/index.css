@@ -4,7 +4,7 @@ body {
   --mountain-3: hsl(0,4%,78%);
   --mountain-4: hsl(212,19%,77%);
   --mountain-5: hsl(210,39%,76%);
-  --ground: hsl(100,75%,37%);
+  --ground: hsl(100,74%,37%);
   --sky: hsl(208,83%,74%);
   --sky-dark: hsl(211,73%,64%);
   --sky-bright: hsl(208,76%,83%);
@@ -987,9 +987,9 @@ main {
 }
 .norwegian-house {
   position: absolute;
-  width: 48vw;
-  top: -103vw;
-  left: 9vw;
+  width: 62vw;
+  top: -84vw;
+  left: 3vw;
   z-index: 1;
 }
 
@@ -1015,7 +1015,7 @@ main {
   position: absolute;
   width: 18vw;
   top: -60vw;
-  right: 5.2vw;
+  right: 5vw;
   z-index: 1;
   -webkit-animation: growing 27s forwards;
           animation: growing 27s forwards;
