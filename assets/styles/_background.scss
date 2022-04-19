@@ -1,3 +1,20 @@
+.intro {
+    height: 58vw;
+    background: $intro;
+
+    &__circle {
+        position: absolute;
+        width: 50vw;
+        height: 50vw;
+        background-color: $white;
+        border-radius: 100%;
+        top: 3vw;
+        left: 25vw;
+        z-index: 0;
+    }
+}
+
+
 .sky, .ground__blueblock {
     background-color: var(--sky);
     transition: 2s;
@@ -340,4 +357,6 @@
     left: 6vw;
     transition: 2s;
 }
+
+
 

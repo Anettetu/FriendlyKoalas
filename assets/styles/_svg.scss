@@ -13,7 +13,37 @@
     top: 43vw;
     left: 51vw;
     z-index: 2;
+    .st0{fill:$orange-1;}
+	  .st1{fill:$light-brown;stroke:$black-3;stroke-width:0.1;}
+	  .st2{fill:$yellow-white;}
+	  .st3{fill:$dark-brown;}
+	  .st4{fill:$dark-orange;}
+	  .st5{fill:$red-brown;fill-opacity:0.65;}
+	  .st6{fill:$white-1;}
+	  .st7{fill:$black-1;}
+	  .st8{fill:$white-2;}
+	  .st9{fill:$yellow-1;}
+	  .st10{fill:$orange-2;}
+	  .st11{fill:$black-2;}
+	  .st12{fill:none;stroke:$black-3;stroke-width:0.1;}
 }
+
+#head{
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+  z-index: 1;
+}
+
+.water-tap > *{
+  position: absolute;
+  z-index: 2;
+  top: -8vw;
+  left: 13vw;
+
+  .st0{fill:#D2D2D2;}
+	.st1{fill:#727272;}
+}
+
 
 .trees--african {
   position: relative;
@@ -56,6 +86,7 @@
       transform: translate(0);
     }
   }
+
 
 #well1 {
     position: absolute;
@@ -148,6 +179,73 @@
   z-index: 1;
 }
 
+
+.intro__hands {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 10vw;
+  left: -15vw;
+  z-index: 1; 
+}
+
+.intro__eclipse {
+  position: absolute;
+  height: 100vw;
+  width: 100vw;
+  left: -9vw;
+  top: 1vw;
+  z-index: 3;
+}
+
+.handle{
+  transform-origin: center;
+  animation-name: rotate-s-loader;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+.tumbleweed {
+  position: absolute;
+  width: 8vw;
+  top: -60vw;
+  left: 90vw;
+  z-index: 1;
+}
+
+.village {
+  position: absolute;
+  width: 25vw;
+  top: -76vw;
+  left: 6vw;
+  z-index: 1;
+}
+
+.small-trees-african-2 {
+  position: absolute;
+  width: 100vw;
+  top: -94vw;
+  left: 26vw;
+  z-index: 1;
+}
+
+.big-trees-african-2 {
+  position: absolute;
+  width: 100vw;
+  top: -97.5vw;
+  left: 36vw;
+  z-index: 1;
+}
+
+.pond {
+  position: absolute;
+  width: 20vw;
+  top: -73vw;
+  left: 75vw;
+  z-index: 1;
+}
+
 .growing-tree1 {
   position: absolute;
   width: 16vw;
@@ -193,3 +291,4 @@
     transform: scaleY(800%) scaleX(650%);
   }
 }
+
