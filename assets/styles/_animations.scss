@@ -96,3 +96,12 @@
     transform: translateY(-1vw);
   }
 }
+
+@keyframes spin {
+  0% {
+     transform: rotate(0); 
+  }
+  100% {
+      transform: rotate(350deg);
+  }
+}
