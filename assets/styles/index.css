@@ -227,6 +227,38 @@ body.african {
     transform: rotate(350deg);
   }
 }
+@-webkit-keyframes drops {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes drops {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes drip {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translateY(11vw);
+  }
+}
+@keyframes drip {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translateY(11vw);
+  }
+}
 body {
   margin: 0;
   width: 100vw;
@@ -552,6 +584,36 @@ main {
 .edge__5:nth-of-type(5), .edge__6:nth-of-type(6), .edge__7:nth-of-type(7), .edge__8:nth-of-type(8), .edge__9:nth-of-type(9), .edge__10:nth-of-type(10) {
   position: absolute;
   z-index: -2;
+}
+
+.drops {
+  -webkit-animation: drip 6s infinite, drops 6s infinite;
+          animation: drip 6s infinite, drops 6s infinite;
+  width: 5vw;
+  position: absolute;
+  margin-left: 51.7vw;
+  top: 22.6vw;
+  z-index: 1;
+}
+
+.cover-water {
+  width: 4vw;
+  height: 4vw;
+  background-color: hsl(0deg, 0%, 44%);
+  margin-left: 52.3vw;
+  margin-top: 24.9vw;
+  position: absolute;
+  z-index: 2;
+}
+
+.cover-water1 {
+  width: 2vw;
+  height: 3vw;
+  background-color: hsl(0deg, 0%, 44%);
+  margin-left: 53.5vw;
+  margin-top: 23vw;
+  position: absolute;
+  z-index: 2;
 }
 
 .intro {
