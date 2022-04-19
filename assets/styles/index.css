@@ -216,7 +216,7 @@ body.african {
     transform: rotate(0);
   }
   100% {
-    transform: rotate(350deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes spin {
@@ -224,7 +224,7 @@ body.african {
     transform: rotate(0);
   }
   100% {
-    transform: rotate(350deg);
+    transform: rotate(360deg);
   }
 }
 body {
@@ -1041,8 +1041,8 @@ main {
 .water-tap > * {
   position: absolute;
   z-index: 0.9;
-  top: -6vw;
-  left: 13vw;
+  top: -9.5vw;
+  left: 6.5vw;
 }
 .water-tap > * .st0 {
   fill: #D2D2D2;
