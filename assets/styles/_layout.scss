@@ -20,7 +20,14 @@ main {
 
 .frame__1{
     height: 400vh;
-    
+}
+
+.frame__2{
+    position: relative;
+}
+
+.frame__3{
+    position: relative;
 }
 
 .frame__4 {
@@ -34,7 +41,7 @@ main {
 
 .box1 {
     position: absolute;
-    top: 150vw;
-    height: 40px;
+    top: 0vw;
+    height: 150vw;
     width: 40px;
 }

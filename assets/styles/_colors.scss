@@ -5,11 +5,24 @@ body {
     --mountain-3: hsl(0,4%,78%);
     --mountain-4: hsl(212,19%,77%);
     --mountain-5: hsl(210,39%,76%);
-    --ground: hsl(100,75%,37%);
+    --ground: hsl(100,74%,37%);
     --sky: hsl(208,83%,74%);
     --sky-dark: hsl(211,73%,64%);
     --sky-bright: hsl(208,76%,83%);
-
+    --riverst0: #493F35;
+    --riverst1: #544639;
+    --riverst2: #605954;
+    --riverst3: #6D6155;
+    --riverst4: #585654;
+    --riverst5: #525251;
+    --riverst6: #695D51;
+    --riverst7: #636363;
+    --riverst8: #504d49;
+    --riverst9: #9b9792;
+    --riverst10:#5b5957;
+    --riverst12:#565553;
+    --riverst13:#7BB4EA;
+    --riverst14:#7BB4EA;
 }
 
 body.african {
@@ -22,6 +35,20 @@ body.african {
     --sky: hsl(32,83%,74%);
     --sky-dark:hsl(19,73%,64%);
     --sky-bright: hsl(34,44%,83%);
+    --riverst0: #9B5E15;
+    --riverst1: #AC601B;
+    --riverst2: #B65F10;
+    --riverst3: #BC600A;
+    --riverst4: #BD7117;
+    --riverst5: #AF6610;
+    --riverst6: #AA5F07;
+    --riverst7: #AF6917;
+    --riverst8: #C67D28;
+    --riverst9: #E89740;
+    --riverst10:#E89740;
+    --riverst12:#824106;
+    --riverst13:#7BB4EA;
+    --riverst14:#7bb4ea00;
 }
 
 $water: hsl(183,51%,51%);
