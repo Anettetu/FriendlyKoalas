@@ -44,6 +44,10 @@
 	.st1{fill:#727272;}
 }
 
+.water-tap > svg {
+  width: 98vw;
+}
+
 
 .trees--african {
   position: relative;
@@ -245,15 +249,40 @@
   animation: growing 23s forwards; 
 }
 
-.tap-handle {
-  z-index: 2;
+.tap {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+
+  &__container {
+  position: relative;
+  top: 21vw;
+  left: 49.7vw;
+  }
+  &__center {
+  background-color: #727272;
+  height: 3vw;
+  width: 5vw; 
+  border-radius: 50%;
+  }
+  &__circle {
+  height: 2.8vw;
   position: absolute;
-  width: 100vw;
-  height: 100vw;
-  top: -36.5vw;
-  left: 9vw;
-  background-color: transparent;
-  animation: spin 3s infinite linear;
+  width: 2vw;
+  top: 0.1vw;
+  background-color: #727272;
+  border-radius: 50%;
+  }
+  &__circle-container {
+  position: relative;
+  animation: spin 4s linear infinite
+  }
+  &__circle:nth-last-of-type(2n) {
+  right: -1.3vw;
+  }
+  &__circle:nth-last-of-type(2n-1) {
+  left: -1.3vw;
+  }
 }
 
 #handling {
