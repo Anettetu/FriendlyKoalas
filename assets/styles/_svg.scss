@@ -47,9 +47,19 @@
 
 .trees--african {
   position: relative;
-  top: -100vw;
-  left: 20vw;
+  top: -75vw;
+  left: 40vw;
+  height: 20vw;
+  width: 55vw;
   z-index: 1;
+}
+
+.trees--african > svg {
+  .st0{fill: $african-tree-trunk;}
+  .st1{fill: var(--ground);}
+  .st2{fill: $african-tree-green;}
+  .st3{fill: $african-tree-lightgreen;}
+  transition: 2s;
 }
 
 .lynx{
@@ -73,20 +83,6 @@
         animation: beat 4s infinite;
         z-index: 1;
       }
-
-
-@keyframes beat {
-    0% {
-      transform: translate(0);
-    }
-    50% {
-      transform: translate(-50px, 100px);
-    }
-    100%{
-      transform: translate(0);
-    }
-  }
-
 
 #well1 {
     position: absolute;
@@ -119,49 +115,10 @@
   animation: drag 4s linear 3;
 }
 
-@keyframes drag {
-  50% {
-    transform: translateY(-6.5vw);
-  }
-}
-
-@keyframes drag-inner {
-  25% {
-    height: 1vw;
-    transform: translateY(-1vw);
-  }
-  50% {
-    height: 5vw;
-    transform: translateY(-4.3vw);
-  }
-  75% {
-    height: 1vw;
-    transform: translateY(-1vw);
-  }
-}
-
-
 #bucket{
   animation: pull 12s forwards;
 }
 
-@keyframes pull {
-  100% {
-    transform: translateY(-6.6vw);
-    z-index: 1;
-  }
-}
-
-@keyframes rope {
-  10% {
-    height: 11vw;
-  }
-  
-  100% {
-    height: 6vw;
-    z-index: 1;
-  }
-}
 
 .norwegian-house {
   position: absolute;
@@ -198,7 +155,7 @@
   z-index: 3;
 }
 
-.handle{
+.handl{
   transform-origin: center;
   animation-name: rotate-s-loader;
   animation-iteration-count: infinite;
@@ -228,6 +185,10 @@
   top: -94vw;
   left: 26vw;
   z-index: 1;
+  .st0{fill:$african-tree-trunk;}
+  .st1{fill:var(--ground)}
+  .st2{fill:$african-tree-green;}
+  .st3{fill:$african-tree-lightgreen;}
 }
 
 .big-trees-african-2 {
@@ -236,6 +197,9 @@
   top: -97.5vw;
   left: 36vw;
   z-index: 1;
+  .st0{fill:$african-tree-trunk;}
+  .st1{fill:$african-tree-green;}
+  .st2{fill:$african-tree-lightgreen;}
 }
 
 .pond {
@@ -280,15 +244,5 @@
   right: 10vw;
   z-index: 1;
   animation: growing 23s forwards; 
-}
-
-@keyframes growing {
-  10% {
-    transform-origin: scaleY(100%) scaleX(100%);
-  }
-  
-  100% {
-    transform: scaleY(800%) scaleX(650%);
-  }
 }
 
