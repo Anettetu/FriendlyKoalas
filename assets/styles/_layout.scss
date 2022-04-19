@@ -15,7 +15,7 @@ body.african {
 }
 
 main {
-    height: 800vh;
+    height: 1600vh;
 }
 
 .frame__1{
@@ -39,9 +39,37 @@ main {
     top: 0;
 }
 
-.box1 {
+.box1, .box2 {
     position: absolute;
-    top: 0vw;
+    
     height: 150vw;
     width: 40px;
+}
+.box1 {
+    top: 0;
+    height: 250vw;
+}
+
+.box2{
+    top: 400vw;
+}
+
+.frame4-block {
+    background-color: var(--ground);
+    height: 5vw;
+    width: 15vw;
+    position: absolute;
+    top: -68.2vw;
+    left: 24vw;
+    transform: rotateZ(6deg);
+}
+
+.frame4-block::before {
+    content: '';
+    position: absolute;
+    left: -1vw;
+    width: 10%;
+    height: 3vw;
+    background-color: var(--ground);
+    top: 3vw;
 }
