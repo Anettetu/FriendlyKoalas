@@ -32,7 +32,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100vw);
+    transform: translateX(-100vw) rotateZ(-1500deg);
   }
 }
 
