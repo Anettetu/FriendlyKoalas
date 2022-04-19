@@ -86,8 +86,6 @@
                       <ellipse class="st2" cx="178.54" cy="474.8" rx="127.06" ry="35.14"/>
                   </svg>
               </div>
-
-
             <div class="norwegian-trees">
               <img src="assets/svg/woods-norway.svg"></img>
             </div>
@@ -366,7 +364,7 @@
 
 
             <div class="frame__2">
-              <div class="trees--african">
+              <div class="trees--african hidden">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
                   <style type="text/css">
@@ -734,27 +732,7 @@
         </div>
       </div>
     </main>
-<script type="text/javascript">
-      const frame1 = document.querySelector('#frame1');
-      const riverCover = document.querySelector('#cover');
-      const body = document.querySelector('body');
-      const sun = document.querySelector('#sun');
-      const scroller = scrollama();
-
-      scroller
-          .setup({
-              step: '.box1'
-          })
-          .onStepEnter(() => {
-              frame1.classList.add('hidden');
-              body.classList.add('african');
-              sun.classList.add('sun-african');
-              riverCover.classList.remove('hidden');
-              console.log('hei');
-          })
-          .onStepExit((response) => {
-              response.element.classList.add('hidden');
-          })
-  </script>
+<script src="assets/script.js"></script>
   </body>
 </html>
+
