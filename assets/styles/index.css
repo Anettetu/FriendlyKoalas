@@ -216,7 +216,7 @@ body.african {
     transform: rotate(0);
   }
   100% {
-    transform: rotate(350deg);
+    transform: rotateY(360deg);
   }
 }
 @keyframes spin {
@@ -224,9 +224,19 @@ body.african {
     transform: rotate(0);
   }
   100% {
-    transform: rotate(350deg);
+    transform: rotateY(360deg);
   }
 }
+/*
+@keyframes spin {
+  0% {
+     transform: rotate(0); 
+  }
+  100% {
+      transform: rotate(350deg);
+  }
+}
+*/
 body {
   margin: 0;
   width: 100vw;
@@ -1062,6 +1072,10 @@ main {
   fill: #727272;
 }
 
+.water-tap > svg {
+  width: 98vw;
+}
+
 .trees--african {
   position: relative;
   top: -75vw;
@@ -1351,16 +1365,40 @@ main {
           animation: growing 23s forwards;
 }
 
-.tap-handle {
-  z-index: 2;
+.tap {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.tap__container {
+  position: relative;
+  top: 21vw;
+  left: 49.7vw;
+}
+.tap__center {
+  background-color: #727272;
+  height: 3vw;
+  width: 5vw;
+  border-radius: 50%;
+}
+.tap__circle {
+  height: 2.8vw;
   position: absolute;
-  width: 100vw;
-  height: 100vw;
-  top: -36.5vw;
-  left: 9vw;
-  background-color: transparent;
-  -webkit-animation: spin 3s infinite linear;
-          animation: spin 3s infinite linear;
+  width: 2vw;
+  top: 0.1vw;
+  background-color: #727272;
+  border-radius: 50%;
+}
+.tap__circle-container {
+  position: relative;
+  -webkit-animation: spin 4s linear infinite;
+          animation: spin 4s linear infinite;
+}
+.tap__circle:nth-last-of-type(2n) {
+  right: -1.3vw;
+}
+.tap__circle:nth-last-of-type(2n-1) {
+  left: -1.3vw;
 }
 
 #handling {
