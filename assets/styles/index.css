@@ -66,6 +66,28 @@ body.african {
     transform: rotate(360deg);
   }
 }
+.tumbleweed {
+  -webkit-animation: tumbling 5s infinite;
+          animation: tumbling 5s infinite;
+}
+
+@-webkit-keyframes tumbling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes tumbling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
 body {
   margin: 0;
   width: 100vw;
@@ -88,6 +110,10 @@ main {
 
 .frame__1 {
   height: 400vh;
+}
+
+.frame__4 {
+  position: absolute;
 }
 
 .background {
@@ -824,4 +850,44 @@ main {
           animation-duration: 3s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
+}
+
+.tumbleweed {
+  position: absolute;
+  width: 8vw;
+  top: -60vw;
+  left: 90vw;
+  z-index: 1;
+}
+
+.village {
+  position: absolute;
+  width: 25vw;
+  top: -76vw;
+  left: 6vw;
+  z-index: 1;
+}
+
+.small-trees-african-2 {
+  position: absolute;
+  width: 100vw;
+  top: -94vw;
+  left: 26vw;
+  z-index: 1;
+}
+
+.big-trees-african-2 {
+  position: absolute;
+  width: 100vw;
+  top: -97.5vw;
+  left: 36vw;
+  z-index: 1;
+}
+
+.pond {
+  position: absolute;
+  width: 20vw;
+  top: -73vw;
+  left: 75vw;
+  z-index: 1;
 }/*# sourceMappingURL=index.css.map */

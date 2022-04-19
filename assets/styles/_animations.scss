@@ -22,3 +22,17 @@
       transform: rotate(360deg);
     }
   }
+
+.tumbleweed {
+  animation: tumbling 5s infinite;
+}
+
+@keyframes tumbling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+

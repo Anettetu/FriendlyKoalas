@@ -79,3 +79,44 @@
   animation-duration: 3s;
   animation-timing-function: linear;
 }
+
+.tumbleweed {
+  position: absolute;
+  width: 8vw;
+  top: -60vw;
+  left: 90vw;
+  z-index: 1;
+}
+
+.village {
+  position: absolute;
+  width: 25vw;
+  top: -76vw;
+  left: 6vw;
+  z-index: 1;
+}
+
+.small-trees-african-2 {
+  position: absolute;
+  width: 100vw;
+  top: -94vw;
+  left: 26vw;
+  z-index: 1;
+}
+
+.big-trees-african-2 {
+  position: absolute;
+  width: 100vw;
+  top: -97.5vw;
+  left: 36vw;
+  z-index: 1;
+}
+
+.pond {
+  position: absolute;
+  width: 20vw;
+  top: -73vw;
+  left: 75vw;
+  z-index: 1;
+}
+
