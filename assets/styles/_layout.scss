@@ -73,19 +73,21 @@ main {
 
 .leaf-trigger:nth-of-type(2n) {
     top: 800vw;
+    height: 140;
 }
 
-.frame4-block {
+#frame4-block {
     background-color: var(--ground);
     height: 5vw;
     width: 15vw;
     position: absolute;
-    top: -68.2vw;
+    top: 31.8vw;
     left: 24vw;
     transform: rotateZ(6deg);
+    transition: 2s;
 }
 
-.frame4-block::before {
+#frame4-block::before {
     content: '';
     position: absolute;
     left: -1vw;
@@ -93,4 +95,5 @@ main {
     height: 3vw;
     background-color: var(--ground);
     top: 3vw;
+    transition: 2s;
 }

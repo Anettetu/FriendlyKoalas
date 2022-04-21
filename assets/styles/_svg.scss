@@ -63,7 +63,7 @@
 .trees--african {
   position: relative;
   top: -75vw;
-  left: 40vw;
+  left: 60vw;
   height: 20vw;
   width: 55vw;
   z-index: 1;
@@ -117,23 +117,6 @@
         .st9{fill:$well-wood-2;}
         .st10{fill:$well-top;}
 }
-
-.handle-inner-animation {
-  animation: drag-inner 4s linear 3;
-}
-
-.rope-animation {
-  animation: rope 12s forwards;
-}
-
-.handle-animation {
-  animation: drag 4s linear 3;
-}
-
-.bucket-animation{
-  animation: pull 12s forwards;
-}
-
 
 .norwegian-house {
   position: absolute;
@@ -282,7 +265,6 @@
     }
     &__circle-container {
     position: relative;
-    animation: spin 4s linear infinite
     }
     &__circle:nth-last-of-type(2n) {
     right: -1.3vw;
@@ -303,8 +285,8 @@
 
 .lion {
   position: absolute;
-  top: -63vw;
-  left: 48vw;
+  top: -59.5vw;
+  left: 50vw;
   width: 16vw;
   z-index: 1;
 }

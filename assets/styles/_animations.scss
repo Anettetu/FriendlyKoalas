@@ -7,26 +7,16 @@
           transform: translate(0);
         }
         50% {
-          transform: translate(-50px, 100px);
+          transform: translate(-3vw, 7vw);
         }
         100%{
           transform: translate(0);
         }
     }
 
-@keyframes rotate-s-loader {
-    from {
-      transform: rotate(0);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
 .tumbleweed {
-  animation: tumbling 5s infinite;
+  animation: tumbling 9s infinite;
 }
-
     @keyframes tumbling {
       0% {
         transform: translateX(0);
@@ -39,7 +29,6 @@
 .bucket-animation{
   animation: pull 12s forwards;
 }
-
     @keyframes pull {
       100% {
         transform: translateY(-6.6vw);
@@ -47,7 +36,7 @@
       }
     }
 
-.rope {
+.rope-animation {
   animation: rope 12s forwards;
 }
     @keyframes rope {
@@ -72,6 +61,7 @@
 }
 .growing-tree4 {
   animation: moving 3s forwards, growing 23s forwards; 
+
 }
     @keyframes growing {
       10% {
@@ -110,47 +100,50 @@
       }
     }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
+.tap__circle-container{
+  animation: spin 4s linear infinite    
 }
-
-#small-pond{
-  animation: shrink 3s linear forwards;
-}
-    @keyframes shrink {
-      10% {
-        transform-origin: scaleY(100%) scaleX(100%);
+    @keyframes spin {
+      0% {
+        transform: rotate(0);
       }
-      
       100% {
-        transform: scaleY(50%) scaleX(50%);
+        transform: rotateY(360deg);
       }
     }
 
-
-@keyframes drops {
-  from {
-    opacity: 1;
-  }
-  
-  to { 
-    opacity: 0;
-  }
+#small-pond {
+  transition: 2s;
 }
 
-@keyframes drip {
-   0% {
-    transform: translate(0, 0);    
-  }
-  100% {
-    transform: translateY(11vw);
-  }
+
+.smaller-pond{
+  animation: shrink 3s linear forwards;
+  transform: scaleY(50%) scaleX(50%);
+  transition: 2s;
 }
+
+.drops > img {
+  animation: drip 6s infinite, drops 6s infinite;
+}
+    @keyframes drops {
+      from {
+        opacity: 1;
+      }
+      
+      to { 
+        opacity: 0;
+      }
+    }
+
+    @keyframes drip {
+      0% {
+        transform: translate(0, 0);    
+      }
+      100% {
+        transform: translateY(11vw);
+      }
+    }
 
 @keyframes moving {
   0% {
