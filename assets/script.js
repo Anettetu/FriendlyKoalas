@@ -4,22 +4,22 @@ const frame2 = document.querySelector('#frame2');
 const frame3 = document.querySelector('#frame3');
 const frame4 = document.querySelector('#frame4');
 const river = document.querySelector('#river');
-const bigTrees = document.querySelector('#big-african-trees');
-const smallTrees = document.querySelector('#small-african-trees');
+const forrest2 = document.querySelector('#african-forrest2');
 const forrest = document.querySelector('#african-forrest');
 const riverCover = document.querySelector('#cover');
 const body = document.querySelector('body');
 const sun = document.querySelector('#sun');
-let lastFrames
+let lastFrames = false;
 
 const box1Scroller = scrollama();
 const box2Scroller = scrollama();
 const box3Scroller = scrollama();
+const box4Scroller = scrollama();
 const noLeaf = scrollama();
 
 box1Scroller
     .setup({
-        step: '.box1'
+        step: '.box__1'
     })
     .onStepEnter(() => {
         frame1.classList.remove('hidden');
@@ -42,7 +42,7 @@ box1Scroller
 
     box2Scroller
     .setup({
-        step: '.box2'
+        step: '.box__2'
     })
     .onStepEnter(() => {
         frame3.classList.remove('hidden');
@@ -57,19 +57,30 @@ box1Scroller
         body.classList.add('african');
         sun.classList.add('sun-african');
         if (lastFrames) frame4.classList.remove('hidden');
+        console.log(lastFrames);
     })
 
     box3Scroller
     .setup({
-        step: '.box3'
+        step: '.box__3'
     })
     .onStepEnter(() => {
         frameOneTwo.classList.remove('hidden');
         frame2.classList.remove('hidden');
-        lastFrames = false;
+        
     })
     .onStepExit(() => {
         frameOneTwo.classList.add('hidden');
+    })
+
+    box4Scroller
+    .setup({
+        step: '.box__4'
+    })
+    .onStepEnter(() => {
+        lastFrames = false;
+    })
+    .onStepExit(() => {
         lastFrames = true;
     })
 
@@ -78,14 +89,12 @@ box1Scroller
         step: '.leaf-trigger'
     })
     .onStepEnter(() => {
-        bigTrees.classList.add('no-leaf');
-        smallTrees.classList.add('no-leaf');
+        forrest2.classList.add('no-leaf');
         forrest.classList.add('no-leaf');
         river.style.display = 'none';
     })
     .onStepExit(() => {
-        bigTrees.classList.remove('no-leaf');
-        smallTrees.classList.remove('no-leaf');
+        forrest2.classList.remove('no-leaf');
         forrest.classList.remove('no-leaf');
         river.style.display = 'block';
     })
