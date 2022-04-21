@@ -1043,7 +1043,7 @@ main {
   fill: #C4C4C4;
 }
 
-.handle1 {
+.handle-inner-animation {
   -webkit-animation: drag-inner 4s linear 3;
           animation: drag-inner 4s linear 3;
 }
@@ -1053,12 +1053,12 @@ main {
           animation: rope 12s forwards;
 }
 
-.handle {
+.handle-animation {
   -webkit-animation: drag 4s linear 3;
           animation: drag 4s linear 3;
 }
 
-#bucket {
+.bucket-animation {
   -webkit-animation: pull 12s forwards;
           animation: pull 12s forwards;
 }
@@ -1126,6 +1126,9 @@ main {
 }
 .trees-african-2 .st2 {
   fill: #91B549;
+}
+.trees-african-2 .st3 {
+  fill: var(--ground);
 }
 
 .no-leaf .st2 {

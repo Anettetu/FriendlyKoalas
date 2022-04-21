@@ -107,7 +107,8 @@
         .st9{fill:#A8643E;}
         .st10{fill:#C4C4C4;}
 }
-.handle1 {
+
+.handle-inner-animation {
   animation: drag-inner 4s linear 3;
 }
 
@@ -115,11 +116,11 @@
   animation: rope 12s forwards;
 }
 
-.handle{
+.handle-animation {
   animation: drag 4s linear 3;
 }
 
-#bucket{
+.bucket-animation{
   animation: pull 12s forwards;
 }
 
@@ -184,6 +185,7 @@
   .st0{fill:$african-tree-trunk;}
   .st1{fill:$african-tree-green;}
   .st2{fill:$african-tree-lightgreen;}
+  .st3{fill: var(--ground);}
 }
 
 .no-leaf {
