@@ -116,18 +116,29 @@ body.african {
     transform: translateX(-100vw) rotateZ(-1500deg);
   }
 }
+.bucket-animation {
+  -webkit-animation: pull 12s forwards;
+          animation: pull 12s forwards;
+}
+
 @-webkit-keyframes pull {
   100% {
     transform: translateY(-6.6vw);
     z-index: 1;
   }
 }
+
 @keyframes pull {
   100% {
     transform: translateY(-6.6vw);
     z-index: 1;
   }
 }
+.rope {
+  -webkit-animation: rope 12s forwards;
+          animation: rope 12s forwards;
+}
+
 @-webkit-keyframes rope {
   10% {
     height: 11vw;
@@ -137,6 +148,7 @@ body.african {
     z-index: 1;
   }
 }
+
 @keyframes rope {
   10% {
     height: 11vw;
@@ -146,6 +158,26 @@ body.african {
     z-index: 1;
   }
 }
+.growing-tree1 {
+  -webkit-animation: moving 3s forwards, growing 26s forwards;
+          animation: moving 3s forwards, growing 26s forwards;
+}
+
+.growing-tree2 {
+  -webkit-animation: moving 3s forwards, growing 27s forwards;
+          animation: moving 3s forwards, growing 27s forwards;
+}
+
+.growing-tree3 {
+  -webkit-animation: moving 3s forwards, growing 18s forwards;
+          animation: moving 3s forwards, growing 18s forwards;
+}
+
+.growing-tree4 {
+  -webkit-animation: moving 3s forwards, growing 23s forwards;
+          animation: moving 3s forwards, growing 23s forwards;
+}
+
 @-webkit-keyframes growing {
   10% {
     transform-origin: scaleY(100%) scaleX(100%);
@@ -154,6 +186,7 @@ body.african {
     transform: scaleY(800%) scaleX(650%);
   }
 }
+
 @keyframes growing {
   10% {
     transform-origin: scaleY(100%) scaleX(100%);
@@ -162,27 +195,27 @@ body.african {
     transform: scaleY(800%) scaleX(650%);
   }
 }
-@keyframes beat {
-  0% {
-    transform: translate(0);
-  }
-  50% {
-    transform: translate(-50px, 100px);
-  }
-  100% {
-    transform: translate(0);
-  }
+.handle-animation {
+  -webkit-animation: drag 4s linear 3;
+          animation: drag 4s linear 3;
 }
+
 @-webkit-keyframes drag {
   50% {
     transform: translateY(-6.5vw);
   }
 }
+
 @keyframes drag {
   50% {
     transform: translateY(-6.5vw);
   }
 }
+.handle-inner-animation {
+  -webkit-animation: drag-inner 4s linear 3;
+          animation: drag-inner 4s linear 3;
+}
+
 @-webkit-keyframes drag-inner {
   25% {
     height: 1vw;
@@ -197,6 +230,7 @@ body.african {
     transform: translateY(-1vw);
   }
 }
+
 @keyframes drag-inner {
   25% {
     height: 1vw;
@@ -227,6 +261,11 @@ body.african {
     transform: rotateY(360deg);
   }
 }
+#small-pond {
+  -webkit-animation: shrink 3s linear forwards;
+          animation: shrink 3s linear forwards;
+}
+
 @-webkit-keyframes shrink {
   10% {
     transform-origin: scaleY(100%) scaleX(100%);
@@ -235,6 +274,7 @@ body.african {
     transform: scaleY(50%) scaleX(50%);
   }
 }
+
 @keyframes shrink {
   10% {
     transform-origin: scaleY(100%) scaleX(100%);
@@ -275,6 +315,53 @@ body.african {
     transform: translateY(11vw);
   }
 }
+@-webkit-keyframes moving {
+  0% {
+    transform: translateX(10vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+@keyframes moving {
+  0% {
+    transform: translateX(10vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+@-webkit-keyframes reversemoving {
+  0% {
+    transform: translateX(-10vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+@keyframes reversemoving {
+  0% {
+    transform: translateX(-10vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+#trees-right, #lynx, .lion, .trees--african, .trees-african-2, .pond {
+  -webkit-animation: moving 3s linear forwards;
+          animation: moving 3s linear forwards;
+}
+
+.norwegian-house, .jacuzzi, .village {
+  -webkit-animation: reversemoving 3s linear forwards;
+          animation: reversemoving 3s linear forwards;
+}
+
+#well, #trees-left {
+  -webkit-animation: reversemoving 3s linear forwards;
+          animation: reversemoving 3s linear forwards;
+}
+
 body {
   margin: 0;
   width: 100vw;
@@ -400,6 +487,7 @@ main {
   top: -2vw;
   left: 1vw;
   position: absolute;
+  z-index: 2;
 }
 
 .lady {
@@ -874,8 +962,20 @@ main {
   position: absolute;
   width: 100vw;
   height: 100vw;
-  top: 23vw;
+  left: 20vw;
+  top: 12vw;
   z-index: 1;
+}
+
+#trees-left {
+  position: absolute;
+  right: 60vw;
+  top: -5vw;
+  width: 100vw;
+}
+
+#trees-right {
+  position: absolute;
 }
 
 .lynx {
@@ -1027,8 +1127,6 @@ main {
 #head {
   transform-origin: 50% 50%;
   transform-box: fill-box;
-  -webkit-animation: beat 4s infinite;
-          animation: beat 4s infinite;
   z-index: 1;
 }
 
@@ -1196,8 +1294,6 @@ main {
 #small-pond {
   position: absolute;
   z-index: 1;
-  -webkit-animation: shrink 3s linear forwards;
-          animation: shrink 3s linear forwards;
 }
 
 .growing-tree1 {
@@ -1206,8 +1302,6 @@ main {
   top: -53vw;
   right: 8.5vw;
   z-index: 1;
-  -webkit-animation: growing 26s forwards;
-          animation: growing 26s forwards;
 }
 
 .growing-tree2 {
@@ -1216,8 +1310,6 @@ main {
   top: -60vw;
   right: 5vw;
   z-index: 1;
-  -webkit-animation: growing 27s forwards;
-          animation: growing 27s forwards;
 }
 
 .growing-tree3 {
@@ -1226,8 +1318,6 @@ main {
   top: -58vw;
   right: 2vw;
   z-index: 1;
-  -webkit-animation: growing 18s forwards;
-          animation: growing 18s forwards;
 }
 
 .growing-tree4 {
@@ -1236,8 +1326,6 @@ main {
   top: -55vw;
   right: 10vw;
   z-index: 1;
-  -webkit-animation: growing 23s forwards;
-          animation: growing 23s forwards;
 }
 
 .tap {

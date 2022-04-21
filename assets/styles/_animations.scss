@@ -1,6 +1,7 @@
 #head {
   animation: beat 4s infinite;
 }
+
     @keyframes beat {
         0% {
           transform: translate(0);
@@ -61,16 +62,16 @@
     }
 
 .growing-tree1 {
-  animation: growing 26s forwards; 
+  animation: moving 3s forwards, growing 26s forwards; 
 }
 .growing-tree2 {
-  animation: growing 27s forwards; 
+  animation: moving 3s forwards, growing 27s forwards;
 }
 .growing-tree3 {
-  animation: growing 18s forwards; 
+  animation: moving 3s forwards, growing 18s forwards; 
 }
-.growing-tree3 {
-  animation: growing 23s forwards; 
+.growing-tree4 {
+  animation: moving 3s forwards, growing 23s forwards; 
 }
     @keyframes growing {
       10% {
@@ -150,4 +151,35 @@
     transform: translateY(11vw);
   }
 }
+
+@keyframes moving {
+  0% {
+    transform: translateX(10vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes reversemoving {
+  0% {
+    transform: translateX(-10vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+#trees-right, #lynx, .lion, .trees--african, .trees-african-2, .pond {
+  animation: moving 3s linear forwards;
+}
+
+.norwegian-house, .jacuzzi, .village {
+  animation: reversemoving 3s linear forwards;
+}
+
+#well, #trees-left {
+  animation: reversemoving 3s linear forwards;
+}
+
 
