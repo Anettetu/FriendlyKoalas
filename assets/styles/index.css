@@ -216,7 +216,7 @@ body.african {
     transform: rotate(0);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotateY(360deg);
   }
 }
 @keyframes spin {
@@ -224,41 +224,54 @@ body.african {
     transform: rotate(0);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotateY(360deg);
   }
 }
-@-webkit-keyframes drops {
-  from {
-    opacity: 1;
+@-webkit-keyframes shrink {
+  10% {
+    transform-origin: scaleY(100%) scaleX(100%);
   }
-  to {
-    opacity: 0;
+  100% {
+    transform: scaleY(50%) scaleX(50%);
   }
 }
+@keyframes shrink {
+  10% {
+    transform-origin: scaleY(100%) scaleX(100%);
+  }
+  100% {
+    transform: scaleY(50%) scaleX(50%);
+  }
+}
+/*
+@keyframes spin {
+  0% {
+     transform: rotate(0); 
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
 @keyframes drops {
   from {
     opacity: 1;
   }
-  to {
+
+  to { 
     opacity: 0;
   }
 }
-@-webkit-keyframes drip {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translateY(11vw);
-  }
-}
+
 @keyframes drip {
-  0% {
-    transform: translate(0, 0);
+   0% {
+    transform: translate(0, 0);    
   }
   100% {
     transform: translateY(11vw);
   }
 }
+*/
 body {
   margin: 0;
   width: 100vw;
@@ -301,7 +314,7 @@ main {
   top: 0;
 }
 
-.box1, .box2 {
+.box1, .box2, .box3 {
   position: absolute;
   height: 150vw;
   width: 40px;
@@ -314,6 +327,10 @@ main {
 
 .box2 {
   top: 500vw;
+}
+
+.box3 {
+  height: 500vw;
 }
 
 .leaf-trigger {
@@ -731,68 +748,75 @@ main {
   top: 30.8vw;
   left: 3vw;
 }
+.river .st0 {
+  fill: var(--riverst0);
+}
+.river .st1 {
+  fill: var(--riverst1);
+}
+.river .st2 {
+  fill: var(--riverst2);
+}
+.river .st3 {
+  fill: var(--riverst3);
+}
+.river .st4 {
+  fill: var(--riverst4);
+}
+.river .st5 {
+  fill: var(--riverst5);
+}
+.river .st6 {
+  fill: var(--riverst6);
+}
+.river .st7 {
+  fill: var(--riverst7);
+}
+.river .st8 {
+  fill: var(--riverst8);
+}
+.river .st9 {
+  fill: var(--riverst9);
+}
+.river .st10 {
+  fill: var(--riverst10);
+}
+.river .st11 {
+  fill: var(--ground);
+}
+.river .st12 {
+  fill: var(--riverst12);
+}
+.river .st13 {
+  fill: var(--riverst13);
+}
+.river .st14 {
+  fill: var(--riverst14);
+}
 .river__img {
   width: 60vw;
   height: 27.2vw;
   overflow: hidden;
 }
 
+#river-dry .st13 {
+  fill: var(--riverst12);
+}
+#river-dry .st14 {
+  fill: var(--riverst13);
+}
+
 #river > * {
   transition: 2s;
 }
 
-#river {
+#river, #river-dry {
   width: 74vw;
   height: 40vw;
   position: relative;
   top: -5vw;
   -o-object-fit: cover;
      object-fit: cover;
-}
-#river .st0 {
-  fill: var(--riverst0);
-}
-#river .st1 {
-  fill: var(--riverst1);
-}
-#river .st2 {
-  fill: var(--riverst2);
-}
-#river .st3 {
-  fill: var(--riverst3);
-}
-#river .st4 {
-  fill: var(--riverst4);
-}
-#river .st5 {
-  fill: var(--riverst5);
-}
-#river .st6 {
-  fill: var(--riverst6);
-}
-#river .st7 {
-  fill: var(--riverst7);
-}
-#river .st8 {
-  fill: var(--riverst8);
-}
-#river .st9 {
-  fill: var(--riverst9);
-}
-#river .st10 {
-  fill: var(--riverst10);
-}
-#river .st11 {
-  fill: var(--ground);
-}
-#river .st12 {
-  fill: var(--riverst12);
-}
-#river .st13 {
-  fill: var(--riverst13);
-}
-#river .st14 {
-  fill: var(--riverst14);
 }
 
 #cover {
@@ -883,6 +907,10 @@ main {
 }
 .water-tap > * .st1 {
   fill: #727272;
+}
+
+.water-tap > svg {
+  width: 98vw;
 }
 
 .trees--african {
@@ -1068,51 +1096,31 @@ main {
 .tumbleweed {
   position: absolute;
   width: 8vw;
-  top: -55vw;
+  top: -52vw;
   left: 90vw;
 }
 
 .village {
   position: absolute;
-  width: 25vw;
-  top: -79vw;
-  left: 15vw;
+  width: 30vw;
+  top: -77vw;
+  left: 8vw;
 }
 
-.small-trees-african-2 {
+.trees-african-2 {
   position: absolute;
-  width: 100vw;
-  top: -94vw;
-  left: 26vw;
+  width: 50vw;
+  top: -74.5vw;
+  left: 57vw;
   z-index: 1;
 }
-.small-trees-african-2 .st0 {
+.trees-african-2 .st0 {
   fill: #824106;
 }
-.small-trees-african-2 .st1 {
-  fill: var(--ground);
-}
-.small-trees-african-2 .st2 {
+.trees-african-2 .st1 {
   fill: #7CAE18;
 }
-.small-trees-african-2 .st3 {
-  fill: #91B549;
-}
-
-.big-trees-african-2 {
-  position: absolute;
-  width: 100vw;
-  top: -97.5vw;
-  left: 36vw;
-  z-index: 1;
-}
-.big-trees-african-2 .st0 {
-  fill: #824106;
-}
-.big-trees-african-2 .st1 {
-  fill: #7CAE18;
-}
-.big-trees-african-2 .st2 {
+.trees-african-2 .st2 {
   fill: #91B549;
 }
 
@@ -1129,9 +1137,23 @@ main {
 .pond {
   position: absolute;
   width: 20vw;
-  top: -73vw;
-  left: 75vw;
+  top: -72vw;
+  left: 65vw;
+}
+
+#big-pond {
+  position: absolute;
+  left: -40vw;
+  top: -16.7vw;
+  width: 100vw;
   z-index: 1;
+}
+
+#small-pond {
+  position: absolute;
+  z-index: 2;
+  -webkit-animation: shrink 3s linear forwards;
+          animation: shrink 3s linear forwards;
 }
 
 .growing-tree1 {
@@ -1174,16 +1196,40 @@ main {
           animation: growing 23s forwards;
 }
 
-.tap-handle {
-  z-index: 2;
+.tap {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.tap__container {
+  position: relative;
+  top: 21vw;
+  left: 49.7vw;
+}
+.tap__center {
+  background-color: #727272;
+  height: 3vw;
+  width: 5vw;
+  border-radius: 50%;
+}
+.tap__circle {
+  height: 2.8vw;
   position: absolute;
-  width: 100vw;
-  height: 100vw;
-  top: -36.5vw;
-  left: 9vw;
-  background-color: transparent;
-  -webkit-animation: spin 3s infinite linear;
-          animation: spin 3s infinite linear;
+  width: 2vw;
+  top: 0.1vw;
+  background-color: #727272;
+  border-radius: 50%;
+}
+.tap__circle-container {
+  position: relative;
+  -webkit-animation: spin 4s linear infinite;
+          animation: spin 4s linear infinite;
+}
+.tap__circle:nth-last-of-type(2n) {
+  right: -1.3vw;
+}
+.tap__circle:nth-last-of-type(2n-1) {
+  left: -1.3vw;
 }
 
 #handling {
@@ -1193,4 +1239,12 @@ main {
   height: 100vw;
   top: 5.3vw;
   left: -3.2vw;
+}
+
+.lion {
+  position: absolute;
+  top: -63vw;
+  left: 48vw;
+  width: 16vw;
+  z-index: 2;
 }/*# sourceMappingURL=index.css.map */
