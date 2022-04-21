@@ -39,9 +39,8 @@ main {
     top: 0;
 }
 
-.box1, .box2 {
+.box1, .box2, .box3 {
     position: absolute;
-    
     height: 150vw;
     width: 40px;
 }
@@ -53,6 +52,11 @@ main {
 .box2{
     top: 500vw;
 }
+
+.box3 {
+    height: 500vw;
+}
+
 .leaf-trigger {
     position: absolute;
     top: 400vw;
