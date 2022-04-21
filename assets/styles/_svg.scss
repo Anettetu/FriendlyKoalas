@@ -86,7 +86,7 @@
   z-index: 1;
 }
 
-#well1 {
+#well {
     position: absolute;
     width: 25vw;
     top: 3vw;
@@ -105,6 +105,23 @@
         .st9{fill:$well-wood-2;}
         .st10{fill:$well-top;}
 }
+
+.handle-inner-animation {
+  animation: drag-inner 4s linear 3;
+}
+
+.rope-animation {
+  animation: rope 12s forwards;
+}
+
+.handle-animation {
+  animation: drag 4s linear 3;
+}
+
+.bucket-animation{
+  animation: pull 12s forwards;
+}
+
 
 .norwegian-house {
   position: absolute;
@@ -160,13 +177,13 @@
 .trees-african-2 {
   position: absolute;
   width: 50vw;
-  top: -61.5vw;
-  left: 57vw;
+  top: -84.5vw;
+  left: 49vw;
   z-index: 1;
   .st0{fill:$african-tree-trunk;}
-  .st1{fill:$african-tree-green;}
-  .st2{fill:$african-tree-lightgreen;}
-  .st3{fill: var(--ground);}
+  .st2{fill:$african-tree-green;}
+  .st3{fill:$african-tree-lightgreen;}
+  .st1{fill: var(--ground);}
 }
 
 .no-leaf {

@@ -3,6 +3,11 @@ const frameOneTwo = document.querySelector('#frame1-2');
 const frame2 = document.querySelector('#frame2');
 const frame3 = document.querySelector('#frame3');
 const frame4 = document.querySelector('#frame4');
+
+const innerHandle = document.querySelector('#handle-inner');
+const handle = document.querySelector('#handle');
+const rope = document.querySelector('#rope');
+const bucket = document.querySelector('#bucket');
 const river = document.querySelector('#river');
 const forrest2 = document.querySelector('#african-forrest2');
 const forrest = document.querySelector('#african-forrest');
@@ -15,6 +20,7 @@ const box1Scroller = scrollama();
 const box2Scroller = scrollama();
 const box3Scroller = scrollama();
 const box4Scroller = scrollama();
+const wellAnimation = scrollama();
 const noLeaf = scrollama();
 
 box1Scroller
@@ -97,4 +103,22 @@ box1Scroller
         forrest2.classList.remove('no-leaf');
         forrest.classList.remove('no-leaf');
         river.style.display = 'block';
+    })
+
+    wellAnimation
+    .setup({
+        step: '.box__5'
+    })
+    .onStepEnter(() => {
+        rope.classList.add('rope-animation');
+        bucket.classList.add('bucket-animation');
+        innerHandle.classList.add('handle-inner-animation');
+        handle.classList.add('handle-animation');
+
+    })
+    .onStepExit(() => {
+        rope.classList.remove('rope-animation');
+        bucket.classList.remove('bucket-animation');
+        innerHandle.classList.remove('handle-inner-animation');
+        handle.classList.remove('handle-animation');
     })
