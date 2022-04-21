@@ -163,22 +163,22 @@
 .tumbleweed {
   position: absolute;
   width: 8vw;
-  top: -55vw;
+  top: -52vw;
   left: 90vw;
 
 }
 
 .village {
   position: absolute;
-  width: 25vw;
-  top: -79vw;
-  left: 15vw;
+  width: 30vw;
+  top: -78vw;
+  left: 8vw;
 }
 
 .small-trees-african-2 {
   position: absolute;
   width: 100vw;
-  top: -94vw;
+  top: -92vw;
   left: 26vw;
   z-index: 1;
   .st0{fill:$african-tree-trunk;}
@@ -192,7 +192,7 @@
 .big-trees-african-2 {
   position: absolute;
   width: 100vw;
-  top: -97.5vw;
+  top: -95.5vw;
   left: 36vw;
   z-index: 1;
   .st0{fill:$african-tree-trunk;}
@@ -208,9 +208,22 @@
 .pond {
   position: absolute;
   width: 20vw;
-  top: -73vw;
-  left: 75vw;
+  top: -72vw;
+  left: 65vw;
+}
+
+#big-pond {
+  position: absolute;
+  left: -40vw;
+  top: -16.7vw;
+  width: 100vw;
   z-index: 1;
+}
+
+#small-pond {
+  position: absolute;
+  z-index: 2;
+  animation: shrink 3s linear forwards;
 }
 
 .growing-tree1 {
@@ -292,6 +305,14 @@
   height: 100vw;
   top: 5.3vw;
   left: -3.2vw;
+}
+
+.lion {
+  position: absolute;
+  top: -63vw;
+  left: 48vw;
+  width: 16vw;
+  z-index: 2;
 }
 
 
