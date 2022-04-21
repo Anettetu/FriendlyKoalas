@@ -39,22 +39,24 @@ main {
     top: 0;
 }
 
-.box1, .box2, .box3 {
+.box {
     position: absolute;
-    height: 150vw;
     width: 40px;
-}
-.box1 {
+
+    &__1 {
     top: 0;
     height: 250vw;
-}
-
-.box2{
-    top: 500vw;
-}
-
-.box3 {
+    }
+    &__2 {
+    height: 150vw;
+    top: 500vw;    
+    }
+    &__3 {
     height: 500vw;
+    }
+    &__4 {
+    height: 550;
+    }
 }
 
 .leaf-trigger {

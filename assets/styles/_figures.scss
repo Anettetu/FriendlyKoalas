@@ -1,28 +1,29 @@
   .drops {
-    animation: drip 6s infinite, drops 6s infinite;
     width: 5vw;
+    position: relative;
+    left: 45vw;
+    top: 20.7vw;
+  }
+
+  .drops > img {
+    animation: drip 6s infinite, drops 6s infinite;
     position: absolute;
-    margin-left: 51.7vw;
-    top: 22.6vw;
-    z-index: 1;
+    top: -3vw;
+    left: -0.9vw;
   }
 
   .cover-water {
     width: 4vw;
     height: 4vw;
     background-color: $tap;
-    margin-left: 52.3vw;
-    margin-top: 24.9vw;
     position: absolute;
-    z-index: 2;
   }
   
   .cover-water1 {
     width: 2vw;
     height: 3vw;
     background-color: $tap;
-    margin-left: 53.5vw;
-    margin-top: 23vw;
+    top: -2vw;
+    left: 1vw;
     position: absolute;
-    z-index: 2;
   }

@@ -15,11 +15,12 @@ let lastFrames
 const box1Scroller = scrollama();
 const box2Scroller = scrollama();
 const box3Scroller = scrollama();
+const box4Scroller = scrollama();
 const noLeaf = scrollama();
 
 box1Scroller
     .setup({
-        step: '.box1'
+        step: '.box__1'
     })
     .onStepEnter(() => {
         frame1.classList.remove('hidden');
@@ -42,7 +43,7 @@ box1Scroller
 
     box2Scroller
     .setup({
-        step: '.box2'
+        step: '.box__2'
     })
     .onStepEnter(() => {
         frame3.classList.remove('hidden');
@@ -61,15 +62,25 @@ box1Scroller
 
     box3Scroller
     .setup({
-        step: '.box3'
+        step: '.box__3'
     })
     .onStepEnter(() => {
         frameOneTwo.classList.remove('hidden');
         frame2.classList.remove('hidden');
-        lastFrames = false;
+        
     })
     .onStepExit(() => {
         frameOneTwo.classList.add('hidden');
+    })
+
+    box4Scroller
+    .setup({
+        step: '.box__4'
+    })
+    .onStepEnter(() => {
+        lastFrames = false;
+    })
+    .onStepExit(() => {
         lastFrames = true;
     })
 
