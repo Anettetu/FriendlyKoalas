@@ -10,6 +10,7 @@ const handle = document.querySelector('#handle');
 const rope = document.querySelector('#rope');
 const bucket = document.querySelector('#bucket');
 const river = document.querySelector('#river');
+const smallPond = document.querySelector('#small-pond');
 const forrest2 = document.querySelector('#african-forrest2');
 const forrest = document.querySelector('#african-forrest');
 const riverCover = document.querySelector('#cover');
@@ -101,11 +102,13 @@ box1Scroller
         forrest2.classList.add('no-leaf');
         forrest.classList.add('no-leaf');
         river.style.display = 'none';
+        smallPond.classList.add('smaller-pond');
     })
     .onStepExit(() => {
         forrest2.classList.remove('no-leaf');
         forrest.classList.remove('no-leaf');
         river.style.display = 'block';
+        smallPond.classList.remove('smaller-pond');
     })
 
     wellAnimation

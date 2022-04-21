@@ -6,7 +6,7 @@
           transform: translate(0);
         }
         50% {
-          transform: translate(-50px, 100px);
+          transform: translate(-3vw, 7vw);
         }
         100%{
           transform: translate(0);
@@ -35,7 +35,7 @@
       }
     }
 
-.rope {
+.rope-animation {
   animation: rope 12s forwards;
 }
     @keyframes rope {
@@ -110,19 +110,16 @@
       }
     }
 
-#small-pond{
-  animation: shrink 3s linear forwards;
+#small-pond {
+  transition: 2s;
 }
-    @keyframes shrink {
-      10% {
-        transform-origin: scaleY(100%) scaleX(100%);
-      }
-      
-      100% {
-        transform: scaleY(50%) scaleX(50%);
-      }
-    }
 
+
+.smaller-pond{
+  animation: shrink 3s linear forwards;
+  transform: scaleY(50%) scaleX(50%);
+  transition: 2s;
+}
 
 .drops > img {
   animation: drip 6s infinite, drops 6s infinite;
