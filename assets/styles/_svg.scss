@@ -12,7 +12,7 @@
     height: 15vw;
     top: 43vw;
     left: 51vw;
-    z-index: 2;
+    z-index: 1;
     .st0{fill:$orange-1;}
 	  .st1{fill:$light-brown;stroke:$black-3;stroke-width:0.1;}
 	  .st2{fill:$yellow-white;}
@@ -208,7 +208,7 @@
 
 #small-pond {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   animation: shrink 3s linear forwards;
 }
 
@@ -217,7 +217,7 @@
   width: 16vw;
   top: -53vw;
   right: 8.5vw;
-  z-index: 2;
+  z-index: 1;
   animation: growing 26s forwards; 
 }
 
@@ -298,7 +298,16 @@
   top: -63vw;
   left: 48vw;
   width: 16vw;
-  z-index: 2;
+  z-index: 1;
+}
+
+#lady-1 {
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  top: 20vw;
+  left: -10vw;
+  z-index: 5;
 }
 
 

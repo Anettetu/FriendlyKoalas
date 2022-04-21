@@ -302,3 +302,57 @@
     position: absolute;
     z-index: 2;
   }
+
+  .lady {
+    position: relative;
+    font-family: Georgia;
+    width: 30vw;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    background-color: $white;
+    border-radius: 5vw;
+    padding: 2vw;
+    text-align: center;
+    color: $black-2;
+    z-index:2;
+  }
+  
+  .lady__bubble:before {
+    content: "";
+    position: absolute;
+    border-right: 2vw solid transparent;
+    border-bottom: 2vw solid $white;
+    border-left: 2vw solid transparent;
+    border-top: 1vw solid transparent;
+    width: 0vw;
+    height: 0vw;
+    background-color: transparent;
+    left: 1.7vw;
+    transform: rotate(-45deg);
+    bottom: -1.6vw;
+    }
+
+.talking-box {
+  position: absolute;
+  bottom: 70vw;
+  left: 11vw;
+}
+
+.talking-lady {
+  position: absolute;
+  height: 100vw;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.blur {
+  position: absolute;
+  filter: opacity(80%);
+  height: 100vw;
+  width: 100vw;
+  z-index: 1;
+  background: white;
+
+}
