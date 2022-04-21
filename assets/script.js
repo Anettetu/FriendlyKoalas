@@ -4,6 +4,7 @@ const frame2 = document.querySelector('#frame2');
 const frame3 = document.querySelector('#frame3');
 const frame4 = document.querySelector('#frame4');
 
+const frame4Block = document.querySelector('#frame4-block');
 const innerHandle = document.querySelector('#handle-inner');
 const handle = document.querySelector('#handle');
 const rope = document.querySelector('#rope');
@@ -34,7 +35,7 @@ box1Scroller
         body.classList.remove('african');
         sun.classList.remove('sun-african');
         river.classList.remove('hidden');
-        riverCover.classList.add('hidden'); 
+        riverCover.classList.remove('move-down'); 
         frameOneTwo.classList.remove('hidden');
     })
     .onStepExit(() => {
@@ -42,7 +43,7 @@ box1Scroller
         frame2.classList.remove('hidden');
         body.classList.add('african');
         sun.classList.add('sun-african');
-        riverCover.classList.remove('hidden');
+        riverCover.classList.add('move-down');
         console.log('hei');
     })
 
@@ -72,11 +73,13 @@ box1Scroller
     })
     .onStepEnter(() => {
         frameOneTwo.classList.remove('hidden');
+        frame4Block.classList.add('hidden');
         frame2.classList.remove('hidden');
         
     })
     .onStepExit(() => {
         frameOneTwo.classList.add('hidden');
+        frame4Block.classList.remove('hidden');
     })
 
     box4Scroller
