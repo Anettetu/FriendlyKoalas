@@ -78,25 +78,9 @@ body.african {
     transform: translate(0);
   }
 }
-@-webkit-keyframes rotate-s-loader {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotate-s-loader {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .tumbleweed {
-  -webkit-animation: tumbling 5s infinite;
-          animation: tumbling 5s infinite;
+  -webkit-animation: tumbling 9s infinite;
+          animation: tumbling 9s infinite;
 }
 
 @-webkit-keyframes tumbling {
@@ -245,6 +229,11 @@ body.african {
     transform: translateY(-1vw);
   }
 }
+.tap__circle-container {
+  -webkit-animation: spin 4s linear infinite;
+          animation: spin 4s linear infinite;
+}
+
 @-webkit-keyframes spin {
   0% {
     transform: rotate(0);
@@ -253,6 +242,7 @@ body.african {
     transform: rotateY(360deg);
   }
 }
+
 @keyframes spin {
   0% {
     transform: rotate(0);
@@ -283,6 +273,11 @@ body.african {
     transform: scaleY(50%) scaleX(50%);
   }
 }
+.drops > img {
+  -webkit-animation: drip 6s infinite, drops 6s infinite;
+          animation: drip 6s infinite, drops 6s infinite;
+}
+
 @-webkit-keyframes drops {
   from {
     opacity: 1;
@@ -291,6 +286,7 @@ body.african {
     opacity: 0;
   }
 }
+
 @keyframes drops {
   from {
     opacity: 1;
@@ -421,8 +417,6 @@ main {
 }
 
 .drops > img {
-  -webkit-animation: drip 6s infinite, drops 6s infinite;
-          animation: drip 6s infinite, drops 6s infinite;
   position: absolute;
   top: -3vw;
   left: -0.9vw;
@@ -491,7 +485,7 @@ main {
 
 .blur {
   position: absolute;
-  filter: opacity(80%);
+  filter: opacity(75%);
   height: 100vw;
   width: 100vw;
   z-index: 1;
@@ -1007,7 +1001,7 @@ main {
 .trees--african {
   position: relative;
   top: -75vw;
-  left: 40vw;
+  left: 60vw;
   height: 20vw;
   width: 55vw;
   z-index: 1;
@@ -1126,26 +1120,6 @@ main {
 }
 #well .st10 {
   fill: #C4C4C4;
-}
-
-.handle-inner-animation {
-  -webkit-animation: drag-inner 4s linear 3;
-          animation: drag-inner 4s linear 3;
-}
-
-.rope-animation {
-  -webkit-animation: rope 12s forwards;
-          animation: rope 12s forwards;
-}
-
-.handle-animation {
-  -webkit-animation: drag 4s linear 3;
-          animation: drag 4s linear 3;
-}
-
-.bucket-animation {
-  -webkit-animation: pull 12s forwards;
-          animation: pull 12s forwards;
 }
 
 .norwegian-house {
@@ -1304,8 +1278,6 @@ main {
 }
 .tap__circle-container {
   position: relative;
-  -webkit-animation: spin 4s linear infinite;
-          animation: spin 4s linear infinite;
 }
 .tap__circle:nth-last-of-type(2n) {
   right: -1.3vw;
