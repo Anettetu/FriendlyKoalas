@@ -1,4 +1,5 @@
 const frame1 = document.querySelector('#frame1');
+const frameOneTwo = document.querySelector('#frame1-2');
 const frame2 = document.querySelector('#frame2');
 const frame3 = document.querySelector('#frame3');
 const frame4 = document.querySelector('#frame4');
@@ -9,8 +10,11 @@ const forrest = document.querySelector('#african-forrest');
 const riverCover = document.querySelector('#cover');
 const body = document.querySelector('body');
 const sun = document.querySelector('#sun');
+let lastFrames
+
 const box1Scroller = scrollama();
 const box2Scroller = scrollama();
+const box3Scroller = scrollama();
 const noLeaf = scrollama();
 
 box1Scroller
@@ -25,6 +29,7 @@ box1Scroller
         sun.classList.remove('sun-african');
         river.classList.remove('hidden');
         riverCover.classList.add('hidden'); 
+        frameOneTwo.classList.remove('hidden');
     })
     .onStepExit(() => {
         frame1.classList.add('hidden');
@@ -49,10 +54,23 @@ box1Scroller
     })
     .onStepExit(() => {
         frame3.classList.add('hidden');
-        frame4.classList.remove('hidden');
         body.classList.add('african');
         sun.classList.add('sun-african');
-        console.log('hei');
+        if (lastFrames) frame4.classList.remove('hidden');
+    })
+
+    box3Scroller
+    .setup({
+        step: '.box3'
+    })
+    .onStepEnter(() => {
+        frameOneTwo.classList.remove('hidden');
+        frame2.classList.remove('hidden');
+        lastFrames = false;
+    })
+    .onStepExit(() => {
+        frameOneTwo.classList.add('hidden');
+        lastFrames = true;
     })
 
     noLeaf
@@ -63,9 +81,11 @@ box1Scroller
         bigTrees.classList.add('no-leaf');
         smallTrees.classList.add('no-leaf');
         forrest.classList.add('no-leaf');
+        river.style.display = 'none';
     })
     .onStepExit(() => {
         bigTrees.classList.remove('no-leaf');
         smallTrees.classList.remove('no-leaf');
         forrest.classList.remove('no-leaf');
+        river.style.display = 'block';
     })
