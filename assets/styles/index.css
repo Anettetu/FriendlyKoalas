@@ -402,6 +402,59 @@ main {
   position: absolute;
 }
 
+.lady {
+  position: relative;
+  font-family: Georgia;
+  width: 30vw;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  background-color: white;
+  border-radius: 5vw;
+  padding: 2vw;
+  text-align: center;
+  color: #0D0C0C;
+  z-index: 2;
+}
+
+.lady__bubble:before {
+  content: "";
+  position: absolute;
+  border-right: 2vw solid transparent;
+  border-bottom: 2vw solid white;
+  border-left: 2vw solid transparent;
+  border-top: 1vw solid transparent;
+  width: 0vw;
+  height: 0vw;
+  background-color: transparent;
+  left: 1.7vw;
+  transform: rotate(-45deg);
+  bottom: -1.6vw;
+}
+
+.talking-box {
+  position: absolute;
+  bottom: 70vw;
+  left: 11vw;
+}
+
+.talking-lady {
+  position: absolute;
+  height: 100vw;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.blur {
+  position: absolute;
+  filter: opacity(80%);
+  height: 100vw;
+  width: 100vw;
+  z-index: 1;
+  background: white;
+}
+
 .intro {
   height: 58vw;
   background: #a2caf0;
@@ -831,7 +884,7 @@ main {
   height: 15vw;
   top: 43vw;
   left: 51vw;
-  z-index: 2;
+  z-index: 1;
 }
 .lynx .st0 {
   fill: #DD944F;
@@ -1142,7 +1195,7 @@ main {
 
 #small-pond {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   -webkit-animation: shrink 3s linear forwards;
           animation: shrink 3s linear forwards;
 }
@@ -1152,7 +1205,7 @@ main {
   width: 16vw;
   top: -53vw;
   right: 8.5vw;
-  z-index: 2;
+  z-index: 1;
   -webkit-animation: growing 26s forwards;
           animation: growing 26s forwards;
 }
@@ -1237,5 +1290,14 @@ main {
   top: -63vw;
   left: 48vw;
   width: 16vw;
-  z-index: 2;
+  z-index: 1;
+}
+
+#lady-1 {
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  top: 20vw;
+  left: -10vw;
+  z-index: 5;
 }/*# sourceMappingURL=index.css.map */
