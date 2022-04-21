@@ -335,6 +335,10 @@ main {
 .box__4 {
   height: 520vw;
 }
+.box__5 {
+  top: 80vw;
+  height: 180vw;
+}
 
 .leaf-trigger {
   position: absolute;
@@ -485,26 +489,6 @@ main {
 
 .sun {
   background-color: hsl(43deg, 94%, 72%);
-}
-
-.pond__water > * {
-  background-color: hsl(183deg, 51%, 51%);
-}
-
-.pond__bubble:nth-of-type(1), .pond__bubble:nth-of-type(2), .pond__bubble:nth-of-type(3), .pond__bubble:nth-of-type(4), .pond__bubble:nth-of-type(5), .pond__bubble:nth-of-type(6), .pond__bubble:nth-of-type(7), .pond__bubble:nth-of-type(8), .pond__bubble:nth-of-type(13), .pond__bubble:nth-of-type(14) {
-  background-color: hsl(183deg, 47%, 59%);
-}
-
-.pond__bubble:nth-of-type(9), .pond__bubble:nth-of-type(10), .pond__bubble:nth-of-type(11), .pond__bubble:nth-of-type(12) {
-  background-color: hsl(183deg, 54%, 74%);
-}
-
-.edge__1:nth-of-type(1), .edge__2:nth-of-type(2), .edge__3:nth-of-type(3), .edge__4:nth-of-type(4) {
-  background-color: hsl(31deg, 75%, 48%);
-}
-
-.edge__5:nth-of-type(5), .edge__6:nth-of-type(6), .edge__7:nth-of-type(7), .edge__8:nth-of-type(8), .edge__9:nth-of-type(9), .edge__10:nth-of-type(10) {
-  background-color: hsl(29deg, 41%, 50%);
 }
 
 .sky {
@@ -995,51 +979,51 @@ main {
   z-index: 1;
 }
 
-#well1 {
+#well {
   position: absolute;
   width: 25vw;
   top: 3vw;
   left: -56vw;
   z-index: 1;
 }
-#well1 .st0 {
+#well .st0 {
   fill: none;
   stroke: #000000;
   stroke-width: 0.5;
 }
-#well1 .st1 {
+#well .st1 {
   fill: #6C4949;
   stroke: #000000;
   stroke-width: 0.5;
 }
-#well1 .st2 {
+#well .st2 {
   fill: #6C4949;
 }
-#well1 .st3 {
+#well .st3 {
   fill: #3586FF;
 }
-#well1 .st4 {
+#well .st4 {
   fill: none;
   stroke: #000000;
   stroke-width: 0.6;
 }
-#well1 .st5 {
+#well .st5 {
   fill: #583C2C;
   fill-opacity: 1;
 }
-#well1 .st6 {
+#well .st6 {
   fill: #A3765D;
 }
-#well1 .st7 {
+#well .st7 {
   fill: #A4A4A4;
 }
-#well1 .st8 {
+#well .st8 {
   fill: #727272;
 }
-#well1 .st9 {
+#well .st9 {
   fill: #A8643E;
 }
-#well1 .st10 {
+#well .st10 {
   fill: #C4C4C4;
 }
 
@@ -1048,7 +1032,7 @@ main {
           animation: drag-inner 4s linear 3;
 }
 
-.rope {
+.rope-animation {
   -webkit-animation: rope 12s forwards;
           animation: rope 12s forwards;
 }
@@ -1114,20 +1098,20 @@ main {
 .trees-african-2 {
   position: absolute;
   width: 50vw;
-  top: -74.5vw;
-  left: 57vw;
+  top: -84.5vw;
+  left: 49vw;
   z-index: 1;
 }
 .trees-african-2 .st0 {
   fill: #824106;
 }
-.trees-african-2 .st1 {
+.trees-african-2 .st2 {
   fill: #7CAE18;
 }
-.trees-african-2 .st2 {
+.trees-african-2 .st3 {
   fill: #91B549;
 }
-.trees-african-2 .st3 {
+.trees-african-2 .st1 {
   fill: var(--ground);
 }
 
