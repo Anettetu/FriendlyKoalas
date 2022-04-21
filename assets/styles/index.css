@@ -243,35 +243,38 @@ body.african {
     transform: scaleY(50%) scaleX(50%);
   }
 }
-/*
-@keyframes spin {
-  0% {
-     transform: rotate(0); 
+@-webkit-keyframes drops {
+  from {
+    opacity: 1;
   }
-  100% {
-      transform: rotate(360deg);
+  to {
+    opacity: 0;
   }
 }
-
 @keyframes drops {
   from {
     opacity: 1;
   }
-
-  to { 
+  to {
     opacity: 0;
   }
 }
-
-@keyframes drip {
-   0% {
-    transform: translate(0, 0);    
+@-webkit-keyframes drip {
+  0% {
+    transform: translate(0, 0);
   }
   100% {
     transform: translateY(11vw);
   }
 }
-*/
+@keyframes drip {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translateY(11vw);
+  }
+}
 body {
   margin: 0;
   width: 100vw;
@@ -604,33 +607,34 @@ main {
 }
 
 .drops {
+  width: 5vw;
+  position: relative;
+  left: 45vw;
+  top: 20.7vw;
+}
+
+.drops > img {
   -webkit-animation: drip 6s infinite, drops 6s infinite;
           animation: drip 6s infinite, drops 6s infinite;
-  width: 5vw;
   position: absolute;
-  margin-left: 51.7vw;
-  top: 22.6vw;
-  z-index: 1;
+  top: -3vw;
+  left: -0.9vw;
 }
 
 .cover-water {
   width: 4vw;
   height: 4vw;
   background-color: hsl(0deg, 0%, 44%);
-  margin-left: 52.3vw;
-  margin-top: 24.9vw;
   position: absolute;
-  z-index: 2;
 }
 
 .cover-water1 {
   width: 2vw;
   height: 3vw;
   background-color: hsl(0deg, 0%, 44%);
-  margin-left: 53.5vw;
-  margin-top: 23vw;
+  top: -2vw;
+  left: 1vw;
   position: absolute;
-  z-index: 2;
 }
 
 .intro {
