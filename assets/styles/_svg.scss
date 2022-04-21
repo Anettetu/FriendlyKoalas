@@ -2,8 +2,20 @@
     position: absolute;
     width: 100vw;
     height: 100vw;
-    top: 23vw;
+    left: 20vw;
+    top: 12vw;
     z-index: 1;
+}
+
+#trees-left {
+  position: absolute;
+  right: 60vw;
+  top: -5vw;
+  width: 100vw;
+}
+
+#trees-right {
+  position: absolute;
 }
 
 .lynx {
