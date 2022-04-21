@@ -106,23 +106,6 @@
         .st10{fill:$well-top;}
 }
 
-.handle-inner-animation {
-  animation: drag-inner 4s linear 3;
-}
-
-.rope-animation {
-  animation: rope 12s forwards;
-}
-
-.handle-animation {
-  animation: drag 4s linear 3;
-}
-
-.bucket-animation{
-  animation: pull 12s forwards;
-}
-
-
 .norwegian-house {
   position: absolute;
   width: 62vw;
@@ -270,7 +253,6 @@
     }
     &__circle-container {
     position: relative;
-    animation: spin 4s linear infinite
     }
     &__circle:nth-last-of-type(2n) {
     right: -1.3vw;

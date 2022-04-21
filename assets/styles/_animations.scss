@@ -13,19 +13,9 @@
         }
     }
 
-@keyframes rotate-s-loader {
-    from {
-      transform: rotate(0);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
 .tumbleweed {
   animation: tumbling 5s infinite;
 }
-
     @keyframes tumbling {
       0% {
         transform: translateX(0);
@@ -38,7 +28,6 @@
 .bucket-animation{
   animation: pull 12s forwards;
 }
-
     @keyframes pull {
       100% {
         transform: translateY(-6.6vw);
@@ -109,14 +98,17 @@
       }
     }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
+.tap__circle-container{
+  animation: spin 4s linear infinite    
 }
+    @keyframes spin {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotateY(360deg);
+      }
+    }
 
 #small-pond{
   animation: shrink 3s linear forwards;
@@ -132,22 +124,25 @@
     }
 
 
-@keyframes drops {
-  from {
-    opacity: 1;
-  }
-  
-  to { 
-    opacity: 0;
-  }
+.drops > img {
+  animation: drip 6s infinite, drops 6s infinite;
 }
+    @keyframes drops {
+      from {
+        opacity: 1;
+      }
+      
+      to { 
+        opacity: 0;
+      }
+    }
 
-@keyframes drip {
-   0% {
-    transform: translate(0, 0);    
-  }
-  100% {
-    transform: translateY(11vw);
-  }
-}
+    @keyframes drip {
+      0% {
+        transform: translate(0, 0);    
+      }
+      100% {
+        transform: translateY(11vw);
+      }
+    }
 
