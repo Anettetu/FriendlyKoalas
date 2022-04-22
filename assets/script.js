@@ -16,6 +16,7 @@ const bucket = document.querySelector('#bucket');
 const river = document.querySelector('#river');
 const smallPond = document.querySelector('#small-pond');
 const forrest2 = document.querySelector('#african-forrest2');
+const endFooter = document.querySelector('#end-footer');
 const forrest = document.querySelector('#african-forrest');
 const riverCover = document.querySelector('#cover');
 const body = document.querySelector('body');
@@ -28,8 +29,7 @@ const bubble3="In the world, billions of people still lack access to safe drinki
 const bubble4="Due to climate change, the temperature around the world keeps increasing and is predicted to continue growing. This causes water sources to dry out."
 const bubble5="A sprinkler uses between 1000 and 1500 liters an hour, while a jacuzzi needs about 1000 liters of water."
 const bubble6="In Norway one person use around 180 liters of water a day. In some of the poorest countries, a regular person uses about 10 liters a day."
-const bubble7="Access to clean water can save about 16.000 people, each week!"
-const bubble8= "When the water sources dry out, the one thing that could help would be wells. But digging and building wells costs money. The poorer parts of the world could use our help in aid when it comes to this."
+const bubble7="Access to clean water can save about 16.000 people, each week! When the water sources dry out, the one thing that could help would be wells. But digging and building wells costs money. The poorer parts of the world could use our help in aid when it comes to this."
 
 const listTitle = "How can you help?"
 const item1= "Don’t let the water run when brushing your teeth."
@@ -65,7 +65,7 @@ const ladyScroll4 = scrollama();
 const ladyScroll5 = scrollama();
 const ladyScroll6 = scrollama();
 const ladyScroll7 = scrollama();
-const ladyScroll13 = scrollama();
+const ladyScroll8 = scrollama();
 const noLeaf = scrollama();
 
 box1Scroller
@@ -282,23 +282,26 @@ ladyScroll7
     .onStepExit(() => {
         lady.classList.add('hidden');
         blurScreen.classList.remove('blur-in');
+        bubbleText.textContent = "";
         blurScreen.classList.add('blur-out');
     })
 
-    ladyScroll13
+    ladyScroll8
     .setup({
-        step: '.lady13',
+        step: '.lady8',
     })
     .onStepEnter(() => {
         lady.classList.remove('hidden');
         blurScreen.classList.add('blur-in');
         blurScreen.classList.remove('blur-out');
-        bubbleText.textContent = bubble13;
+        bubbleText.appendChild(ulTitle);
+        bubbleText.appendChild(ul);
     })
     .onStepExit(() => {
         lady.classList.add('hidden');
         blurScreen.classList.remove('blur-in');
         blurScreen.classList.add('blur-out');
+        endFooter.classList.remove('hidden');
     })
 
 
@@ -317,3 +320,8 @@ introScroll
         frameOneTwo.classList.remove('hidden');
     })
 
+    
+    function startOver() {
+        scroll(0, 0)
+        console.log('slutt')
+    }

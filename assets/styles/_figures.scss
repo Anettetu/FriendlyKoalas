@@ -40,8 +40,9 @@
     text-align: center;
     color: $black-2;
     z-index:2;
+    box-shadow: 0 0 2em rgb(113, 112, 112);
   }
-  
+
   .lady__bubble:before {
     content: "";
     position: absolute;
