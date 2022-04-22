@@ -16,6 +16,7 @@ const bucket = document.querySelector('#bucket');
 const river = document.querySelector('#river');
 const smallPond = document.querySelector('#small-pond');
 const forrest2 = document.querySelector('#african-forrest2');
+const endFooter = document.querySelector('#end-footer');
 const forrest = document.querySelector('#african-forrest');
 const riverCover = document.querySelector('#cover');
 const body = document.querySelector('body');

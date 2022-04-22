@@ -151,16 +151,25 @@ main {
     top: 0;
 }
 
+.down{
+    transform: translateY(5vw);
+}
+
 #goal {
     position: absolute;
     z-index: 4;
     width: 100vw;
     text-align: center;
-    margin-top: 1.5vw;
+    margin-top: 0vw;
 
 }
 
-.endFooter {
+footer {
+    position: relative;
+    bottom: 0vw;
+}
+
+#endFooter {
     width: 100vw;
     margin: 0 auto;
     text-align: center;
