@@ -67,6 +67,7 @@ const ladyScroll6 = scrollama();
 const ladyScroll7 = scrollama();
 const ladyScroll8 = scrollama();
 const noLeaf = scrollama();
+const blurRemove = scrollama();
 
 box1Scroller
     .setup({
@@ -88,7 +89,6 @@ box1Scroller
         body.classList.add('african');
         sun.classList.add('sun-african');
         riverCover.classList.add('move-down');
-        console.log('hei');
     })
 
 box2Scroller
@@ -108,7 +108,6 @@ box2Scroller
         body.classList.add('african');
         sun.classList.add('sun-african');
         if (lastFrames) frame4.classList.remove('hidden');
-        console.log(lastFrames);
     })
 
 box3Scroller
@@ -132,11 +131,12 @@ box4Scroller
     })
     .onStepEnter(() => {
         lastFrames = false;
+        console.log('false');
     })
     .onStepExit(() => {
         lastFrames = true;
     })
-
+    
 noLeaf
     .setup({
         step: '.leaf-trigger'
@@ -323,5 +323,16 @@ introScroll
     
     function startOver() {
         scroll(0, 0)
-        console.log('slutt')
+        blurScreen.classList.remove('hidden');
     }
+
+blurRemove
+    .setup({
+        step: '.box__6'
+    })
+    .onStepEnter(() => {
+        blurScreen.classList.add('hidden');
+    })
+    .onStepExit(() => {
+        blurScreen.classList.remove('hidden');
+    })
