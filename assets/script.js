@@ -22,7 +22,6 @@ const body = document.querySelector('body');
 const sun = document.querySelector('#sun');
 let lastFrames = false;
 
-const goal="Ensure availability and sustainable management of water and sanitation for all."
 const bubble1="Scroll to learn more about the world’s water supply. "
 const bubble2="Norway is a rich country when it comes to water supply. 99% of the population in Norway have access to clean and safe drinking water. "
 const bubble3="In the world, billions of people still lack access to safe drinking water, sanitation, and hygiene. Out of the 195 countries in the world, as many as 129 are not on track to having sustainably managed water resources by 2030."
