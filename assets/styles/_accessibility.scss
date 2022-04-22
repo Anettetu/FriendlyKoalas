@@ -1,0 +1,95 @@
+@media (prefers-reduced-motion) {
+    #head, .tap__circle-container, .tumbleweed {
+        animation: none;
+    }
+    #trees-right, #lynx, .lion, .trees--african, .trees-african-2, .pond {
+        animation: none;
+    }
+    #well, #trees-left {
+        animation: none;
+    }
+    .norwegian-house, .jacuzzi, .village {
+        animation: none;
+    }
+    .growing-tree1 {
+        animation: growing 0s forwards; 
+    }
+    .growing-tree2 {
+        animation: growing 0s forwards;
+    }
+    .growing-tree3 {
+        animation: growing 0s forwards; 
+    }
+    .growing-tree4 {
+        animation: growing 0s forwards; 
+    }
+    #small-pond, .sun-african, .river {
+        transition: 0s;
+    }
+    .drops > img {
+        animation: none;
+        transform: translateY(5vw);
+    }
+    #river > * {
+        transition: 0s;
+    }
+    .river, .move-down, #cover {
+        transition: 0s;
+    }
+    .mountain1, .mountain1 > * {
+        transition: 0s;
+    }
+    .mountain2, .mountain2 > * {
+        transition: 0s;
+    }
+    .mountain3, .mountain3 > * {
+        transition: 0s;
+    }
+    .mountain4 {
+        transition: 0s;
+    }
+    .mountain5 {
+        transition: 0s;
+    }
+    .ground {
+        transition: 0s;
+    }
+    .ground__greyblock::before {
+        transition: 0s;
+    }
+    .ground, .ground__left {
+        transition: 0s;
+    }
+    .ground__greyblock {
+        transition: 0s;
+    }
+    .ground__blueblock {
+        transition: 0s;
+    }
+    #frame4-block, .land, .ground__greyblock {
+        transition: 0s;
+    }
+    .land {
+        transition: 0s;    
+    }
+    #frame4-block {
+        transition: 0s;
+    }
+    #frame4-block::before {
+        transition: 0s;
+    }
+    .sky__bright {
+        transition: 0s;
+    }
+    .sky__dark {
+        transition: 0s;
+    }
+    .sky__dark:nth-of-type(1n) {
+        transition: 0s;
+    }
+    .sky {
+        transition: 0s;
+    }
+}
+
+
