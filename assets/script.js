@@ -299,6 +299,7 @@ ladyScroll7
         lady.classList.add('hidden');
         blurScreen.classList.remove('blur-in');
         blurScreen.classList.add('blur-out');
+        endFooter.classList.remove('hidden');
     })
 
 
@@ -317,3 +318,8 @@ introScroll
         frameOneTwo.classList.remove('hidden');
     })
 
+    
+    function startOver() {
+        scroll(0, 0)
+        console.log('slutt')
+    }
