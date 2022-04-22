@@ -54,6 +54,13 @@ const box4Scroller = scrollama();
 const wellAnimation = scrollama();
 const introScroll = scrollama();
 const ladyScroll1 = scrollama();
+const ladyScroll2 = scrollama();
+const ladyScroll3 = scrollama();
+const ladyScroll4 = scrollama();
+const ladyScroll5 = scrollama();
+const ladyScroll6 = scrollama();
+const ladyScroll7 = scrollama();
+const ladyScroll13 = scrollama();
 const noLeaf = scrollama();
 
 box1Scroller
@@ -176,6 +183,119 @@ ladyScroll1
         blurScreen.classList.remove('blur-in');
         blurScreen.classList.add('blur-out');
     })
+
+ladyScroll2
+    .setup({
+        step: '.lady2',
+    })
+    .onStepEnter(() => {
+        lady.classList.remove('hidden');
+        blurScreen.classList.add('blur-in');
+        blurScreen.classList.remove('blur-out');
+        bubbleText.textContent = bubble2;
+    })
+    .onStepExit(() => {
+        lady.classList.add('hidden');
+        blurScreen.classList.remove('blur-in');
+        blurScreen.classList.add('blur-out');
+    })
+
+ladyScroll3
+    .setup({
+        step: '.lady3',
+    })
+    .onStepEnter(() => {
+        lady.classList.remove('hidden');
+        blurScreen.classList.add('blur-in');
+        blurScreen.classList.remove('blur-out');
+        bubbleText.textContent = bubble3;
+    })
+    .onStepExit(() => {
+        lady.classList.add('hidden');
+        blurScreen.classList.remove('blur-in');
+        blurScreen.classList.add('blur-out');
+    })
+
+ladyScroll4
+    .setup({
+        step: '.lady4',
+    })
+    .onStepEnter(() => {
+        lady.classList.remove('hidden');
+        blurScreen.classList.add('blur-in');
+        blurScreen.classList.remove('blur-out');
+        bubbleText.textContent = bubble4;
+    })
+    .onStepExit(() => {
+        lady.classList.add('hidden');
+        blurScreen.classList.remove('blur-in');
+        blurScreen.classList.add('blur-out');
+    })
+
+ladyScroll5
+    .setup({
+        step: '.lady5',
+    })
+    .onStepEnter(() => {
+        lady.classList.remove('hidden');
+        blurScreen.classList.add('blur-in');
+        blurScreen.classList.remove('blur-out');
+        bubbleText.textContent = bubble5;
+    })
+    .onStepExit(() => {
+        lady.classList.add('hidden');
+        blurScreen.classList.remove('blur-in');
+        blurScreen.classList.add('blur-out');
+    })    
+
+ladyScroll6
+    .setup({
+        step: '.lady6',
+    })
+    .onStepEnter(() => {
+        lady.classList.remove('hidden');
+        blurScreen.classList.add('blur-in');
+        blurScreen.classList.remove('blur-out');
+        bubbleText.textContent = bubble6;
+    })
+    .onStepExit(() => {
+        lady.classList.add('hidden');
+        blurScreen.classList.remove('blur-in');
+        blurScreen.classList.add('blur-out');
+    })
+
+ladyScroll7
+    .setup({
+        step: '.lady7',
+    })
+    .onStepEnter(() => {
+        lady.classList.remove('hidden');
+        blurScreen.classList.add('blur-in');
+        blurScreen.classList.remove('blur-out');
+        bubbleText.textContent = bubble7;
+    })
+    .onStepExit(() => {
+        lady.classList.add('hidden');
+        blurScreen.classList.remove('blur-in');
+        blurScreen.classList.add('blur-out');
+    })
+
+    ladyScroll13
+    .setup({
+        step: '.lady13',
+    })
+    .onStepEnter(() => {
+        lady.classList.remove('hidden');
+        blurScreen.classList.add('blur-in');
+        blurScreen.classList.remove('blur-out');
+        bubbleText.textContent = bubble13;
+    })
+    .onStepExit(() => {
+        lady.classList.add('hidden');
+        blurScreen.classList.remove('blur-in');
+        blurScreen.classList.add('blur-out');
+    })
+
 
 
 introScroll
