@@ -347,6 +347,29 @@ body.african {
           animation: reversemoving 3s linear forwards;
 }
 
+@-webkit-keyframes blur-in {
+  100% {
+    background-color: white;
+    filter: opacity(75%);
+  }
+}
+
+@keyframes blur-in {
+  100% {
+    background-color: white;
+    filter: opacity(75%);
+  }
+}
+@-webkit-keyframes blur-out {
+  100% {
+    background-color: rgba(255, 235, 205, 0);
+  }
+}
+@keyframes blur-out {
+  100% {
+    background-color: rgba(255, 235, 205, 0);
+  }
+}
 body {
   margin: 0;
   width: 100vw;
@@ -395,7 +418,7 @@ main {
 }
 .box__1 {
   top: 0;
-  height: 190vw;
+  height: 240vw;
 }
 .box__2 {
   height: 200vw;
@@ -412,16 +435,25 @@ main {
   height: 220vw;
 }
 
+.lady1 {
+  top: 60vw;
+  height: 60vw;
+}
+
 .leaf-trigger {
   position: absolute;
   top: 330vw;
-  height: 100vw;
+  height: 140vw;
   width: 10px;
 }
 
 .leaf-trigger:nth-of-type(2n) {
   top: 840vw;
   height: 190vw;
+}
+
+.intro-trigger {
+  height: 150vw;
 }
 
 #frame4-block {
@@ -444,6 +476,16 @@ main {
   background-color: var(--ground);
   top: 3vw;
   transition: 2s;
+}
+
+#intro-container {
+  height: 190vw;
+}
+
+.intro {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .drops {
@@ -520,13 +562,24 @@ main {
   z-index: 2;
 }
 
-.blur {
-  position: absolute;
-  filter: opacity(75%);
+#blur {
+  position: fixed;
+  top: 0;
   height: 100vw;
   width: 100vw;
   z-index: 1;
-  background: white;
+}
+
+.blur-in {
+  -webkit-animation: blur-in 0.5s linear forwards;
+          animation: blur-in 0.5s linear forwards;
+}
+
+.blur-out {
+  background-color: white;
+  filter: opacity(75%);
+  -webkit-animation: blur-out 0.5s linear forwards;
+          animation: blur-out 0.5s linear forwards;
 }
 
 .intro {
@@ -1352,6 +1405,12 @@ main {
   z-index: 1;
 }
 
+.lady-container {
+  position: absolute;
+  top: 0;
+  height: 1200vw;
+}
+
 #lady-1 {
   position: absolute;
   width: 40vw;
@@ -1359,4 +1418,8 @@ main {
   top: 20vw;
   left: -10vw;
   z-index: 5;
+}
+
+#lady {
+  position: fixed;
 }/*# sourceMappingURL=index.css.map */
