@@ -15,7 +15,7 @@ body.african {
 }
 
 main {
-    height: 800vh;
+    height: 1600vh;
 }
 
 .frame__1{
@@ -30,14 +30,70 @@ main {
     position: relative;
 }
 
+.frame__4 {
+    position: absolute;
+}
+
 .background {
     position: sticky;
     top: 0;
 }
 
-.box1 {
+.box {
     position: absolute;
-    top: 150vw;
-    height: 40px;
     width: 40px;
+
+    &__1 {
+    top: 0;
+    height: 250vw;
+    }
+    &__2 {
+    height: 150vw;
+    top: 500vw;    
+    }
+    &__3 {
+    height: 500vw;
+    }
+    &__4 {
+    height: 520vw;
+    }
+    &__5 {
+    top: 80vw;
+    height: 180vw;
+    }
+}
+
+.leaf-trigger {
+    position: absolute;
+    top: 400vw;
+    height:100vw;
+    width: 10px;
+
+}
+
+.leaf-trigger:nth-of-type(2n) {
+    top: 800vw;
+    height: 140;
+}
+
+#frame4-block {
+    background-color: var(--ground);
+    height: 5vw;
+    width: 15vw;
+    position: absolute;
+    top: 31.8vw;
+    left: 24vw;
+    transform: rotateZ(6deg);
+    transition: 2s;
+}
+
+#frame4-block::before {
+    content: '';
+    position: absolute;
+    left: -1vw;
+    width: 10%;
+    height: 3vw;
+    background-color: var(--ground);
+    top: 3vw;
+    transition: 2s;
 }

@@ -1,3 +1,20 @@
+.intro {
+    height: 58vw;
+    background: $intro;
+
+    &__circle {
+        position: absolute;
+        width: 50vw;
+        height: 50vw;
+        background-color: $white;
+        border-radius: 100%;
+        top: 3vw;
+        left: 25vw;
+        z-index: 0;
+    }
+}
+
+
 .sky, .ground__blueblock {
     background-color: var(--sky);
     transition: 2s;
@@ -70,27 +87,6 @@
 .sun {
     background-color: $sun;
 }
-
-.pond__water > * {
-    background-color: $water;
-}
-
-.pond__bubble:nth-of-type(1), .pond__bubble:nth-of-type(2), .pond__bubble:nth-of-type(3), .pond__bubble:nth-of-type(4), .pond__bubble:nth-of-type(5), .pond__bubble:nth-of-type(6), .pond__bubble:nth-of-type(7), .pond__bubble:nth-of-type(8), .pond__bubble:nth-of-type(13), .pond__bubble:nth-of-type(14) {
-    background-color: $bubbles; }
-
-
-.pond__bubble:nth-of-type(9), .pond__bubble:nth-of-type(10), .pond__bubble:nth-of-type(11), .pond__bubble:nth-of-type(12) {
-    background-color: $top-bubble;
-}
-
-.edge__1:nth-of-type(1), .edge__2:nth-of-type(2), .edge__3:nth-of-type(3), .edge__4:nth-of-type(4) {
-    background-color: $edge;
-}
-
-.edge__5:nth-of-type(5), .edge__6:nth-of-type(6), .edge__7:nth-of-type(7), .edge__8:nth-of-type(8), .edge__9:nth-of-type(9), .edge__10:nth-of-type(10) {
-    background-color: $grey-edge;
-}
-
 
 .sky {
     width: 100vw;
@@ -340,4 +336,6 @@
     left: 6vw;
     transition: 2s;
 }
+
+
 

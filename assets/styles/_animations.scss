@@ -1,0 +1,178 @@
+#head {
+  animation: beat 4s infinite;
+}
+
+    @keyframes beat {
+        0% {
+          transform: translate(0);
+        }
+        50% {
+          transform: translate(-3vw, 7vw);
+        }
+        100%{
+          transform: translate(0);
+        }
+    }
+
+.tumbleweed {
+  animation: tumbling 9s infinite;
+}
+    @keyframes tumbling {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100vw) rotateZ(-1500deg);
+      }
+    }
+
+.bucket-animation{
+  animation: pull 12s forwards;
+}
+    @keyframes pull {
+      100% {
+        transform: translateY(-6.6vw);
+        z-index: 1;
+      }
+    }
+
+.rope-animation {
+  animation: rope 12s forwards;
+}
+    @keyframes rope {
+      10% {
+        height: 11vw;
+      }
+      
+      100% {
+        height: 6vw;
+        z-index: 1;
+      }
+    }
+
+.growing-tree1 {
+  animation: moving 3s forwards, growing 26s forwards; 
+}
+.growing-tree2 {
+  animation: moving 3s forwards, growing 27s forwards;
+}
+.growing-tree3 {
+  animation: moving 3s forwards, growing 18s forwards; 
+}
+.growing-tree4 {
+  animation: moving 3s forwards, growing 23s forwards; 
+
+}
+    @keyframes growing {
+      10% {
+        transform-origin: scaleY(100%) scaleX(100%);
+      }
+      
+      100% {
+        transform: scaleY(800%) scaleX(650%);
+      }
+    }
+
+.handle-animation {
+  animation: drag 4s linear 3;
+}
+    @keyframes drag {
+      50% {
+        transform: translateY(-6.5vw);
+      }
+    }
+
+.handle-inner-animation {
+  animation: drag-inner 4s linear 3;
+}
+    @keyframes drag-inner {
+      25% {
+        height: 1vw;
+        transform: translateY(-1vw);
+      }
+      50% {
+        height: 5vw;
+        transform: translateY(-4.3vw);
+      }
+      75% {
+        height: 1vw;
+        transform: translateY(-1vw);
+      }
+    }
+
+.tap__circle-container{
+  animation: spin 4s linear infinite    
+}
+    @keyframes spin {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotateY(360deg);
+      }
+    }
+
+#small-pond {
+  transition: 2s;
+}
+
+
+.smaller-pond{
+  animation: shrink 3s linear forwards;
+  transform: scaleY(50%) scaleX(50%);
+  transition: 2s;
+}
+
+.drops > img {
+  animation: drip 6s infinite, drops 6s infinite;
+}
+    @keyframes drops {
+      from {
+        opacity: 1;
+      }
+      
+      to { 
+        opacity: 0;
+      }
+    }
+
+    @keyframes drip {
+      0% {
+        transform: translate(0, 0);    
+      }
+      100% {
+        transform: translateY(11vw);
+      }
+    }
+
+@keyframes moving {
+  0% {
+    transform: translateX(30vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes reversemoving {
+  0% {
+    transform: translateX(-10vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+#trees-right, #lynx, .lion, .trees--african, .trees-african-2, .pond {
+  animation: moving 3s linear forwards;
+}
+
+.norwegian-house, .jacuzzi, .village {
+  animation: reversemoving 3s linear forwards;
+}
+
+#well, #trees-left {
+  animation: reversemoving 3s linear forwards;
+}
+
+
