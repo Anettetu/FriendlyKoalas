@@ -30,7 +30,7 @@
 
   .lady {
     position: relative;
-    font-family: Georgia;
+    font-family: $main;
     width: 30vw;
     font-size: 1.5vw;
     line-height: 2vw;
@@ -60,7 +60,7 @@
 .talking-box {
   position: absolute;
   bottom: 70vw;
-  left: 11vw;
+  left: 24vw;
 }
 
 .talking-lady {

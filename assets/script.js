@@ -43,6 +43,7 @@ const bubble9= "Don’t let the water run when brushing your teeth."
 const bubble10= "Fill the washing machine before turning it on." 
 const bubble11= "Don’t leave the sprinkler on longer than necessary."
 const bubble12= "Take shorter showers."
+const bubble13="When the water sources dry out, the one thing that could help would be wells. But digging and building wells costs money. The poorer parts of the world could use our help in aid when it comes to this."
 
 bubbleText.textContent = bubble1;
 
@@ -159,6 +160,7 @@ wellAnimation
         handle.classList.remove('handle-animation');
     })
 
+
 ladyScroll1
     .setup({
         step: '.lady1',
@@ -175,6 +177,7 @@ ladyScroll1
         blurScreen.classList.add('blur-out');
     })
 
+
 introScroll
     .setup({
         step: '.intro-trigger',
@@ -186,3 +189,4 @@ introScroll
     .onStepExit(() => {
         introContainer.classList.add('hidden');
     })
+
