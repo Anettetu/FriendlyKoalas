@@ -142,7 +142,9 @@ box1Scroller
     const bubble5="A sprinkler uses between 1000 and 1500 liters an hour, while a jacuzzi needs about 1000 liters of water."
 
     const bubble6="In Norway one person use around 180 liters of water a day. In some of the poorest countries, a regular person uses about 10 liters a day."
-
+    
+    const bubble13="When the water sources dry out, the one thing that could help would be wells. But digging and building wells costs money. The poorer parts of the world could use our help in aid when it comes to this."
+    
     const bubble7="Access to clean water can save about 16.000 people, each week!"
 
     const bubble8= "How can you help?"
