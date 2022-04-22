@@ -438,6 +438,10 @@ main {
   top: 80vw;
   height: 220vw;
 }
+.box__6 {
+  top: 960vw;
+  height: 30vw;
+}
 
 .lady1 {
   top: 90vw;
@@ -481,7 +485,7 @@ main {
 
 .leaf-trigger:nth-of-type(2n) {
   top: 840vw;
-  height: 140vw;
+  height: 175vw;
 }
 
 .intro-trigger {
@@ -539,9 +543,10 @@ main {
 footer {
   position: relative;
   bottom: 0vw;
+  background-color: var(--ground);
 }
 
-#endFooter {
+#end-footer {
   width: 100vw;
   margin: 0 auto;
   text-align: center;
@@ -550,6 +555,14 @@ footer {
 
 #beginAgain {
   padding: 1vw;
+  border-radius: 10%;
+  background-color: #EDEAE6;
+  border: 0;
+}
+
+#beginAgain:hover {
+  transform: scale(1.15);
+  transition: all 0.2s;
 }
 
 ul > li {
@@ -560,12 +573,27 @@ ul > li {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   width: 80vw;
   margin-left: 10vw;
   color: white;
 }
 
+@media only screen and (max-width: 1300px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 750px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+}
 .drops {
   width: 5vw;
   position: relative;
