@@ -1,7 +1,7 @@
 body {
     margin: 0;
     width: 100vw;
-    height: 1600vh;
+    height: 1000vw;
     overflow-x: hidden;
     transition: 2s;
 }
@@ -15,11 +15,11 @@ body.african {
 }
 
 main {
-    height: 1600vh;
+    height: 1000vw;
 }
 
 .frame__1{
-    height: 400vh;
+    height: 300vw;
 }
 
 .frame__2{
@@ -45,35 +45,35 @@ main {
 
     &__1 {
     top: 0;
-    height: 250vw;
+    height: 190vw;
     }
     &__2 {
-    height: 150vw;
-    top: 500vw;    
+    height: 200vw;
+    top: 450vw;    
     }
     &__3 {
-    height: 500vw;
+    height: 450vw;
     }
     &__4 {
-    height: 520vw;
+    height: 470vw;
     }
     &__5 {
     top: 80vw;
-    height: 180vw;
+    height: 220vw;
     }
 }
 
 .leaf-trigger {
     position: absolute;
-    top: 400vw;
+    top: 330vw;
     height:100vw;
     width: 10px;
 
 }
 
 .leaf-trigger:nth-of-type(2n) {
-    top: 800vw;
-    height: 140;
+    top: 840vw;
+    height: 190vw;
 }
 
 #frame4-block {
