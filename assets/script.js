@@ -143,8 +143,6 @@ box1Scroller
 
     const bubble6="In Norway one person use around 180 liters of water a day. In some of the poorest countries, a regular person uses about 10 liters a day."
     
-    const bubble13="When the water sources dry out, the one thing that could help would be wells. But digging and building wells costs money. The poorer parts of the world could use our help in aid when it comes to this."
-    
     const bubble7="Access to clean water can save about 16.000 people, each week!"
 
     const bubble8= "How can you help?"
@@ -152,3 +150,5 @@ box1Scroller
     const bubble10= "Fill the washing machine before turning it on." 
     const bubble11= "Don’t leave the sprinkler on longer than necessary."
     const bubble12= "Take shorter showers."
+
+    const bubble13="When the water sources dry out, the one thing that could help would be wells. But digging and building wells costs money. The poorer parts of the world could use our help in aid when it comes to this."
