@@ -45,7 +45,7 @@ main {
 
     &__1 {
     top: 0;
-    height: 190vw;
+    height: 240vw;
     }
     &__2 {
     height: 200vw;
@@ -63,10 +63,15 @@ main {
     }
 }
 
+.lady1 {
+    top: 60vw;
+    height: 60vw;
+}
+
 .leaf-trigger {
     position: absolute;
     top: 330vw;
-    height:100vw;
+    height:140vw;
     width: 10px;
 
 }
@@ -74,6 +79,10 @@ main {
 .leaf-trigger:nth-of-type(2n) {
     top: 840vw;
     height: 190vw;
+}
+
+.intro-trigger {
+    height: 150vw;
 }
 
 #frame4-block {
@@ -97,3 +106,13 @@ main {
     top: 3vw;
     transition: 2s;
 }
+
+#intro-container {
+    height: 190vw;
+}
+
+.intro {
+    position: sticky;
+    top: 0;
+}
+

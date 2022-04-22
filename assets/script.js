@@ -7,6 +7,9 @@ const frame4 = document.querySelector('#frame4');
 const frame4Block = document.querySelector('#frame4-block');
 const bubbleText = document.querySelector('#text_in_bubble');
 const innerHandle = document.querySelector('#handle-inner');
+const introContainer = document.querySelector('#intro-container');
+const blurScreen = document.querySelector('#blur');
+const lady = document.querySelector('#lady');
 const handle = document.querySelector('#handle');
 const rope = document.querySelector('#rope');
 const bucket = document.querySelector('#bucket');
@@ -19,11 +22,37 @@ const body = document.querySelector('body');
 const sun = document.querySelector('#sun');
 let lastFrames = false;
 
+const goal="Ensure availability and sustainable management of water and sanitation for all."
+
+const bubble1="Scroll to learn more about the world’s water supply. "
+
+const bubble2="Norway is a rich country when it comes to water supply. 99% of the population in Norway have access to clean and safe drinking water. "
+
+const bubble3="In the world, billions of people still lack access to safe drinking water, sanitation, and hygiene. Out of the 195 countries in the world, as many as 129 are not on track to having sustainably managed water resources by 2030."
+
+const bubble4="Due to climate change, the temperature around the world keeps increasing and is predicted to continue growing. This causes water sources to dry out."
+
+const bubble5="A sprinkler uses between 1000 and 1500 liters an hour, while a jacuzzi needs about 1000 liters of water."
+
+const bubble6="In Norway one person use around 180 liters of water a day. In some of the poorest countries, a regular person uses about 10 liters a day."
+
+const bubble7="Access to clean water can save about 16.000 people, each week!"
+
+const bubble8= "How can you help?"
+const bubble9= "Don’t let the water run when brushing your teeth."
+const bubble10= "Fill the washing machine before turning it on." 
+const bubble11= "Don’t leave the sprinkler on longer than necessary."
+const bubble12= "Take shorter showers."
+const bubble13="When the water sources dry out, the one thing that could help would be wells. But digging and building wells costs money. The poorer parts of the world could use our help in aid when it comes to this."
+
+bubbleText.textContent = bubble1;
+
 const box1Scroller = scrollama();
 const box2Scroller = scrollama();
 const box3Scroller = scrollama();
 const box4Scroller = scrollama();
 const wellAnimation = scrollama();
+const introScroll = scrollama();
 const ladyScroll1 = scrollama();
 const noLeaf = scrollama();
 
@@ -50,7 +79,7 @@ box1Scroller
         console.log('hei');
     })
 
-    box2Scroller
+box2Scroller
     .setup({
         step: '.box__2'
     })
@@ -70,7 +99,7 @@ box1Scroller
         console.log(lastFrames);
     })
 
-    box3Scroller
+box3Scroller
     .setup({
         step: '.box__3'
     })
@@ -85,7 +114,7 @@ box1Scroller
         frame4Block.classList.remove('hidden');
     })
 
-    box4Scroller
+box4Scroller
     .setup({
         step: '.box__4'
     })
@@ -96,7 +125,7 @@ box1Scroller
         lastFrames = true;
     })
 
-    noLeaf
+noLeaf
     .setup({
         step: '.leaf-trigger'
     })
@@ -113,7 +142,7 @@ box1Scroller
         smallPond.classList.remove('smaller-pond');
     })
 
-    wellAnimation
+wellAnimation
     .setup({
         step: '.box__5'
     })
@@ -131,30 +160,33 @@ box1Scroller
         handle.classList.remove('handle-animation');
     })
 
-    const goal="Ensure availability and sustainable management of water and sanitation for all."
-   
-    const bubble1="Scroll to learn more about the world’s water supply. "
-    
-    const bubble2="Norway is a rich country when it comes to water supply. 99% of the population in Norway have access to clean and safe drinking water. "
-   
-    const bubble3="In the world, billions of people still lack access to safe drinking water, sanitation, and hygiene. Out of the 195 countries in the world, as many as 129 are not on track to having sustainably managed water resources by 2030."
 
-    const bubble4="Due to climate change, the temperature around the world keeps increasing and is predicted to continue growing. This causes water sources to dry out."
-
-    const bubble5="A sprinkler uses between 1000 and 1500 liters an hour, while a jacuzzi needs about 1000 liters of water."
-
-    const bubble6="In Norway one person use around 180 liters of water a day. In some of the poorest countries, a regular person uses about 10 liters a day."
-    
-    const bubble7="Access to clean water can save about 16.000 people, each week!"
-
-    const bubble8= "How can you help?"
-    const bubble9= "Don’t let the water run when brushing your teeth."
-    const bubble10= "Fill the washing machine before turning it on." 
-    const bubble11= "Don’t leave the sprinkler on longer than necessary."
-    const bubble12= "Take shorter showers."
+ladyScroll1
+    .setup({
+        step: '.lady1',
+    })
+    .onStepEnter(() => {
+        lady.classList.remove('hidden');
+        blurScreen.classList.add('blur-in');
+        blurScreen.classList.remove('blur-out');
+        bubbleText.textContent = bubble1;
+    })
+    .onStepExit(() => {
+        lady.classList.add('hidden');
+        blurScreen.classList.remove('blur-in');
+        blurScreen.classList.add('blur-out');
+    })
 
 
-    const bubble13="When the water sources dry out, the one thing that could help would be wells. But digging and building wells costs money. The poorer parts of the world could use our help in aid when it comes to this."
+introScroll
+    .setup({
+        step: '.intro-trigger',
+    })
+    .onStepEnter(() => {
+        introContainer.classList.remove('hidden');
 
-bubbleText.textContent = bubble1;
+    })
+    .onStepExit(() => {
+        introContainer.classList.add('hidden');
+    })
 

@@ -291,6 +291,12 @@
   z-index: 1;
 }
 
+.lady-container {
+  position: absolute;
+  top: 0;
+  height: 1200vw;
+}
+
 #lady-1 {
   position: absolute;
   width: 70vw;
@@ -299,4 +305,7 @@
   z-index: 5;
 }
 
+#lady {
+  position: fixed;
+}
 

@@ -14,41 +14,45 @@
     <div class="box box__3"></div>
     <div class="box box__4"></div>
     <div class="box box__5"></div>
+    <div class="box intro-trigger"></div>
     <div class="leaf-trigger"></div>
     <div class="leaf-trigger"></div>
+    <div class="box lady1"></div>
     <main>
-      <div class="intro hidden">
-        <div class="intro__eclipse">
-          <img src="assets/svg/intro-eclipse.svg">
-        </div>
-        <div class="intro__hands">
-          <img src="assets/svg/hands.svg">
-        </div>
-        <div class="intro__circle"></div>
-        <div class="water-tap">
-          <div class="tap">
-            <div class="tap__container">
-              <div class="tap__circle-container">
-                <div class="tap__circle"></div>
-                <div class="tap__circle"></div>
-              </div>
-              <div class="tap__center"></div>
-              </div>
-        </div>
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	          viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
-            <rect x="719.35" y="330.95" class="st1" width="15.72" height="19.98"/>
-            <ellipse class="st1" cx="726.96" cy="383.56" rx="51.81" ry="37.95"/>
-            <rect x="604.92" y="363.36" class="st1" width="84.96" height="41.73"/>
-            <path class="st1" d="M745.38,362.47l84.96-4.44v50.16l-84.96-3.99V362.47z"/>
-            <path class="st1" d="M555.32,363.36h57.46L595.84,477H518L555.32,363.36z"/>
-            <ellipse class="st1" cx="830.34" cy="383.11" rx="18.66" ry="25.08"/>
-          </svg>
-        </div>
-        <div class="drops">
-          <img src="./assets/svg/drop.svg" alt="">
-          <div class="cover-water"></div>
-          <div class="cover-water1"></div>
+      <div id="intro-container">
+        <div class="intro">
+          <div class="intro__eclipse">
+            <img src="assets/svg/intro-eclipse.svg">
+          </div>
+          <div class="intro__hands">
+            <img src="assets/svg/hands.svg">
+          </div>
+          <div class="intro__circle"></div>
+          <div class="water-tap">
+            <div class="tap">
+              <div class="tap__container">
+                <div class="tap__circle-container">
+                  <div class="tap__circle"></div>
+                  <div class="tap__circle"></div>
+                </div>
+                <div class="tap__center"></div>
+                </div>
+            </div>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+              <rect x="719.35" y="330.95" class="st1" width="15.72" height="19.98"/>
+              <ellipse class="st1" cx="726.96" cy="383.56" rx="51.81" ry="37.95"/>
+              <rect x="604.92" y="363.36" class="st1" width="84.96" height="41.73"/>
+              <path class="st1" d="M745.38,362.47l84.96-4.44v50.16l-84.96-3.99V362.47z"/>
+              <path class="st1" d="M555.32,363.36h57.46L595.84,477H518L555.32,363.36z"/>
+              <ellipse class="st1" cx="830.34" cy="383.11" rx="18.66" ry="25.08"/>
+            </svg>
+          </div>
+          <div class="drops">
+            <img src="./assets/svg/drop.svg" alt="">
+            <div class="cover-water"></div>
+            <div class="cover-water1"></div>
+          </div>
         </div>
       </div>
     
@@ -1101,18 +1105,16 @@
             </div>
           </div>
       </div>
+      </div>
+      <div id="blur"></div>
+      <div id="lady" class="talking-lady hidden"> 
+        <img src="assets/svg/girl_talking.svg" id="lady-1">
 
-
-      <div class="talking-lady">
-        <div class="blur"></div>
-            <img src="assets/svg/girl_talking.svg" id="lady-1">
         <div class="talking-box">
 
         <div class="lady lady__bubble">
           <p id="text_in_bubble"></p>   
         </div>
-      </div>
-
       </div>
     </main>
 <script src="assets/script.js"></script>
