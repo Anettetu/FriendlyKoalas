@@ -45,6 +45,7 @@ main {
 .box {
     position: absolute;
     width: 40px;
+    height: 30vw;
 
     &__1 {
     top: 0;
@@ -73,47 +74,37 @@ main {
 
 .lady2 {
     top: 180vw;
-    height: 40vw;
 }
 
 .lady3 {
     top: 700vw;
-    height: 50vw;
 }
 
 .lady4 {
     top: 400vw;
-    height: 50vw;
 }
 
 .lady5 {
-    top: 550vw;
-    height: 50vw;
+    top: 520vw;
 }
 
 .lady6 {
     top: 600vw;
-    height: 50vw;
 }
 
 .lady7 {
     top: 750vw;
-    height: 60vw;
 }
 
-.lady13 {
+.lady8 {
     top: 880vw;
-    height: 60vw;
 }
-
-
 
 .leaf-trigger {
     position: absolute;
     top: 330vw;
     height:140vw;
     width: 10px;
-
 }
 
 .leaf-trigger:nth-of-type(2n) {
