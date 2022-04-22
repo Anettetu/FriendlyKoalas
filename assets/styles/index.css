@@ -350,7 +350,7 @@ body.african {
 body {
   margin: 0;
   width: 100vw;
-  height: 1600vh;
+  height: 1000vw;
   overflow-x: hidden;
   transition: 2s;
 }
@@ -364,23 +364,26 @@ body.african {
 }
 
 main {
-  height: 1600vh;
+  height: 1000vw;
 }
 
 .frame__1 {
-  height: 400vh;
+  height: 300vw;
 }
 
 .frame__2 {
-  position: relative;
+  position: absolute;
+  top: 100vw;
 }
 
 .frame__3 {
-  position: relative;
+  position: absolute;
+  top: 100vw;
 }
 
 .frame__4 {
   position: absolute;
+  top: 100vw;
 }
 
 .background {
@@ -395,33 +398,33 @@ main {
 }
 .box__1 {
   top: 0;
-  height: 250vw;
+  height: 190vw;
 }
 .box__2 {
-  height: 150vw;
-  top: 500vw;
+  height: 200vw;
+  top: 450vw;
 }
 .box__3 {
-  height: 500vw;
+  height: 450vw;
 }
 .box__4 {
-  height: 520vw;
+  height: 470vw;
 }
 .box__5 {
   top: 80vw;
-  height: 180vw;
+  height: 220vw;
 }
 
 .leaf-trigger {
   position: absolute;
-  top: 400vw;
+  top: 330vw;
   height: 100vw;
   width: 10px;
 }
 
 .leaf-trigger:nth-of-type(2n) {
-  top: 800vw;
-  height: 140;
+  top: 840vw;
+  height: 100vw;
 }
 
 #frame4-block {
@@ -444,6 +447,10 @@ main {
   background-color: var(--ground);
   top: 3vw;
   transition: 2s;
+}
+
+.mountains {
+  height: 0vw;
 }
 
 .drops {
@@ -508,7 +515,7 @@ main {
 .talking-box {
   position: absolute;
   bottom: 70vw;
-  left: 11vw;
+  left: 24vw;
 }
 
 .talking-lady {
@@ -1273,7 +1280,7 @@ main {
   position: absolute;
   width: 16vw;
   top: -53vw;
-  right: 8.5vw;
+  right: -91.5vw;
   z-index: 1;
 }
 
@@ -1281,7 +1288,7 @@ main {
   position: absolute;
   width: 18vw;
   top: -60vw;
-  right: 5vw;
+  right: -95vw;
   z-index: 1;
 }
 
@@ -1289,7 +1296,7 @@ main {
   position: absolute;
   width: 18vw;
   top: -58vw;
-  right: 2vw;
+  right: -98vw;
   z-index: 1;
 }
 
@@ -1297,7 +1304,7 @@ main {
   position: absolute;
   width: 20vw;
   top: -55vw;
-  right: 10vw;
+  right: -90vw;
   z-index: 1;
 }
 
@@ -1354,9 +1361,8 @@ main {
 
 #lady-1 {
   position: absolute;
-  width: 40vw;
-  height: 40vw;
-  top: 20vw;
-  left: -10vw;
+  width: 70vw;
+  top: 28vw;
+  left: -15vw;
   z-index: 5;
 }/*# sourceMappingURL=index.css.map */

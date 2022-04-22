@@ -23,15 +23,18 @@ main {
 }
 
 .frame__2{
-    position: relative;
+    position: absolute;
+    top: 100vw;
 }
 
 .frame__3{
-    position: relative;
+    position: absolute;
+    top: 100vw;
 }
 
 .frame__4 {
     position: absolute;
+    top: 100vw;
 }
 
 .background {
@@ -73,7 +76,7 @@ main {
 
 .leaf-trigger:nth-of-type(2n) {
     top: 840vw;
-    height: 190vw;
+    height: 100vw;
 }
 
 #frame4-block {
@@ -97,3 +100,8 @@ main {
     top: 3vw;
     transition: 2s;
 }
+
+.mountains {
+    height: 0vw;
+}
+
