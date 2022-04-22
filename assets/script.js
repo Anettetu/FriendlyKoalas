@@ -5,6 +5,7 @@ const frame3 = document.querySelector('#frame3');
 const frame4 = document.querySelector('#frame4');
 
 const frame4Block = document.querySelector('#frame4-block');
+const bubbleText = document.querySelector('#text_in_bubble');
 const innerHandle = document.querySelector('#handle-inner');
 const handle = document.querySelector('#handle');
 const rope = document.querySelector('#rope');
@@ -23,6 +24,7 @@ const box2Scroller = scrollama();
 const box3Scroller = scrollama();
 const box4Scroller = scrollama();
 const wellAnimation = scrollama();
+const ladyScroll1 = scrollama();
 const noLeaf = scrollama();
 
 box1Scroller
@@ -151,4 +153,8 @@ box1Scroller
     const bubble11= "Don’t leave the sprinkler on longer than necessary."
     const bubble12= "Take shorter showers."
 
+
     const bubble13="When the water sources dry out, the one thing that could help would be wells. But digging and building wells costs money. The poorer parts of the world could use our help in aid when it comes to this."
+
+bubbleText.textContent = bubble1;
+
