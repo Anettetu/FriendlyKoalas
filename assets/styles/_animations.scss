@@ -175,4 +175,19 @@
   animation: reversemoving 3s linear forwards;
 }
 
+@keyframes blur-in {
+  0% {
+  }
+  100% {
+    background-color: white;
+    filter: opacity(75%);
+  }
+}
 
+@keyframes blur-out {
+  0% {
+  }
+  100% {
+    background-color: rgba(255, 235, 205, 0);
+  }
+}
