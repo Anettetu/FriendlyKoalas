@@ -1,4 +1,3 @@
-
 body {
   --mountain-1: hsl(0,1%,66%);
   --mountain-2: hsl(0,3%,70%);
@@ -165,19 +164,19 @@ body.african {
 
 @-webkit-keyframes growing {
   10% {
-    transform-origin: scaleY(100%) scaleX(100%);
+    transform: scaleY(1) scaleX(1);
   }
   100% {
-    transform: scaleY(800%) scaleX(650%);
+    transform: scaleY(8) scaleX(7);
   }
 }
 
 @keyframes growing {
   10% {
-    transform-origin: scaleY(100%) scaleX(100%);
+    transform: scaleY(1) scaleX(1);
   }
   100% {
-    transform: scaleY(800%) scaleX(650%);
+    transform: scaleY(8) scaleX(7);
   }
 }
 .handle-animation {
@@ -259,7 +258,7 @@ body.african {
 .smaller-pond {
   -webkit-animation: shrink 3s linear forwards;
           animation: shrink 3s linear forwards;
-  transform: scaleY(50%) scaleX(50%);
+  transform: scaleY(0.5) scaleX(0.5);
   transition: 2s;
 }
 
@@ -301,22 +300,16 @@ body.african {
     transform: translateY(11vw);
   }
 }
-@-webkit-keyframes moving {
-  0% {
-    transform: translateX(30vw);
-  }
-  100% {
-    transform: translateX(0vw);
-  }
+#well, #trees-left {
+  -webkit-animation: reversemoving 3s linear forwards;
+          animation: reversemoving 3s linear forwards;
 }
-@keyframes moving {
-  0% {
-    transform: translateX(30vw);
-  }
-  100% {
-    transform: translateX(0vw);
-  }
+
+.norwegian-house, .jacuzzi, .village {
+  -webkit-animation: reversemoving 3s linear forwards;
+          animation: reversemoving 3s linear forwards;
 }
+
 @-webkit-keyframes reversemoving {
   0% {
     transform: translateX(-10vw);
@@ -325,6 +318,7 @@ body.african {
     transform: translateX(0vw);
   }
 }
+
 @keyframes reversemoving {
   0% {
     transform: translateX(-10vw);
@@ -338,23 +332,29 @@ body.african {
           animation: moving 3s linear forwards;
 }
 
-.norwegian-house, .jacuzzi, .village {
-  -webkit-animation: reversemoving 3s linear forwards;
-          animation: reversemoving 3s linear forwards;
+@-webkit-keyframes moving {
+  0% {
+    transform: translateX(30vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
 }
 
-#well, #trees-left {
-  -webkit-animation: reversemoving 3s linear forwards;
-          animation: reversemoving 3s linear forwards;
+@keyframes moving {
+  0% {
+    transform: translateX(30vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
 }
-
 @-webkit-keyframes blur-in {
   100% {
     background-color: white;
     filter: opacity(75%);
   }
 }
-
 @keyframes blur-in {
   100% {
     background-color: white;
@@ -1193,7 +1193,6 @@ h1 {
 
 .water-tap > * {
   position: absolute;
-  z-index: 0.9;
   top: -9.5vw;
   left: 6.5vw;
 }
@@ -1529,5 +1528,136 @@ h1 {
 
 #lady {
   position: fixed;
-}/*# sourceMappingURL=index.css.map */
+}
 
+@media (prefers-reduced-motion) {
+  #head, .tap__circle-container, .tumbleweed {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  #trees-right, #lynx, .lion, .trees--african, .trees-african-2, .pond {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  #well, #trees-left {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .norwegian-house, .jacuzzi, .village {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .growing-tree1 {
+    -webkit-animation: growing 0s forwards;
+            animation: growing 0s forwards;
+  }
+
+  .growing-tree2 {
+    -webkit-animation: growing 0s forwards;
+            animation: growing 0s forwards;
+  }
+
+  .growing-tree3 {
+    -webkit-animation: growing 0s forwards;
+            animation: growing 0s forwards;
+  }
+
+  .growing-tree4 {
+    -webkit-animation: growing 0s forwards;
+            animation: growing 0s forwards;
+  }
+
+  #small-pond, .sun-african, .river {
+    transition: 0s;
+  }
+
+  .drops > img {
+    -webkit-animation: none;
+            animation: none;
+    transform: translateY(5vw);
+  }
+
+  #river > * {
+    transition: 0s;
+  }
+
+  .river, .move-down, #cover {
+    transition: 0s;
+  }
+
+  .mountain1, .mountain1 > * {
+    transition: 0s;
+  }
+
+  .mountain2, .mountain2 > * {
+    transition: 0s;
+  }
+
+  .mountain3, .mountain3 > * {
+    transition: 0s;
+  }
+
+  .mountain4 {
+    transition: 0s;
+  }
+
+  .mountain5 {
+    transition: 0s;
+  }
+
+  .ground {
+    transition: 0s;
+  }
+
+  .ground__greyblock::before {
+    transition: 0s;
+  }
+
+  .ground, .ground__left {
+    transition: 0s;
+  }
+
+  .ground__greyblock {
+    transition: 0s;
+  }
+
+  .ground__blueblock {
+    transition: 0s;
+  }
+
+  #frame4-block, .land, .ground__greyblock {
+    transition: 0s;
+  }
+
+  .land {
+    transition: 0s;
+  }
+
+  #frame4-block {
+    transition: 0s;
+  }
+
+  #frame4-block::before {
+    transition: 0s;
+  }
+
+  .sky__bright {
+    transition: 0s;
+  }
+
+  .sky__dark {
+    transition: 0s;
+  }
+
+  .sky__dark:nth-of-type(1n) {
+    transition: 0s;
+  }
+
+  .sky {
+    transition: 0s;
+  }
+}/*# sourceMappingURL=index.css.map */
